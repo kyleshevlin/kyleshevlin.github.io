@@ -1,0 +1,52 @@
+//////////////////////////////
+// Elements
+//////////////////////////////
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: $c-white;
+  color: $c-black;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: $c-red;
+  text-decoration: none;
+  position: relative;
+  transition: color .3s ease;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $c-red;
+    transition: width .3s ease,
+                background .3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  &:hover {
+    color: darken($c-red, 15%);
+
+    &:after {
+      width: 100%;
+      background: darken($c-red, 15%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+//////////////////////////////
+// Typography
+//////////////////////////////
+
+@include headings;
+@include paragraph;
+
+h1,
+h2 {
+  font-weight: bold;
+}

@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: #f7f7f7;
+  color: #444;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: #a7352f;
+  text-decoration: none;
+  position: relative;
+  transition: color .3s ease;
+}
+a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #a7352f;
+  transition: width .3s ease, background .3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+a:hover {
+  color: #6b221e;
+}
+a:hover:after {
+  width: 100%;
+  background: #6b221e;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 43.2px;
+  margin-bottom: 28.8px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 28.8px;
+}
+
+h3 {
+  font-size: 21.6px;
+  line-height: 28.8px;
+  margin-bottom: 28.8px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28.8px;
+  margin-bottom: 28.8px;
+}
+
+h5 {
+  font-size: 18.4px;
+  line-height: 28.8px;
+  margin-bottom: 28.8px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 28.8px;
+  margin-bottom: 28.8px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28.8px;
+  margin-bottom: 28.8px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.header {
+  margin: 28.8px 0;
+}
+
+.repo-item {
+  margin-bottom: 57.6px;
+}
+
+/*# sourceMappingURL=application.css.map */
