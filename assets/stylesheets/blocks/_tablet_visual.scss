@@ -1,0 +1,51 @@
+//////////////////////////////
+// Tablet  Visual
+//////////////////////////////
+
+.tablet_visual {
+  display: block;
+
+  &-wrap {
+    display: none;
+    margin-bottom: bs(2);
+
+    @include bp(alpha) {
+      display: block;
+    }
+
+    @include bp(bravo) {
+      display: none;
+    }
+
+    form {
+      width: 500px;
+      font-size: 75%;
+      padding: 0 5px;
+    }
+
+    .input {
+      text-align: right;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+
+      input {
+        margin-left: 5px;
+      }
+    }
+
+    .legend {
+
+      &-svg {
+        display: block;
+        margin-left: 5px;
+      }
+
+      &-interest {
+
+        &-heading {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

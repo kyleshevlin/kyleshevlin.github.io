@@ -4,7 +4,8 @@
 
 // Breakpoints
 $breakpoints: (
-  'alpha': 768px
+  'alpha': 600px,
+  'bravo': 1025px
 );
 
 // Shevy Map
@@ -15,10 +16,11 @@ $shevy: (
 );
 
 // Colors
-$c-black: hsl(10, 100%, 2%);
-$c-dark-gray: hsl(0, 0%, 17%);
-$c-white: hsl(0, 0%, 97%);
-$c-red: #a7352f;
+$c-black: #0a0200;
+$c-dark-gray: #2b2b2b;
+$c-white: #f7f7f7;
+$c-red: #cf332a;
+$c-dark-red: darken($c-red, 30%);
 
 // Font Stacks
 $f-sans: 'Helvetica', 'Arial', sans-serif;

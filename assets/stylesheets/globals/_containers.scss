@@ -6,7 +6,7 @@
   width: 85%;
   margin: 0 auto;
 
-  @include bp(alpha) {
-    width: 65%;
+  @include bp(bravo) {
+    width: 75%;
   }
 }

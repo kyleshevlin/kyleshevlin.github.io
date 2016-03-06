@@ -70,7 +70,12 @@ module.exports = function(grunt) {
         options: {
           separator: ';'
         },
-        src: ['vendor/assets/javascripts/*.js', 'assets/javascripts/*.js'],
+        src: [
+          'vendor/assets/javascripts/*.js',
+          'assets/javascripts/visual.js',
+          'assets/javascripts/mobile_visual.js',
+          'assets/javascripts/application.js'
+        ],
         dest: 'build/application.js',
       }
     },
@@ -118,7 +123,7 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          keepalive : true
+          keepalive: true
         }
       }
     }

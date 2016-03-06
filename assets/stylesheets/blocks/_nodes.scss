@@ -1,0 +1,25 @@
+//////////////////////////////
+// Nodes
+//////////////////////////////
+
+.node,
+.rect {
+  opacity: .85;
+  transition: all .3s ease;
+
+  .is-active & {
+    opacity: .15;
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+
+  &-circle {
+    transition: all .3s ease;
+  }
+
+  &-label {
+    fill: white;
+  }
+}

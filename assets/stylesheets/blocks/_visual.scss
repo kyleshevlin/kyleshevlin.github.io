@@ -1,0 +1,34 @@
+//////////////////////////////
+// Visual
+//////////////////////////////
+
+.visual {
+  display: none;
+
+  @include bp(bravo) {
+    display: block;
+    margin-bottom: bs(2);
+  }
+
+  .legend {
+
+    &-interest {
+
+      &-heading {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.axis-group {
+
+  path {
+    fill: none;
+    stroke: black;
+  }
+
+  line {
+    stroke: black;
+  }
+}

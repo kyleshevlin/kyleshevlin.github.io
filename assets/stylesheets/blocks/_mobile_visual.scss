@@ -1,0 +1,51 @@
+//////////////////////////////
+// Mobile Visual
+//////////////////////////////
+
+.mobile_visual {
+  display: block;
+
+  &-wrap {
+    display: block;
+    margin-bottom: bs(2);
+
+    @include bp(alpha) {
+      display: none;
+    }
+
+    form {
+      width: 280px;
+      font-size: 75%;
+      padding: 0 5px;
+    }
+
+    .input {
+      text-align: right;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+
+      input {
+        margin-left: 5px;
+      }
+    }
+
+    .legend {
+
+      &-svg {
+        display: block;
+        margin-left: 5px;
+      }
+
+      &-interest {
+
+        &-heading {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .rect-group {
+    font-size: 85%;
+  }
+}
