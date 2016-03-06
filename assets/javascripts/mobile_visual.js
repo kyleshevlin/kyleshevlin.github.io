@@ -30,7 +30,7 @@ d3.chart.mobileVisual = function() {
 
     // Scales
     xScale = d3.scale.linear()
-      .domain([0, d3.max(data, function(d) { return d.months; })])
+      .domain([0, d3.max(data, function(d) { return months(d.months); })])
       .range([0, width])
 
     yScale = d3.scale.linear()
@@ -193,7 +193,7 @@ d3.chart.mobileVisual = function() {
       })
       .transition().delay(function(d,i) { return i * 100; })
       .attr({
-        width: function(d) { return xScale(d.months); }
+        width: function(d) { return xScale(months(d.months)); }
       })
 
     rectWrap.append('title')
@@ -232,7 +232,7 @@ d3.chart.mobileVisual = function() {
         property;
 
     if (value === klass + '-months') {
-      domain = [0, d3.max(data, function(d) { return d.months; })];
+      domain = [0, d3.max(data, function(d) { return months(d.months); })];
       label = 'Months';
       property = 'months';
     } else {

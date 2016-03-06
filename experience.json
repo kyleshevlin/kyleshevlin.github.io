@@ -2,91 +2,91 @@
   "experience": [
     {
       "name": "HTML",
-      "months": 48,
+      "months": "2012-01-01",
       "expertise": 90,
       "interest": 10
     },
     {
       "name": "CSS",
-      "months": 48,
+      "months": "2012-01-01",
       "expertise": 90,
       "interest": 60
     },
     {
       "name": "JavaScript",
-      "months": 42,
+      "months": "2012-06-01",
       "expertise": 70,
       "interest": 100
     },
     {
       "name": "jQuery",
-      "months": 42,
+      "months": "2012-06-01",
       "expertise": 80,
       "interest": 20
     },
     {
       "name": "Sass",
-      "months": 36,
+      "months": "2013-01-01",
       "expertise": 100,
       "interest": 70
     },
     {
       "name": "WordPress",
-      "months": 36,
+      "months": "2013-01-01",
       "expertise": 50,
       "interest": 45
     },
     {
       "name": "PHP",
-      "months": 36,
+      "months": "2013-01-01",
       "expertise": 50,
       "interest": 5
     },
     {
       "name": "Rails",
-      "months": 30,
+      "months": "2013-06-01",
       "expertise": 85,
       "interest": 70
     },
     {
       "name": "Git",
-      "months": 30,
+      "months": "2013-06-01",
       "expertise": 75,
       "interest": 45
     },
     {
       "name": "Bash",
-      "months": 30,
+      "months": "2013-06-01",
       "expertise": 50,
       "interest": 70
     },
     {
       "name": "Templating Langs.",
-      "months": 24,
+      "months": "2014-01-01",
       "expertise": 85,
       "interest": 40
     },
     {
       "name": "JS MVCs",
-      "months": 15,
+      "months": "2014-06-01",
       "expertise": 30,
       "interest": 100
     },
     {
       "name": "Ember",
-      "months": 12,
+      "months": "2014-09-01",
       "expertise": 40,
       "interest": 100
     },
     {
       "name": "Rails API",
-      "months": 9,
+      "months": "2015-04-01",
       "expertise": 35,
       "interest": 95
     },
     {
       "name": "D3",
-      "months": 4,
+      "months": "2015-09-01",
       "expertise": 30,
       "interest": 100
     }

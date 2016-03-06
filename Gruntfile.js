@@ -72,6 +72,7 @@ module.exports = function(grunt) {
         },
         src: [
           'vendor/assets/javascripts/*.js',
+          'assets/javascripts/helpers.js',
           'assets/javascripts/visual.js',
           'assets/javascripts/mobile_visual.js',
           'assets/javascripts/application.js'
