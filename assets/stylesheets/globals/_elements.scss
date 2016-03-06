@@ -10,16 +10,13 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: $f-raleway;
   font-size: 100%;
 }
 
 body {
   background: $c-white;
   color: $c-black;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
 }
 
 a {
@@ -42,11 +39,28 @@ a {
   }
 
   &:hover {
-    color: darken($c-red, 15%);
+    color: darken($c-red, 4%);
 
     &:after {
       width: 100%;
-      background: darken($c-red, 15%);
+      background: darken($c-red, 4%);
+    }
+  }
+
+  .footer & {
+    $c-lighter-red: lighten($c-red, 10%);
+    color: $c-lighter-red;
+
+    &:after {
+      background: $c-lighter-red;
+    }
+
+    &:hover {
+      color: darken($c-lighter-red, 4%);
+
+      &:after {
+        background: darken($c-lighter-red, 4%);
+      }
     }
   }
 }

@@ -2,6 +2,11 @@
 // Variables
 //////////////////////////////
 
+// Breakpoints
+$breakpoints: (
+  'alpha': 768px
+);
+
 // Shevy Map
 $shevy: (
   base-font-size: 16px,
@@ -10,6 +15,12 @@ $shevy: (
 );
 
 // Colors
-$c-black: #444;
-$c-white: #f7f7f7;
+$c-black: hsl(10, 100%, 2%);
+$c-dark-gray: hsl(0, 0%, 17%);
+$c-white: hsl(0, 0%, 97%);
 $c-red: #a7352f;
+
+// Font Stacks
+$f-sans: 'Helvetica', 'Arial', sans-serif;
+$f-monty: 'Montserrat', $f-sans;
+$f-raleway: 'Raleway', $f-sans;

@@ -6,16 +6,13 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
   font-size: 100%;
 }
 
 body {
   background: #f7f7f7;
-  color: #444;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
+  color: #0a0200;
 }
 
 a {
@@ -38,11 +35,23 @@ a:after {
   left: 0;
 }
 a:hover {
-  color: #6b221e;
+  color: #97302b;
 }
 a:hover:after {
   width: 100%;
-  background: #6b221e;
+  background: #97302b;
+}
+.footer a {
+  color: #c94740;
+}
+.footer a:after {
+  background: #c94740;
+}
+.footer a:hover {
+  color: #bf3d36;
+}
+.footer a:hover:after {
+  background: #bf3d36;
 }
 
 h1 {
@@ -88,12 +97,37 @@ p {
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+
+h1,
 h2 {
   font-weight: bold;
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 65%;
+  }
+}
+
 .header {
   margin: 28.8px 0;
+}
+
+.footer {
+  background: #2b2b2b;
+  color: #f7f7f7;
+  padding: 57.6px 0;
 }
 
 .repo-item {
