@@ -51,7 +51,7 @@ d3.chart.visual = function() {
       .range([0, width])
 
     yScale = d3.scale.linear()
-      .domain([d3.max(data, function(d) { return months(d.months); }), 0])
+      .domain([d3.max(data, function(d) { return d.months; }), 0])
       .range([height, 0])
 
     fill = d3.scale.linear()
@@ -174,7 +174,7 @@ d3.chart.visual = function() {
       .append('g').classed('node', true)
       .attr({
         x: function(d,i) { return xScale(i + 1); },
-        y: function(d) { return yScale(months(d.months)); }
+        y: function(d) { return yScale(d.months); }
       })
 
     node.append('title')
@@ -184,7 +184,7 @@ d3.chart.visual = function() {
       .attr({
         r: 0,
         cx: function(d,i) { return xScale(i + 1); },
-        cy: function(d) { return yScale(months(d.months)); },
+        cy: function(d) { return yScale(d.months); },
         fill: function(d) { return fill(d.interest); }
       })
       .transition().delay(function(d,i) { return i * 100; })
@@ -195,7 +195,7 @@ d3.chart.visual = function() {
     node.append('text').classed('node-label', true)
       .attr({
         x: function(d,i) { return xScale(i + 1); },
-        y: function(d) { return yScale(months(d.months)); },
+        y: function(d) { return yScale(d.months); },
         dy: '.35em',
         'text-anchor': 'middle',
       })
@@ -288,7 +288,7 @@ d3.chart.mobileVisual = function() {
 
     // Scales
     xScale = d3.scale.linear()
-      .domain([0, d3.max(data, function(d) { return months(d.months); })])
+      .domain([0, d3.max(data, function(d) { return d.months; })])
       .range([0, width])
 
     yScale = d3.scale.linear()
@@ -451,7 +451,7 @@ d3.chart.mobileVisual = function() {
       })
       .transition().delay(function(d,i) { return i * 100; })
       .attr({
-        width: function(d) { return xScale(months(d.months)); }
+        width: function(d) { return xScale(d.months); }
       })
 
     rectWrap.append('title')
@@ -490,7 +490,7 @@ d3.chart.mobileVisual = function() {
         property;
 
     if (value === klass + '-months') {
-      domain = [0, d3.max(data, function(d) { return months(d.months); })];
+      domain = [0, d3.max(data, function(d) { return d.months; })];
       label = 'Months';
       property = 'months';
     } else {
@@ -558,6 +558,11 @@ var AppName = {
 
     d3.json('experience.json', function(err, experience) {
       var data = experience.experience;
+
+      data.forEach(function(d) {
+        d.months = months(d.months);
+      });
+
       var display = d3.select('.js-display');
 
       var visual = d3.chart.visual()

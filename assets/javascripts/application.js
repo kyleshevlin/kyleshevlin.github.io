@@ -12,6 +12,11 @@ var AppName = {
 
     d3.json('experience.json', function(err, experience) {
       var data = experience.experience;
+
+      data.forEach(function(d) {
+        d.months = months(d.months);
+      });
+
       var display = d3.select('.js-display');
 
       var visual = d3.chart.visual()
