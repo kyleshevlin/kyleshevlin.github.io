@@ -279,4 +279,12 @@ h2 {
   margin-bottom: 3.6rem;
 }
 
+.site-item {
+  margin-bottom: 1.8rem;
+}
+.site-item-heading {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=application.css.map */
