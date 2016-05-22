@@ -553,8 +553,8 @@ var AppName = {
   },
 
   getData: function() {
-    var colorOne = '#ffd900',
-        colorTwo = '#dd0000';
+    var colorOne = '#0a2029',
+        colorTwo = '#33a1cc';
 
     d3.json('experience.json', function(err, experience) {
       var data = experience.experience;

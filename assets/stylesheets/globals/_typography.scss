@@ -3,7 +3,8 @@
 //////////////////////////////
 
 @include headings;
-@include paragraph;
+@include body;
+@include content;
 
 h1,
 h2,
@@ -11,10 +12,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $f-monty;
-}
-
-h1,
-h2 {
-  font-weight: bold;
+  font-family: $f-headings;
 }
