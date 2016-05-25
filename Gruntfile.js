@@ -71,7 +71,7 @@ module.exports = function(grunt) {
           separator: ';'
         },
         src: [
-          'vendor/assets/javascripts/*.js',
+          'vendor/assets/javascripts/**/*.js',
           'assets/javascripts/all-tags.js',
           'assets/javascripts/helpers.js',
           'assets/javascripts/visual.js',
