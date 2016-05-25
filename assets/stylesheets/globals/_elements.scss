@@ -52,19 +52,10 @@ a {
   }
 
   .footer & {
-    $c-lighter-red: lighten($c-brand, 10%);
-    color: $c-lighter-red;
-
-    &:after {
-      background: $c-lighter-red;
-    }
+    color: lighten($c-brand, 10%);
 
     &:hover {
-      color: darken($c-lighter-red, 4%);
-
-      &:after {
-        background: darken($c-lighter-red, 4%);
-      }
+      color: darken($c-brand, 4%);
     }
   }
 }

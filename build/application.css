@@ -49,14 +49,8 @@ a:hover:after {
 .footer a {
   color: #5cb4d6;
 }
-.footer a:after {
-  background: #5cb4d6;
-}
 .footer a:hover {
-  color: #4bacd2;
-}
-.footer a:hover:after {
-  background: #4bacd2;
+  color: #2f94bc;
 }
 
 section {
