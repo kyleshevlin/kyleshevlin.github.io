@@ -18,140 +18,44 @@
     <div class="display js-display"></div>
 
     <section>
-      <p>
-        Github: <a href="https://github.com/kyleshevlin">https://github.com/kyleshevlin</a><br/>
-        LinkedIn: <a href="https://www.linkedin.com/in/kyleshevlin">https://www.linkedin.com/in/kyleshevlin</a>
-      </p>
-
-      <h2>Overview</h2>
-      <p>
-        Front end web developer with full stack skills. 4 years coding experience; 2.5 years digital agency experience. Expert in Sass, fluent in Ruby on Rails. JavaScript MV* curious with about a year’s experience with Ember frontends with Rails API backends. Recently began learning D3.js and data visualization. Endlessly curious and ready for the next challenge.
-      </p>
-
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          High level of mastery in HTML (and multiple templating languages: Erb, Slim, Handlebars, Twig), CSS (highly skilled with Sass), and JavaScript.
-        </li>
-        <li>
-          Develops front end systems that are mobile-first, fully responsive, cross-browser supporting and well commented, rigorously following styleguides leaving behind a clean code base for anyone else who might work on the project.
-        </li>
-        <li>
-          Full stack Ruby on Rails developer, capable of developing and implementing data models and CMSs.
-        </li>
-        <li>
-          Excellent communicator and teacher. Able to facilitate dialogue across disciplines as well as effectively describe and educate (when necessary) the pain points and challenges of a particular development direction or benefits and opportunities of another.
-        </li>
-      </ul>
-
-      <h2>Work</h2>
-      <p>
-        <strong>FINE</strong> - Portland, OR - November 2013 to Present<br/>
-        Front End Web Developer
-      </p>
-
-      <ul>
-        <li>
-          Front end engineer and tech lead for numerous projects, all templating, Sass and JavaScript from start to finish
-        </li>
-        <li>
-          Sole Full Stack Ruby on Rails developer for several projects
-        </li>
-        <li>
-          Developed, contributed to, and initiated front end development standards, guidelines and best practices for development team
-        </li>
-        <li>
-          Developed and contributed to internal tools for development team (Private and OS libraries and software)
-        </li>
-      </ul>
-
-      <h2>Education</h2>
-      <p>
-        <strong>MA in Theology</strong> (Yes, you’re reading that correctly. I’m a theologian turned programmer)<br/>
-        Fuller Theoglogical Seminary - Pasadena, CA - 2012
-      </p>
-
-      <p>
-        <strong>BA in Philosophy &amp; Mathematics</strong><br/>
-        Lenoir-Rhyne University - Hickory, NC - 2007
-      </p>
+      <my-social></my-social>
+      <my-overview></my-overview>
+      <my-skills></my-skills>
+      <my-work></my-work>
+      <my-education></my-education>
     </section>
 
     <section>
-      <h2>Noteworthy Repos and OS Projects</h2>
-      <div class="repos">
-        <div class="repo-item">
-          <h3><a href="https://github.com/kyleshevlin/condo">Condo</a></h3>
-          <p>A micro Sass grid library.</p>
-        </div>
-
-        <div class="repo-item">
-          <h3><a href="https://github.com/kyleshevlin/ripsum">Ripsum</a></h3>
-          <p>Ruby gem for generating random amounts of lorem ipsum with each page load.</p>
-          <a href="/ripsum">Demo</a>
-        </div>
-
-        <div class="repo-item">
-          <h3><a href="https://github.com/kyleshevlin/shevy">Shevy</a></h3>
-          <p>A typography/vertical rhythm Sass library.</p>
-          <a href="/shevy">Demo</a>
-        </div>
-
-        <div class="repo-item">
-          <h3><a href="https://github.com/kyleshevlin/resormalize">Resormalize</a></h3>
-          <p>A custom combination of reset.css and normalize.css</p>
-        </div>
-
-        <div class="repo-item">
-          <h3><a href="https://github.com/kyleshevlin/susy-snippets">Susy Snippets</a></h3>
-          <p>Sublime Text package of snippets for all Susy 2 mixins and functions</p>
-        </div>
-      </div>
+      <my-projects></my-projects>
     </section>
 
     <section>
-      <h2>Noteworthy Websites I Have Built</h2>
-      <div class="sites">
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://ta.com">TA Associates</a></h3>
-        </div>
-
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://cask23.com">Stag's Leap Wine Cellar</a></h3>
-          <span>&mdash; CommArts Award Winner</span>
-        </div>
-
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://frazierhealthcare.com">Frazier Healthcare</a></h3>
-        </div>
-
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://mottowines.com">Motto Wines</a></h3>
-        </div>
-
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://eroicawine.com">Eroica Wine</a></h3>
-        </div>
-
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://darioush.com">Darioush</a></h3>
-          <span>&mdash; CommArts Award Winner</span>
-        </div>
-
-        <div class="site-item">
-          <h3 class="site-item-heading"><a href="http://anchorbrewing.com">Anchor Brewing</a></h3>
-        </div>
-      </div>
+      <my-sites></my-sites>
     </section>
   </div>
 
   <footer class="footer">
     <div class="container">
-      Follow me on Twitter <a href="//twitter.com/kyleshevlin">@kyleshevlin</a>.
+      <p>
+        Follow me on Twitter <a href="//twitter.com/kyleshevlin">@kyleshevlin</a>.
+      </p>
+      <p>Built with <a href="http://gruntjs.com/">Grunt</a>, <a href="http://sass-lang.com/">Sass</a>, and <a href="http://riotjs.com/">Riot</a>. Is it overkill? Sure! Was it fun? Heck, yeah! Will people with JavaScript turned off be able to read this? No, but would anyone I want to be hired by have JavaScript turned off? Only if they're testing accessibility.</p>
     </div>
   </footer>
 
+  <script src="/bower_components/riot/riot.min.js"></script>
   <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script src="dist/js/application.js"></script>
+  <script src="/dist/js/application.js"></script>
+  <script>
+    riot.mount('my-social')
+    riot.mount('my-overview')
+    riot.mount('my-skills')
+    riot.mount('my-work')
+    riot.mount('my-education')
+    riot.mount('repo-item', { demopath: '' })
+    riot.mount('my-projects')
+    riot.mount('site-item', { award: false })
+    riot.mount('my-sites')
+  </script>
 </body>
 </html>
