@@ -156,6 +156,12 @@ h6 {
   color: #f7f7f7;
   padding: 2.88rem 0;
 }
+.footer section {
+  margin-bottom: 0;
+}
+.footer p:last-child {
+  margin-bottom: 0;
+}
 
 .display {
   font-family: "Catamaran", sans-serif;
