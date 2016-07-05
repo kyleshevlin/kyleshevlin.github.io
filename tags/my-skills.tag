@@ -6,10 +6,16 @@
 
   <script>
     this.items = [
-      'High level of mastery in HTML (and multiple templating languages: Erb, Slim, Handlebars, Twig), CSS (highly skilled with Sass), and JavaScript.',
-      'Develops front end systems that are mobile-first, fully responsive, cross-browser supporting and well commented, rigorously following styleguides leaving behind a clean code base for anyone else who might work on the project.',
-      'Full stack Ruby on Rails developer, capable of developing and implementing data models and CMSs.',
-      'Excellent communicator and teacher. Able to facilitate dialogue across disciplines as well as effectively describe and educate (when necessary) the pain points and challenges of a particular development direction or benefits and opportunities of another.'
+      'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript',
+      'Full Stack Ruby on Rails developer working to become a JavaScript engineer',
+      'Experience with Ember; Primarily focused on building up experience and skills with this framework',
+      'Experience with Test Driven Development',
+      'Experience with Git and SVN version control, code reviews, pull requests, pair programming and more',
+      'Creator and maintainer of several Ruby gems and Bower packages',
+      'Contributor to several open source projects',
+      'Highly skilled in creating front-end systems that are responsive, mobile-first, cross browser compatible applications',
+      'Code is always well documented, styleguides always followed, and kept clean for the next developer on the project',
+      'Excellent communicator and teacher; Able to facilitate dialogue across disciplines'
     ];
   </script>
 </my-skills>

@@ -4,6 +4,23 @@
 
 .display {
   font-family: $f-headings;
+  margin-bottom: bs(2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &-wrap {
+    position: relative;
+  }
+
+  &-blank_space {
+    height: 640px;
+
+    @include bp(bravo) {
+      height: 550px;
+    }
+  }
 }
 
 .visual {
@@ -11,7 +28,6 @@
 
   @include bp(bravo) {
     display: block;
-    margin-bottom: bs(2);
   }
 
   .legend {

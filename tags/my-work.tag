@@ -1,37 +1,27 @@
 <my-work>
   <h2>Work</h2>
-  <p>
-    <strong>FINE</strong> - Portland, OR - November 2013 to Present<br/>
-    Front End Web Developer
-  </p>
 
-  <ul>
-    <li>
-      Front end engineer and tech lead for numerous projects, all templating, Sass and JavaScript from start to finish
-    </li>
-    <li>
-      Sole Full Stack Ruby on Rails developer for several projects
-    </li>
-    <li>
-      Developed, contributed to, and initiated front end development standards, guidelines and best practices for development team
-    </li>
-    <li>
-      Developed and contributed to internal tools for development team (Private and OS libraries and software)
-    </li>
-  </ul>
+  <work-item each={ items }
+    company={ company }
+    location={ location }
+    dates={ dates }
+    jobtitle={ jobtitle }
+    points={ points }
+  ></work-item>
 
   <script>
     this.items = [
       {
         company: 'FINE',
-        city: 'Portland, OR',
-        dates: 'November 2013 to Present',
+        location: 'Portland, OR',
+        dates: 'November 2013 to July 2016',
         jobtitle: 'Front End Web Developer',
         points: [
-          'Front end engineer and tech lead for numerous projects, all templating, Sass and JavaScript from start to finish',
-          'Sole Full Stack Ruby on Rails developer for several projects',
-          'Developed, contributed to, and initiated front end development standards, guidelines and best practices for development team',
-          'Developed and contributed to internal tools for development team (Private and OS libraries and software)'
+          'Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish',
+          'Sole developer on several projects. Full stack Ruby on Rails development.',
+          'Initiated and crafted front end standards for company.',
+          'Developed and contributed to company\'s open source projects.',
+          'Built internal tools and processes to maximize personal and team efficiency and increase developer happiness.'
         ]
       }
     ];

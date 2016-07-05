@@ -16,7 +16,7 @@ d3.chart.visual = function() {
       fill,
       radius,
       margin = { top: 50, right: 50, bottom: 75, left: 50 },
-      width = 900 - margin.left - margin.right,
+      width = 800 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
   function chart(container) {

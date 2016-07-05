@@ -19,11 +19,27 @@ riot.tag2('my-education', '<h2>Education</h2> <education-item each="{items}" deg
     ]
 });
 
-riot.tag2('my-overview', '<h2>Overview</h2> <p> Front end web developer with full stack skills. 4 years coding experience; 2.5 years digital agency experience. Expert in Sass, fluent in Ruby on Rails. JavaScript MV* curious with about a year’s experience with Ember frontends with Rails API backends. Recently began learning D3.js and data visualization. Endlessly curious and ready for the next challenge. </p>', '', '', function(opts) {
+riot.tag2('my-overview', '<h2>Overview</h2> <p> Expert front-end developer with full stack chops. 4 years coding experience; 3 years client agency experience. Expert in Sass, fluent in Ruby on Rails and Ember. Experienced in building APIs with Rails API and data visualizations with d3.js. I am endlessly curious and ready for a challenge. </p> <p> Specifically, I would like to become a front-end engineer working with APIs and a JavaScript MV* (especially if it\'s Ember). I would like to work on a great product, especially if that product is a helpful tool. I love to build tools, whether it\'s for myself, my team, or my organization. </p>', '', '', function(opts) {
 });
 
-riot.tag2('my-projects', '<h2>Noteworthy Repos and OS Projects</h2> <div class="repos"> <repo-item each="{items}" title="{title}" repopath="{repopath}" desc="{desc}" demopath="{demopath}"></repo-item> </div>', 'my-projects h3,[riot-tag="my-projects"] h3,[data-is="my-projects"] h3,my-projects p,[riot-tag="my-projects"] p,[data-is="my-projects"] p{ margin-bottom: 0; } my-projects p + p,[riot-tag="my-projects"] p + p,[data-is="my-projects"] p + p{ margin-top: 1.8rem; }', '', function(opts) {
-    this.items = [
+riot.tag2('my-projects', '<h2>Noteworthy Repos</h2> <div class="repos"> <repo-item each="{my_projects}" title="{title}" repopath="{repopath}" desc="{desc}" demopath="{demopath}"></repo-item> </div> <h2>Open Source Projects I Contribute To</h2> <div class="repos"> <repo-item each="{os_projects}" title="{title}" repopath="{repopath}" desc="{desc}"></repo-item> </div>', 'my-projects h3,[riot-tag="my-projects"] h3,[data-is="my-projects"] h3,my-projects p,[riot-tag="my-projects"] p,[data-is="my-projects"] p{ margin-bottom: 0; } my-projects p + p,[riot-tag="my-projects"] p + p,[data-is="my-projects"] p + p{ margin-top: 1.8rem; }', '', function(opts) {
+    this.my_projects = [
+      {
+        title: 'Shevy',
+        repopath: 'https://github.com/kyleshevlin/shevy',
+        desc: 'A typography/vertical rhythm Sass library.',
+        demopath: '/shevy'
+      },
+      {
+        title: 'Matchbox',
+        repopath: 'https://github.com/kyleshevlin/matchbox',
+        desc: 'A vanilla JavaScript plugin for... well... matching the height of boxes.'
+      },
+      {
+        title: 'Componentize',
+        repopath: 'https://github.com/kyleshevlin/componentize',
+        desc: "Rails generator for inline and block components; similar to Ember-CLI's component generator"
+      },
       {
         title: 'Condo',
         repopath: 'https://github.com/kyleshevlin/condo',
@@ -36,12 +52,6 @@ riot.tag2('my-projects', '<h2>Noteworthy Repos and OS Projects</h2> <div class="
         demopath: '/ripsum'
       },
       {
-        title: 'Shevy',
-        repopath: 'https://github.com/kyleshevlin/shevy',
-        desc: 'A typography/vertical rhythm Sass library.',
-        demopath: '/shevy'
-      },
-      {
         title: 'Resormalize',
         repopath: 'https://github.com/kyleshevlin/resormalize',
         desc: 'A custom combination of reset.css and normalize.css'
@@ -52,13 +62,63 @@ riot.tag2('my-projects', '<h2>Noteworthy Repos and OS Projects</h2> <div class="
         desc: 'Sublime Text package of snippets for Susy 2'
       }
     ];
+
+    this.os_projects = [
+      {
+        title: 'Rails API - Active Model Serializers',
+        repopath: 'https://github.com/rails-api/active_model_serializers',
+        desc: 'ActiveModel::Serializer implementation and Rails hooks'
+      },
+      {
+        title: 'WeAreFINE / FAE',
+        repopath: 'https://github.com/wearefine/fae',
+        desc: 'A flexible CMS for Rails'
+      },
+      {
+        title: 'WeAreFINE / Frob Core',
+        repopath: 'https://github.com/wearefine/frob-core',
+        desc: 'A framework for front (frob) enders (tenders) everywhere'
+      }
+    ];
 });
 
-riot.tag2('my-sites', '<section> <h2>Noteworthy Wesbites I Have Built</h2> <div class="sites"> <site-item each="{items}" title="{title}" path="{path}" award="{award}"></site-item> </div> </section>', '', '', function(opts) {
+riot.tag2('my-references', '<h2> References </h2> <ul> <li each="{person, i in people}"> <strong>{person.name}</strong> &mdash; {person.title}<br> <a href="mailto:{person.email}">{person.email}</a><br> <a href="http://twitter.com/{person.twitter}">@{person.twitter}</a><br> </li> </ul> <p>If you would like references who are not developers, I have plenty of those, too. Send me an <a href="mailto:kyle.a.shevlin@gmail.com">email</a> and I\'d be happy to connect you with them.</p>', 'my-references ul,[riot-tag="my-references"] ul,[data-is="my-references"] ul{ list-style: none; } my-references li,[riot-tag="my-references"] li,[data-is="my-references"] li{ margin-bottom: 1.8rem; }', '', function(opts) {
+    this.people = [
+      {
+        name: 'James Kurczodyna',
+        title: 'Director of Technology',
+        email: 'james@wearefine.com',
+        twitter: 'jamesmk'
+      },
+      {
+        name: 'Mark Hoffman',
+        title: 'Director of Interactive Development',
+        email: 'mark@wearefine.com',
+        twitter: 'code_mischief'
+      },
+      {
+        name: 'Niles McGiver',
+        title: 'Back End Developer',
+        email: 'niles@wearefine.com',
+        twitter: 'nilesvm'
+      },
+      {
+        name: 'Tim Shedor',
+        title: 'Full Stack Developer',
+        email: 'tim@wearefine.com',
+        twitter: 'tshedor'
+      }
+    ];
+});
+
+riot.tag2('my-sites', '<section> <h2>Noteworthy Wesbites I Have Built</h2> <div class="sites"> <site-item each="{items}" title="{title}" path="{path}" award="{award}" comingsoon="{comingsoon}"></site-item> </div> </section>', '', '', function(opts) {
     this.items = [
+      { title: 'McKibbon Hotels', path: 'http://www.mckibbon.com/', comingsoon: true },
+      { title: 'Global Gourmet', path: 'http://ggcatering.com', comingsoon: true },
       { title: 'TA Associates', path: 'http://ta.com' },
       { title: 'Stag\'s Leap Wine Cellar', path: 'http://cask23.com', award: true },
       { title: 'Frazier Healthcare', path: 'http://frazierhealthcare.com' },
+      { title: 'Eroica Wine', path: 'http://www.eroicawine.com/'},
       { title: 'Motto Wines', path: 'http://mottowines.com' },
       { title: 'Darioush', path: 'http://darioush.com', award: true },
       { title: 'Anchor Brewing', path: 'http://anchorbrewing.com' }
@@ -67,10 +127,16 @@ riot.tag2('my-sites', '<section> <h2>Noteworthy Wesbites I Have Built</h2> <div 
 
 riot.tag2('my-skills', '<h2>Skills</h2> <ul> <li each="{skill, i in items}">{skill}</li> </ul>', '', '', function(opts) {
     this.items = [
-      'High level of mastery in HTML (and multiple templating languages: Erb, Slim, Handlebars, Twig), CSS (highly skilled with Sass), and JavaScript.',
-      'Develops front end systems that are mobile-first, fully responsive, cross-browser supporting and well commented, rigorously following styleguides leaving behind a clean code base for anyone else who might work on the project.',
-      'Full stack Ruby on Rails developer, capable of developing and implementing data models and CMSs.',
-      'Excellent communicator and teacher. Able to facilitate dialogue across disciplines as well as effectively describe and educate (when necessary) the pain points and challenges of a particular development direction or benefits and opportunities of another.'
+      'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript',
+      'Full Stack Ruby on Rails developer working to become a JavaScript engineer',
+      'Experience with Ember; Primarily focused on building up experience and skills with this framework',
+      'Experience with Test Driven Development',
+      'Experience with Git and SVN version control, code reviews, pull requests, pair programming and more',
+      'Creator and maintainer of several Ruby gems and Bower packages',
+      'Contributor to several open source projects',
+      'Highly skilled in creating front-end systems that are responsive, mobile-first, cross browser compatible applications',
+      'Code is always well documented, styleguides always followed, and kept clean for the next developer on the project',
+      'Excellent communicator and teacher; Able to facilitate dialogue across disciplines'
     ];
 });
 
@@ -81,24 +147,30 @@ riot.tag2('my-social', '<ul> <li each="{items}">{title}: <a href="{path}">{path}
     ]
 });
 
-riot.tag2('my-work', '<h2>Work</h2> <p> <strong>FINE</strong> - Portland, OR - November 2013 to Present<br> Front End Web Developer </p> <ul> <li> Front end engineer and tech lead for numerous projects, all templating, Sass and JavaScript from start to finish </li> <li> Sole Full Stack Ruby on Rails developer for several projects </li> <li> Developed, contributed to, and initiated front end development standards, guidelines and best practices for development team </li> <li> Developed and contributed to internal tools for development team (Private and OS libraries and software) </li> </ul>', '', '', function(opts) {
+riot.tag2('my-work', '<h2>Work</h2> <work-item each="{items}" company="{company}" location="{location}" dates="{dates}" jobtitle="{jobtitle}" points="{points}"></work-item>', '', '', function(opts) {
     this.items = [
       {
         company: 'FINE',
-        city: 'Portland, OR',
-        dates: 'November 2013 to Present',
+        location: 'Portland, OR',
+        dates: 'November 2013 to July 2016',
         jobtitle: 'Front End Web Developer',
         points: [
-          'Front end engineer and tech lead for numerous projects, all templating, Sass and JavaScript from start to finish',
-          'Sole Full Stack Ruby on Rails developer for several projects',
-          'Developed, contributed to, and initiated front end development standards, guidelines and best practices for development team',
-          'Developed and contributed to internal tools for development team (Private and OS libraries and software)'
+          'Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish',
+          'Sole developer on several projects. Full stack Ruby on Rails development.',
+          'Initiated and crafted front end standards for company.',
+          'Developed and contributed to company\'s open source projects.',
+          'Built internal tools and processes to maximize personal and team efficiency and increase developer happiness.'
         ]
       }
     ];
 });
+
 riot.tag2('repo-item', '<div class="repo-item"> <h3><a href="{opts.repopath}">{opts.title}</a></h3> <p>{opts.desc}</p> <a if="{opts.demopath}" href="{opts.demopath}">Demo</a> </div>', '', '', function(opts) {
 });
 
-riot.tag2('site-item', '<div class="site-item"> <h3 class="site-item-heading"> <a href="{opts.path}">{opts.title}</a> </h3> <span if="{opts.award}">&mdash; CommArts Award Winner</span> </div>', '', '', function(opts) {
+riot.tag2('site-item', '<div class="{this.siteItemClass}"> <h3 class="site-item-heading"> <span class="site-item-heading-span" show="{opts.comingsoon}">{opts.title}</span> <a class="site-item-heading-link" href="{opts.path}" hide="{opts.comingsoon}">{opts.title}</a> </h3> <span class="site-item-coming_soon" if="{opts.comingsoon}">&mdash; Coming Soon</span> <span class="site-item-award" if="{opts.award}">&mdash; CommArts Award Winner</span> </div>', '', '', function(opts) {
+    this.siteItemClass = opts.comingsoon ? 'site-item is-coming-soon' : 'site-item'
+});
+
+riot.tag2('work-item', '<div class="work-item"> <p> <strong>{opts.company}</strong> - {opts.location} - {opts.dates}</br> <strong>{opts.jobtitle}</strong> </p> <ul> <li each="{point, i in opts.points}">{point}</li> </ul> </div>', '', '', function(opts) {
 });

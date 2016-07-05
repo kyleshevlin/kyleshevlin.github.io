@@ -78,14 +78,7 @@ module.exports = function(grunt) {
           'assets/javascripts/mobile_visual.js',
           'assets/javascripts/application.js'
         ],
-        dest: 'build/application.js',
-      }
-    },
-
-    // Lint JavaScript with JSHint
-    jshint: {
-      files: {
-        src: ['assets/javascripts/*.js', 'vendor/assets/javascripts/*.js']
+        dest: 'dist/js/application.js',
       }
     },
 
@@ -95,7 +88,7 @@ module.exports = function(grunt) {
         mangle: false
       },
       build: {
-        src: 'build/application.js',
+        src: 'dist/js/application.js',
         dest: 'dist/js/application.js'
       }
     },
@@ -107,7 +100,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: '**/*.js',
-        tasks: ['concat', 'uglify'],
+        tasks: ['concat'],
         options: {
           spawn: false
         }
@@ -132,5 +125,6 @@ module.exports = function(grunt) {
   });
 
   // Register Tasks
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'watch']);
+  grunt.registerTask('distribute', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify']);
 };
