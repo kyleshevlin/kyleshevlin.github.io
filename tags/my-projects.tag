@@ -72,7 +72,7 @@
 
     this.os_projects = [
       {
-        title: 'Rails API - Active Model Serializers',
+        title: 'Rails API / Active Model Serializers',
         repopath: 'https://github.com/rails-api/active_model_serializers',
         desc: 'ActiveModel::Serializer implementation and Rails hooks'
       },
