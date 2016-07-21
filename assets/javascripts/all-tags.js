@@ -19,7 +19,7 @@ riot.tag2('my-education', '<h2>Education</h2> <education-item each="{items}" deg
     ]
 });
 
-riot.tag2('my-overview', '<h2>Overview</h2> <p> Expert front-end developer with full stack chops. 4 years coding experience; 3 years client agency experience. Expert in Sass, fluent in Ruby on Rails and Ember. Experienced in building APIs with Rails API and data visualizations with d3.js. I am endlessly curious and ready for a challenge. </p> <p> Specifically, I would like to become a front-end engineer working with APIs and a JavaScript MV* (especially if it\'s Ember). I would like to work on a great product, especially if that product is a helpful tool. I love to build tools, whether it\'s for myself, my team, or my organization. </p>', '', '', function(opts) {
+riot.tag2('my-overview', '<h2>Overview</h2> <p> Expert front-end developer with full stack chops. 4 years coding experience; 3 years client agency experience. Expert in Sass, fluent in Ruby on Rails and Ember. Experienced in building and consuming RESTful APIs. Experienced in building data visualizations with d3.js. </p> <blockquote> I am endlessly curious and always ready for a new challenge. </blockquote> <p> Specifically, I would like to become a front-end engineer working with APIs and a JavaScript MV* (especially if it\'s Ember). I would like to work on a great product, especially if that product is a helpful tool. I love to build tools, whether it\'s for myself, my team, or my organization. </p>', '', '', function(opts) {
 });
 
 riot.tag2('my-projects', '<h2>Noteworthy Repos</h2> <div class="repos"> <repo-item each="{my_projects}" title="{title}" repopath="{repopath}" desc="{desc}" demopath="{demopath}"></repo-item> </div> <h2>Open Source Projects I Contribute To</h2> <div class="repos"> <repo-item each="{os_projects}" title="{title}" repopath="{repopath}" desc="{desc}"></repo-item> </div>', 'my-projects h3,[riot-tag="my-projects"] h3,[data-is="my-projects"] h3,my-projects p,[riot-tag="my-projects"] p,[data-is="my-projects"] p{ margin-bottom: 0; } my-projects p + p,[riot-tag="my-projects"] p + p,[data-is="my-projects"] p + p{ margin-top: 1.8rem; }', '', function(opts) {
@@ -64,6 +64,11 @@ riot.tag2('my-projects', '<h2>Noteworthy Repos</h2> <div class="repos"> <repo-it
     ];
 
     this.os_projects = [
+      {
+        title: 'ShipShapeCode / Ember-3D-Nav',
+        repopath: 'https://github.com/shipshapecode/ember-3d-nav',
+        desc: 'Ember addon for a simple, yet configurable, 3d navigation'
+      },
       {
         title: 'Rails API / Active Model Serializers',
         repopath: 'https://github.com/rails-api/active_model_serializers',
@@ -127,7 +132,7 @@ riot.tag2('my-sites', '<section> <h2>Noteworthy Wesbites I Have Built</h2> <div 
 
 riot.tag2('my-skills', '<h2>Skills</h2> <ul> <li each="{skill, i in items}">{skill}</li> </ul>', '', '', function(opts) {
     this.items = [
-      'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript',
+      'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript (including ES6)',
       'Full Stack Ruby on Rails developer working to become a JavaScript engineer',
       'Experience with Ember; Primarily focused on building up experience and skills with this framework',
       'Experience with Test Driven Development',
@@ -143,7 +148,8 @@ riot.tag2('my-skills', '<h2>Skills</h2> <ul> <li each="{skill, i in items}">{ski
 riot.tag2('my-social', '<ul> <li each="{items}">{title}: <a href="{path}">{path}</a></li> </ul>', 'my-social ul,[riot-tag="my-social"] ul,[data-is="my-social"] ul{ list-style: none; }', '', function(opts) {
     this.items = [
       { title: 'Github', path: 'https://github.com/kyleshevlin' },
-      { title: 'LinkedIn', path: 'https://www.linkedin.com/in/kyleshevlin' }
+      { title: 'LinkedIn', path: 'https://www.linkedin.com/in/kyleshevlin' },
+      { title: 'Twitter', path: 'https://twitter.com/kyleshevlin'}
     ]
 });
 

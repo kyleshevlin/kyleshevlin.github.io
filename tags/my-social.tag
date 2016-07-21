@@ -12,7 +12,8 @@
   <script>
     this.items = [
       { title: 'Github', path: 'https://github.com/kyleshevlin' },
-      { title: 'LinkedIn', path: 'https://www.linkedin.com/in/kyleshevlin' }
+      { title: 'LinkedIn', path: 'https://www.linkedin.com/in/kyleshevlin' },
+      { title: 'Twitter', path: 'https://twitter.com/kyleshevlin'}
     ]
   </script>
 </my-social>

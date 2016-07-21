@@ -19,12 +19,13 @@ $shevy: (
 );
 
 // Colors
-$c-black: #0a0200;
-$c-dark-gray: #2b2b2b;
-$c-light-gray: lighten($c-dark-gray, 45%);
-$c-white: #f7f7f7;
 $c-brand: #33a1cc;
 $c-dark-brand: darken($c-brand, 30%);
+$c-light-brand: lighten(desaturate($c-brand, 35%), 45%);
+$c-white: #f7f7f7;
+$c-black: #0a0200;
+$c-dark-gray: #2b2b2b;
+$c-light-gray: lighten(#2b2b2b, 45%);
 
 // Font Stacks
 $f-serif: serif;

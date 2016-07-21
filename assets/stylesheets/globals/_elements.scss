@@ -83,3 +83,12 @@ ul {
 ul {
   list-style: disc;
 }
+
+blockquote {
+  background: $c-light-brand;
+  font-family: $f-cata;
+  font-style: italic;
+  padding: bs();
+  margin-bottom: bs();
+  border-left: 4px solid $c-brand;
+}

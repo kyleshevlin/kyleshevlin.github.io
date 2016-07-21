@@ -6,7 +6,7 @@
 
   <script>
     this.items = [
-      'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript',
+      'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript (including ES6)',
       'Full Stack Ruby on Rails developer working to become a JavaScript engineer',
       'Experience with Ember; Primarily focused on building up experience and skills with this framework',
       'Experience with Test Driven Development',
