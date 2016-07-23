@@ -325,4 +325,10 @@ h6 {
   margin-bottom: 1.44rem;
 }
 
+.section-anchor {
+  display: block;
+  position: relative;
+  top: -1.44rem;
+}
+
 /*# sourceMappingURL=application.css.map */
