@@ -33,7 +33,8 @@ riot.tag2('my-projects', '<h2>Noteworthy Repos</h2> <div class="repos"> <repo-it
       {
         title: 'Matchbox',
         repopath: 'https://github.com/kyleshevlin/matchbox',
-        desc: 'A vanilla JavaScript plugin for... well... matching the height of boxes.'
+        desc: 'A vanilla JavaScript plugin for... well... matching the height of boxes.',
+        demopath: '/matchbox'
       },
       {
         title: 'Componentize',
@@ -43,23 +44,14 @@ riot.tag2('my-projects', '<h2>Noteworthy Repos</h2> <div class="repos"> <repo-it
       {
         title: 'Condo',
         repopath: 'https://github.com/kyleshevlin/condo',
-        desc: 'A micro Sass grid library.'
+        desc: 'A micro Sass grid library.',
+        demopath: '/condo'
       },
       {
         title: 'Ripsum',
         repopath: 'https://github.com/kyleshevlin/ripsum',
         desc: 'Ruby gem for generating random amounts of lorem ipsum with each page load.',
         demopath: '/ripsum'
-      },
-      {
-        title: 'Resormalize',
-        repopath: 'https://github.com/kyleshevlin/resormalize',
-        desc: 'A custom combination of reset.css and normalize.css'
-      },
-      {
-        title: 'Susy Snippets',
-        repopath: 'https://github.com/kyleshevlin/susy-snippets',
-        desc: 'Sublime Text package of snippets for Susy 2'
       }
     ];
 
