@@ -111,7 +111,7 @@ riot.tag2('my-references', '<h2> References </h2> <ul> <li each="{person, i in p
 riot.tag2('my-sites', '<section> <h2>Noteworthy Wesbites I Have Built</h2> <div class="sites"> <site-item each="{items}" title="{title}" path="{path}" award="{award}" comingsoon="{comingsoon}"></site-item> </div> </section>', '', '', function(opts) {
     this.items = [
       { title: 'McKibbon Hotels', path: 'http://www.mckibbon.com/', comingsoon: true },
-      { title: 'Global Gourmet', path: 'http://ggcatering.com', comingsoon: true },
+      { title: 'Global Gourmet', path: 'http://ggcatering.com', award: true},
       { title: 'TA Associates', path: 'http://ta.com' },
       { title: 'Stag\'s Leap Wine Cellar', path: 'http://cask23.com', award: true },
       { title: 'Frazier Healthcare', path: 'http://frazierhealthcare.com' },
