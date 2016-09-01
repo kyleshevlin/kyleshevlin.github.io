@@ -82,7 +82,7 @@
       "name": "Rails API",
       "months": "2015-04-01",
       "expertise": 50,
-      "interest": 95
+      "interest": 75
     },
     {
       "name": "D3",
@@ -94,7 +94,13 @@
       "name": "TDD",
       "months": "2016-04-01",
       "expertise": 30,
-      "interest": 80
+      "interest": 60
+    },
+    {
+      "name": "React",
+      "months": "2016-08-01",
+      "expertise": 30,
+      "interest": 100
     }
   ]
 }

@@ -42,12 +42,6 @@
         title: 'Back End Developer',
         email: 'niles@wearefine.com',
         twitter: 'nilesvm'
-      },
-      {
-        name: 'Tim Shedor',
-        title: 'Full Stack Developer',
-        email: 'tim@wearefine.com',
-        twitter: 'tshedor'
       }
     ];
   </script>

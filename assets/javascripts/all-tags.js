@@ -98,12 +98,6 @@ riot.tag2('my-references', '<h2> References </h2> <ul> <li each="{person, i in p
         title: 'Back End Developer',
         email: 'niles@wearefine.com',
         twitter: 'nilesvm'
-      },
-      {
-        name: 'Tim Shedor',
-        title: 'Full Stack Developer',
-        email: 'tim@wearefine.com',
-        twitter: 'tshedor'
       }
     ];
 });
