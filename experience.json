@@ -69,13 +69,13 @@
     {
       "name": "JS MVCs",
       "months": "2014-06-01",
-      "expertise": 45,
+      "expertise": 55,
       "interest": 100
     },
     {
       "name": "Ember",
       "months": "2014-09-01",
-      "expertise": 60,
+      "expertise": 70,
       "interest": 100
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "React",
       "months": "2016-08-01",
-      "expertise": 30,
+      "expertise": 50,
       "interest": 100
     }
   ]

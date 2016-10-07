@@ -8,7 +8,9 @@
     "url": "git@github.com:kyleshevlin/grunt-starter-kit.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "riot": "riot --watch tags/ assets/javascripts/all-tags.js",
+    "start": "http-server -p 8080 ./"
   },
   "author": "Kyle Shevlin",
   "license": "ISC",
@@ -24,5 +26,8 @@
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
     "load-grunt-tasks": "^3.1.0"
+  },
+  "dependencies": {
+    "riot": "^2.6.2"
   }
 }
