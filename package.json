@@ -8,7 +8,9 @@
     "url": "git@github.com:kyleshevlin/grunt-starter-kit.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt connect",
+    "dist": "grunt distribute"
   },
   "author": "Kyle Shevlin",
   "license": "ISC",
