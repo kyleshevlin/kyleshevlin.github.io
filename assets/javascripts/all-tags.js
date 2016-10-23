@@ -119,8 +119,8 @@ riot.tag2('my-sites', '<section> <h2>Noteworthy Wesbites I Have Built</h2> <div 
 riot.tag2('my-skills', '<h2>Skills</h2> <ul> <li each="{skill, i in items}">{skill}</li> </ul>', '', '', function(opts) {
     this.items = [
       'Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript (including ES6)',
-      'Full Stack Ruby on Rails developer working to become a JavaScript engineer',
-      'Experience with Ember; Primarily focused on building up experience and skills with this framework',
+      'JavaScript engineer and full stack Ruby on Rails developer',
+      'Strong experience with Ember and React',
       'Experience with Test Driven Development',
       'Experience with Git and SVN version control, code reviews, pull requests, pair programming and more',
       'Creator and maintainer of several Ruby gems and Bower packages',

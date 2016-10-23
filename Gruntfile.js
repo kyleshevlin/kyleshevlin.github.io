@@ -125,6 +125,6 @@ module.exports = function(grunt) {
   });
 
   // Register Tasks
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'watch']);
-  grunt.registerTask('distribute', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'clean', 'watch']);
+  grunt.registerTask('distribute', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'clean']);
 };
