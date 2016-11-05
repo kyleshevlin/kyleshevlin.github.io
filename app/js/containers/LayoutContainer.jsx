@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
-import { requestData, receiveData } from '../actions/dataActions'
+import { requestData, receiveData } from '../actions/data'
 
 const { bool, func } = React.PropTypes
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReferenceItem from './ReferenceItem'
 
-const { object } = React.PropTypes
+const { array } = React.PropTypes
 
 const References = (props) => {
   return (
@@ -9,7 +9,7 @@ const References = (props) => {
       <h2>References</h2>
 
       <div className='references-list'>
-        {props.data.references.map((item, index) => {
+        {props.references.map((item, index) => {
           return <ReferenceItem key={index} {...item} />
         })}
       </div>
@@ -22,7 +22,7 @@ const References = (props) => {
 }
 
 References.propTypes = {
-  data: object
+  references: array
 }
 
 export default References

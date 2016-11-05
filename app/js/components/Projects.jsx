@@ -8,14 +8,14 @@ const Projects = (props) => {
     <section>
       <h2>Noteworthy Repos</h2>
       <div className='repos'>
-        {props.data.projects.personal.map((item, index) => {
+        {props.projects.personal.map((item, index) => {
           return <RepoItem key={`personal-${index}`} {...item} />
         })}
       </div>
 
       <h2>Open Source Projects I Contribute To</h2>
       <div className='repos'>
-        {props.data.projects.open_source.map((item, index) => {
+        {props.projects.open_source.map((item, index) => {
           return <RepoItem key={`os-${index}`} {...item} />
         })}
       </div>
@@ -24,7 +24,7 @@ const Projects = (props) => {
 }
 
 Projects.propTypes = {
-  data: object
+  projects: object
 }
 
 export default Projects

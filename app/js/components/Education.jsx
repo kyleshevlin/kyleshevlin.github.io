@@ -1,13 +1,13 @@
 import React from 'react'
 import EducationItem from './EducationItem'
 
-const { object } = React.PropTypes
+const { array } = React.PropTypes
 
 const Education = (props) => {
   return (
     <section>
       <h2>Education</h2>
-      {props.data.education.map((item, index) => {
+      {props.education.map((item, index) => {
         return <EducationItem key={index} {...item} />
       })}
     </section>
@@ -15,7 +15,7 @@ const Education = (props) => {
 }
 
 Education.propTypes = {
-  data: object
+  education: array
 }
 
 export default Education

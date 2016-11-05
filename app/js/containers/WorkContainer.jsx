@@ -3,7 +3,7 @@ import Work from '../components/Work'
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data
+    work: state.data.work
   }
 }
 

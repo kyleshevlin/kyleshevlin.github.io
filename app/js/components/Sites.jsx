@@ -1,14 +1,14 @@
 import React from 'react'
 import SiteItem from './SiteItem'
 
-const { object } = React.PropTypes
+const { array } = React.PropTypes
 
 const Sites = (props) => {
   return (
     <section>
       <h2>Noteworthy Websites I Have Built</h2>
       <div className='sites'>
-        {props.data.sites.map((item, index) => {
+        {props.sites.map((item, index) => {
           return <SiteItem key={index} {...item} />
         })}
       </div>
@@ -17,7 +17,7 @@ const Sites = (props) => {
 }
 
 Sites.propTypes = {
-  data: object
+  sites: array
 }
 
 export default Sites

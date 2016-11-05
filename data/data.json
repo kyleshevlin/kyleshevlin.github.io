@@ -14,6 +14,110 @@
       "year": 2007
     }
   ],
+  "experience": [
+    {
+      "name": "HTML",
+      "months": "2012-01-01",
+      "expertise": 90,
+      "interest": 10
+    },
+    {
+      "name": "CSS",
+      "months": "2012-01-01",
+      "expertise": 90,
+      "interest": 50
+    },
+    {
+      "name": "JavaScript",
+      "months": "2012-06-01",
+      "expertise": 90,
+      "interest": 100
+    },
+    {
+      "name": "jQuery",
+      "months": "2012-06-01",
+      "expertise": 90,
+      "interest": 20
+    },
+    {
+      "name": "Sass",
+      "months": "2013-01-01",
+      "expertise": 100,
+      "interest": 60
+    },
+    {
+      "name": "WordPress",
+      "months": "2013-01-01",
+      "expertise": 50,
+      "interest": 25
+    },
+    {
+      "name": "PHP",
+      "months": "2013-01-01",
+      "expertise": 50,
+      "interest": 5
+    },
+    {
+      "name": "Rails",
+      "months": "2013-06-01",
+      "expertise": 85,
+      "interest": 75
+    },
+    {
+      "name": "Git",
+      "months": "2013-06-01",
+      "expertise": 75,
+      "interest": 55
+    },
+    {
+      "name": "Bash",
+      "months": "2013-06-01",
+      "expertise": 50,
+      "interest": 70
+    },
+    {
+      "name": "Templating Langs",
+      "months": "2014-01-01",
+      "expertise": 85,
+      "interest": 40
+    },
+    {
+      "name": "JS MVCs",
+      "months": "2014-06-01",
+      "expertise": 55,
+      "interest": 100
+    },
+    {
+      "name": "Ember",
+      "months": "2014-09-01",
+      "expertise": 70,
+      "interest": 100
+    },
+    {
+      "name": "Rails API",
+      "months": "2015-04-01",
+      "expertise": 50,
+      "interest": 75
+    },
+    {
+      "name": "D3",
+      "months": "2015-09-01",
+      "expertise": 50,
+      "interest": 100
+    },
+    {
+      "name": "TDD",
+      "months": "2016-04-01",
+      "expertise": 30,
+      "interest": 60
+    },
+    {
+      "name": "React",
+      "months": "2016-08-01",
+      "expertise": 50,
+      "interest": 100
+    }
+  ],
   "projects": {
     "personal": [
       {

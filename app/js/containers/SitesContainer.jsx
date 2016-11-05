@@ -3,7 +3,7 @@ import Sites from '../components/Sites'
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data
+    sites: state.data.sites
   }
 }
 

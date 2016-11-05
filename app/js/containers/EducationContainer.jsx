@@ -3,7 +3,7 @@ import Education from '../components/Education'
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data
+    education: state.data.education
   }
 }
 

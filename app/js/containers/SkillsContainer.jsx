@@ -3,7 +3,7 @@ import Skills from '../components/Skills'
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data
+    skills: state.data.skills
   }
 }
 

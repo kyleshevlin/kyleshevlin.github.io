@@ -1,12 +1,12 @@
 import React from 'react'
 
-const { object } = React.PropTypes
+const { array } = React.PropTypes
 
 const Social = (props) => {
   return (
     <div>
       <ul>
-        {props.data.social_media.map((item, index) => {
+        {props.social_media.map((item, index) => {
           return <li key={index}>{item.title}: <a href={item.path}>{item.path}</a></li>
         })}
       </ul>
@@ -15,7 +15,7 @@ const Social = (props) => {
 }
 
 Social.propTypes = {
-  data: object
+  social_media: array
 }
 
 export default Social

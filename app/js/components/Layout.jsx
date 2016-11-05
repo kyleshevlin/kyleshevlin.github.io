@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import Display from './Display'
 import Overview from './Overview'
 import EducationContainer from '../containers/EducationContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
@@ -16,6 +17,8 @@ const Layout = () => {
       <Header />
 
       <div className='container'>
+        <Display />
+
         <section>
           <SocialContainer />
           <Overview />

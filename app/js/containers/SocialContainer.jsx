@@ -3,7 +3,7 @@ import Social from '../components/Social'
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data
+    social_media: state.data.social_media
   }
 }
 

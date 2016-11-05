@@ -1,13 +1,13 @@
 import React from 'react'
 import WorkItem from './WorkItem'
 
-const { object } = React.PropTypes
+const { array } = React.PropTypes
 
 const Work = (props) => {
   return (
     <section>
       <h2>Work</h2>
-      {props.data.work.map((item, index) => {
+      {props.work.map((item, index) => {
         return <WorkItem key={index} {...item} />
       })}
     </section>
@@ -15,7 +15,7 @@ const Work = (props) => {
 }
 
 Work.propTypes = {
-  data: object
+  work: array
 }
 
 export default Work

@@ -23378,6 +23378,7 @@
 	  haveData: false,
 	  data: {
 	    education: [],
+	    experience: [],
 	    projects: {
 	      personal: [],
 	      open_source: []
@@ -23428,7 +23429,7 @@
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _dataActions = __webpack_require__(257);
+	var _data = __webpack_require__(258);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23489,10 +23490,10 @@
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    requestData: function requestData() {
-	      dispatch((0, _dataActions.requestData)());
+	      dispatch((0, _data.requestData)());
 	    },
 	    receiveData: function receiveData(data) {
-	      dispatch((0, _dataActions.receiveData)(data));
+	      dispatch((0, _data.receiveData)(data));
 	    }
 	  };
 	};
@@ -24939,35 +24940,39 @@
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _Overview = __webpack_require__(235);
+	var _Display = __webpack_require__(235);
+
+	var _Display2 = _interopRequireDefault(_Display);
+
+	var _Overview = __webpack_require__(236);
 
 	var _Overview2 = _interopRequireDefault(_Overview);
 
-	var _EducationContainer = __webpack_require__(236);
+	var _EducationContainer = __webpack_require__(237);
 
 	var _EducationContainer2 = _interopRequireDefault(_EducationContainer);
 
-	var _ProjectsContainer = __webpack_require__(239);
+	var _ProjectsContainer = __webpack_require__(240);
 
 	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
 
-	var _ReferencesContainer = __webpack_require__(242);
+	var _ReferencesContainer = __webpack_require__(243);
 
 	var _ReferencesContainer2 = _interopRequireDefault(_ReferencesContainer);
 
-	var _SitesContainer = __webpack_require__(245);
+	var _SitesContainer = __webpack_require__(246);
 
 	var _SitesContainer2 = _interopRequireDefault(_SitesContainer);
 
-	var _SkillsContainer = __webpack_require__(250);
+	var _SkillsContainer = __webpack_require__(251);
 
 	var _SkillsContainer2 = _interopRequireDefault(_SkillsContainer);
 
-	var _SocialContainer = __webpack_require__(252);
+	var _SocialContainer = __webpack_require__(253);
 
 	var _SocialContainer2 = _interopRequireDefault(_SocialContainer);
 
-	var _WorkContainer = __webpack_require__(254);
+	var _WorkContainer = __webpack_require__(255);
 
 	var _WorkContainer2 = _interopRequireDefault(_WorkContainer);
 
@@ -24981,6 +24986,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'container' },
+	      _react2.default.createElement(_Display2.default, null),
 	      _react2.default.createElement(
 	        'section',
 	        null,
@@ -25121,6 +25127,56 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Display = function (_React$Component) {
+	  _inherits(Display, _React$Component);
+
+	  function Display() {
+	    _classCallCheck(this, Display);
+
+	    return _possibleConstructorReturn(this, (Display.__proto__ || Object.getPrototypeOf(Display)).apply(this, arguments));
+	  }
+
+	  _createClass(Display, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'display-wrap' },
+	        _react2.default.createElement('div', { className: 'display-blank_space' }),
+	        _react2.default.createElement('div', { className: 'display js-display' })
+	      );
+	    }
+	  }]);
+
+	  return Display;
+	}(_react2.default.Component);
+
+	exports.default = Display;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -25157,7 +25213,7 @@
 	exports.default = Overview;
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25168,7 +25224,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _Education = __webpack_require__(237);
+	var _Education = __webpack_require__(238);
 
 	var _Education2 = _interopRequireDefault(_Education);
 
@@ -25176,14 +25232,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    education: state.data.education
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_Education2.default);
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25198,13 +25254,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _EducationItem = __webpack_require__(238);
+	var _EducationItem = __webpack_require__(239);
 
 	var _EducationItem2 = _interopRequireDefault(_EducationItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var object = _react2.default.PropTypes.object;
+	var array = _react2.default.PropTypes.array;
 
 
 	var Education = function Education(props) {
@@ -25216,20 +25272,20 @@
 	      null,
 	      'Education'
 	    ),
-	    props.data.education.map(function (item, index) {
+	    props.education.map(function (item, index) {
 	      return _react2.default.createElement(_EducationItem2.default, _extends({ key: index }, item));
 	    })
 	  );
 	};
 
 	Education.propTypes = {
-	  data: object
+	  education: array
 	};
 
 	exports.default = Education;
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25290,7 +25346,7 @@
 	exports.default = EducationItem;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25301,7 +25357,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _Projects = __webpack_require__(240);
+	var _Projects = __webpack_require__(241);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
@@ -25309,14 +25365,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    projects: state.data.projects
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_Projects2.default);
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25331,7 +25387,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _RepoItem = __webpack_require__(241);
+	var _RepoItem = __webpack_require__(242);
 
 	var _RepoItem2 = _interopRequireDefault(_RepoItem);
 
@@ -25352,7 +25408,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'repos' },
-	      props.data.projects.personal.map(function (item, index) {
+	      props.projects.personal.map(function (item, index) {
 	        return _react2.default.createElement(_RepoItem2.default, _extends({ key: 'personal-' + index }, item));
 	      })
 	    ),
@@ -25364,7 +25420,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'repos' },
-	      props.data.projects.open_source.map(function (item, index) {
+	      props.projects.open_source.map(function (item, index) {
 	        return _react2.default.createElement(_RepoItem2.default, _extends({ key: 'os-' + index }, item));
 	      })
 	    )
@@ -25372,13 +25428,13 @@
 	};
 
 	Projects.propTypes = {
-	  data: object
+	  projects: object
 	};
 
 	exports.default = Projects;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25438,7 +25494,7 @@
 	exports.default = RepoItem;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25449,7 +25505,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _References = __webpack_require__(243);
+	var _References = __webpack_require__(244);
 
 	var _References2 = _interopRequireDefault(_References);
 
@@ -25457,14 +25513,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    references: state.data.references
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_References2.default);
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25479,13 +25535,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ReferenceItem = __webpack_require__(244);
+	var _ReferenceItem = __webpack_require__(245);
 
 	var _ReferenceItem2 = _interopRequireDefault(_ReferenceItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var object = _react2.default.PropTypes.object;
+	var array = _react2.default.PropTypes.array;
 
 
 	var References = function References(props) {
@@ -25500,7 +25556,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'references-list' },
-	      props.data.references.map(function (item, index) {
+	      props.references.map(function (item, index) {
 	        return _react2.default.createElement(_ReferenceItem2.default, _extends({ key: index }, item));
 	      })
 	    ),
@@ -25519,13 +25575,13 @@
 	};
 
 	References.propTypes = {
-	  data: object
+	  references: array
 	};
 
 	exports.default = References;
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25580,7 +25636,7 @@
 	exports.default = ReferenceItem;
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25591,7 +25647,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _Sites = __webpack_require__(246);
+	var _Sites = __webpack_require__(247);
 
 	var _Sites2 = _interopRequireDefault(_Sites);
 
@@ -25599,14 +25655,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    sites: state.data.sites
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_Sites2.default);
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25621,13 +25677,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SiteItem = __webpack_require__(247);
+	var _SiteItem = __webpack_require__(248);
 
 	var _SiteItem2 = _interopRequireDefault(_SiteItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var object = _react2.default.PropTypes.object;
+	var array = _react2.default.PropTypes.array;
 
 
 	var Sites = function Sites(props) {
@@ -25642,7 +25698,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'sites' },
-	      props.data.sites.map(function (item, index) {
+	      props.sites.map(function (item, index) {
 	        return _react2.default.createElement(_SiteItem2.default, _extends({ key: index }, item));
 	      })
 	    )
@@ -25650,13 +25706,13 @@
 	};
 
 	Sites.propTypes = {
-	  data: object
+	  sites: array
 	};
 
 	exports.default = Sites;
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25669,7 +25725,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(249);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -25740,7 +25796,7 @@
 	exports.default = SiteItem;
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -25786,7 +25842,7 @@
 
 		if (typeof module !== 'undefined' && module.exports) {
 			module.exports = classNames;
-		} else if ("function" === 'function' && _typeof(__webpack_require__(249)) === 'object' && __webpack_require__(249)) {
+		} else if ("function" === 'function' && _typeof(__webpack_require__(250)) === 'object' && __webpack_require__(250)) {
 			// register as 'classnames', consistent with npm package name
 			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 				return classNames;
@@ -25797,7 +25853,7 @@
 	})();
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -25805,7 +25861,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25816,7 +25872,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _Skills = __webpack_require__(251);
+	var _Skills = __webpack_require__(252);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
@@ -25824,14 +25880,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    skills: state.data.skills
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_Skills2.default);
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25846,7 +25902,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var object = _react2.default.PropTypes.object;
+	var array = _react2.default.PropTypes.array;
 
 
 	var Skills = function Skills(props) {
@@ -25861,7 +25917,7 @@
 	    _react2.default.createElement(
 	      'ul',
 	      null,
-	      props.data.skills.map(function (item, index) {
+	      props.skills.map(function (item, index) {
 	        return _react2.default.createElement(
 	          'li',
 	          { key: index },
@@ -25873,13 +25929,13 @@
 	};
 
 	Skills.propTypes = {
-	  data: object
+	  skills: array
 	};
 
 	exports.default = Skills;
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25890,7 +25946,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _Social = __webpack_require__(253);
+	var _Social = __webpack_require__(254);
 
 	var _Social2 = _interopRequireDefault(_Social);
 
@@ -25898,14 +25954,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    social_media: state.data.social_media
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_Social2.default);
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25920,7 +25976,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var object = _react2.default.PropTypes.object;
+	var array = _react2.default.PropTypes.array;
 
 
 	var Social = function Social(props) {
@@ -25930,7 +25986,7 @@
 	    _react2.default.createElement(
 	      'ul',
 	      null,
-	      props.data.social_media.map(function (item, index) {
+	      props.social_media.map(function (item, index) {
 	        return _react2.default.createElement(
 	          'li',
 	          { key: index },
@@ -25948,13 +26004,13 @@
 	};
 
 	Social.propTypes = {
-	  data: object
+	  social_media: array
 	};
 
 	exports.default = Social;
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25965,7 +26021,7 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _Work = __webpack_require__(255);
+	var _Work = __webpack_require__(256);
 
 	var _Work2 = _interopRequireDefault(_Work);
 
@@ -25973,14 +26029,14 @@
 
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
-	    data: state.data
+	    work: state.data.work
 	  };
 	};
 
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(_Work2.default);
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25995,13 +26051,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _WorkItem = __webpack_require__(256);
+	var _WorkItem = __webpack_require__(257);
 
 	var _WorkItem2 = _interopRequireDefault(_WorkItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var object = _react2.default.PropTypes.object;
+	var array = _react2.default.PropTypes.array;
 
 
 	var Work = function Work(props) {
@@ -26013,20 +26069,20 @@
 	      null,
 	      'Work'
 	    ),
-	    props.data.work.map(function (item, index) {
+	    props.work.map(function (item, index) {
 	      return _react2.default.createElement(_WorkItem2.default, _extends({ key: index }, item));
 	    })
 	  );
 	};
 
 	Work.propTypes = {
-	  data: object
+	  work: array
 	};
 
 	exports.default = Work;
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26094,7 +26150,7 @@
 	exports.default = WorkItem;
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
