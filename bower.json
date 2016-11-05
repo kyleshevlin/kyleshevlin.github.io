@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "shevy": "^2.1.0",
-    "condo": "^1.0.2"
+    "condo": "^1.0.2",
+    "shevy": "^2.1.0"
   }
 }

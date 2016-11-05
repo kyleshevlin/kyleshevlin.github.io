@@ -10,31 +10,6 @@ module.exports = function(grunt) {
 
   // Merge Style Tasks
   grunt.config.merge({
-    // Autoprefixer
-    autoprefixer: {
-      dist: {
-        files: {
-          'build/application.css': 'assets/stylesheets/application.css'
-        }
-      }
-    },
-
-    // CSS Compilation
-    cssmin: {
-      options: {
-        shorthandCompacting: false,
-        roundingPrecision: -1
-      },
-      target: {
-        files: {
-          'dist/css/application.css': [
-            'vendor/assets/stylesheets/resormalize.css',
-            'build/application.css'
-          ]
-        }
-      }
-    },
-
     // Compile Sass
     sass: {
       dist: {
@@ -42,8 +17,22 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'assets/stylesheets/application.css': 'assets/stylesheets/base.scss'
+          'tmp/compiled.css': 'assets/stylesheets/base.scss'
         }
+      }
+    },
+
+    // PostCSS
+    postcss: {
+      options: {
+        map: true
+      },
+      processors: [
+        require('autoprefixer')(),
+        require('cssnano')()
+      ],
+      dist: {
+        'dist/css/application.css': 'tmp/compiled.css'
       }
     },
 
@@ -54,53 +43,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: '**/*.scss',
-        tasks: ['sass', 'autoprefixer', 'cssmin'],
-        options: {
-          spawn: false
-        }
-      }
-    }
-  });
-
-  // Merge Tasks for JavaScript
-  grunt.config.merge({
-    // Concatenate JS Files
-    concat: {
-      dist: {
-        options: {
-          separator: ';'
-        },
-        src: [
-          'vendor/assets/javascripts/**/*.js',
-          'assets/javascripts/all-tags.js',
-          'assets/javascripts/helpers.js',
-          'assets/javascripts/visual.js',
-          'assets/javascripts/mobile_visual.js',
-          'assets/javascripts/application.js'
-        ],
-        dest: 'dist/js/application.js',
-      }
-    },
-
-    // Uglify JavaScript
-    uglify: {
-      options: {
-        mangle: false
-      },
-      build: {
-        src: 'dist/js/application.js',
-        dest: 'dist/js/application.js'
-      }
-    },
-
-    // LiveReload
-    watch: {
-      options: {
-        livereload: true
-      },
-      scripts: {
-        files: '**/*.js',
-        tasks: ['concat'],
+        tasks: ['sass', 'postcss', 'clean:tmp'],
         options: {
           spawn: false
         }
@@ -110,21 +53,12 @@ module.exports = function(grunt) {
 
   // Clean
   grunt.config.merge({
-    clean: ['build']
-  });
-
-  // Local Server
-  grunt.config.merge({
-    connect: {
-      server: {
-        options: {
-          keepalive: true
-        }
-      }
+    clean: {
+      tmp: ['tmp']
     }
   });
 
   // Register Tasks
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'clean', 'watch']);
-  grunt.registerTask('distribute', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'clean']);
+  grunt.registerTask('styles', ['sass', 'postcss', 'clean:tmp'])
+  grunt.registerTask('default', ['styles', 'watch']);
 };
