@@ -1,0 +1,135 @@
+{
+  "education": [
+    {
+      "degree": "MA in Theology",
+      "teaser": "(Yes, you're reading that correctly. I'm a theologian turned programmer)",
+      "school": "Fuller Theological Seminary",
+      "city": "Pasadena, CA",
+      "year": 2012
+    },
+    {
+      "degree": "BA in Philosphy & Mathematics",
+      "school": "Lenoir-Rhyne University",
+      "city": "Hickory, NC",
+      "year": 2007
+    }
+  ],
+  "projects": {
+    "personal": [
+      {
+        "title": "Shevy",
+        "repopath": "https://github.com/kyleshevlin/shevy",
+        "desc": "A typography/vertical rhythm Sass library.",
+        "demopath": "/shevy"
+      },
+      {
+        "title": "Matchbox",
+        "repopath": "https://github.com/kyleshevlin/matchbox",
+        "desc": "A vanilla JavaScript plugin for... well... matching the height of boxes.",
+        "demopath": "/matchbox"
+      },
+      {
+        "title": "Componentize",
+        "repopath": "https://github.com/kyleshevlin/componentize",
+        "desc": "Rails generator for inline and block components; similar to Ember-CLI's component generator"
+      },
+      {
+        "title": "Condo",
+        "repopath": "https://github.com/kyleshevlin/condo",
+        "desc": "A micro Sass grid library.",
+        "demopath": "/condo"
+      },
+      {
+        "title": "Ripsum",
+        "repopath": "https://github.com/kyleshevlin/ripsum",
+        "desc": "Ruby gem for generating random amounts of lorem ipsum with each page load.",
+        "demopath": "/ripsum"
+      }
+    ],
+    "open_source": [
+      {
+        "title": "ShipShapeCode / Ember-3D-Nav",
+        "repopath": "https://github.com/shipshapecode/ember-3d-nav",
+        "desc": "Ember addon for a simple, yet configurable, 3d navigation"
+      },
+      {
+        "title": "Rails API / Active Model Serializers",
+        "repopath": "https://github.com/rails-api/active_model_serializers",
+        "desc": "ActiveModel::Serializer implementation and Rails hooks"
+      },
+      {
+        "title": "WeAreFINE / FAE",
+        "repopath": "https://github.com/wearefine/fae",
+        "desc": "A flexible CMS for Rails"
+      },
+      {
+        "title": "WeAreFINE / Frob Core",
+        "repopath": "https://github.com/wearefine/frob-core",
+        "desc": "A framework for front (frob) enders (tenders) everywhere"
+      }
+    ]
+  },
+  "references": [
+    {
+      "name": "James Kurczodyna",
+      "title": "Director of Technology",
+      "email": "james@wearefine.com",
+      "twitter": "jamesmk"
+    },
+    {
+      "name": "Mark Hoffman",
+      "title": "Director of Interactive Development",
+      "email": "mark@wearefine.com",
+      "twitter": "code_mischief"
+    },
+    {
+      "name": "Niles McGiver",
+      "title": "Back End Developer",
+      "email": "niles@wearefine.com",
+      "twitter": "nilesvm"
+    }
+  ],
+  "sites": [
+    { "title": "McKibbon Hotels", "path": "http://www.mckibbon.com/" },
+    { "title": "Global Gourmet", "path": "http://ggcatering.com", "award": true},
+    { "title": "TA Associates", "path": "http://ta.com" },
+    { "title": "Stag's Leap Wine Cellar", "path": "http://cask23.com", "award": true },
+    { "title": "Frazier Healthcare", "path": "http://frazierhealthcare.com" },
+    { "title": "Eroica Wine", "path": "http://www.eroicawine.com/"},
+    { "title": "Motto Wines", "path": "http://mottowines.com" },
+    { "title": "Darioush", "path": "http://darioush.com", "award": true },
+    { "title": "Anchor Brewing", "path": "http://anchorbrewing.com" }
+  ],
+  "skills": [
+    "Expert front-end developer: HTML and templating languages, CSS/Sass, JavaScript (including ES6)",
+    "JavaScript engineer and full stack Ruby on Rails developer",
+    "Strong experience with Ember and React",
+    "Experience with Test Driven Development",
+    "Experience with Git and SVN version control, code reviews, pull requests, pair programming and more",
+    "Creator and maintainer of several Ruby gems and Bower packages",
+    "Contributor to several open source projects",
+    "Highly skilled in creating front-end systems that are responsive, mobile-first, cross browser compatible applications",
+    "Code is always well documented, styleguides always followed, and kept clean for the next developer on the project",
+    "Excellent communicator and teacher; Able to facilitate dialogue across disciplines"
+  ],
+  "social_media": [
+    { "title": "Github", "path": "https://github.com/kyleshevlin" },
+    { "title": "LinkedIn", "path": "https://www.linkedin.com/in/kyleshevlin" },
+    { "title": "Twitter", "path": "https://twitter.com/kyleshevlin"}
+  ],
+  "work": [
+    {
+      "company": "FINE",
+      "location": "Portland, OR",
+      "dates": "November 2013 to July 2016",
+      "jobtitle": "Front End Web Developer",
+      "points": [
+        "Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish",
+        "Sole developer on several projects. Full stack Ruby on Rails development.",
+        "Initiated and crafted front end standards for company.",
+        "Developed and contributed to company's open source projects.",
+        "Built internal tools and processes to maximize personal and team efficiency and increase developer happiness."
+      ]
+    }
+  ]
+}
