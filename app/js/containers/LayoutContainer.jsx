@@ -2,14 +2,11 @@ import React from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
-import { REQUEST_DATA, RECEIVE_DATA } from '../actionTypes'
 import { requestData, receiveData } from '../actions/dataActions'
 
-class LayoutContainer extends React.Component {
-  constructor (props) {
-    super(props)
-  }
+const { bool, func } = React.PropTypes
 
+class LayoutContainer extends React.Component {
   render () {
     return (
       <Layout />
@@ -17,12 +14,20 @@ class LayoutContainer extends React.Component {
   }
 
   componentDidMount () {
-    this.props.requestData()
+    if (!this.props.haveData) {
+      this.props.requestData()
 
-    axios.get('/data/data.json').then((response) => {
-      this.props.receiveData(response.data)
-    })
+      axios.get('/data/data.json').then((response) => {
+        this.props.receiveData(response.data)
+      })
+    }
   }
+}
+
+LayoutContainer.propTypes = {
+  haveData: bool,
+  requestData: func,
+  receiveData: func
 }
 
 const mapStateToProps = (state) => {

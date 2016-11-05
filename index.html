@@ -9,81 +9,12 @@
 </head>
 <body>
   <div id="app"></div>
-  <header class="header">
-    <div class="container">
-      <h1><a href="https://github.com/kyleshevlin">Kyle Shevlin</a> &mdash; Web Developer</h1>
-    </div>
-  </header>
 
-  <div class="container">
-    <div class="display-wrap">
-      <div class="display-blank_space"></div>
-      <div class="display js-display"></div>
-    </div>
-
-    <span class="section-anchor" id="social"></span>
-    <section>
-      <my-social></my-social>
-      <my-overview></my-overview>
-    </section>
-
-    <span class="section-anchor" id="skills"></span>
-    <section>
-      <my-skills></my-skills>
-    </section>
-
-    <span class="section-anchor" id="work"></span>
-    <section>
-      <my-work></my-work>
-    </section>
-
-    <span class="section-anchor" id="education"></span>
-    <section>
-      <my-education></my-education>
-    </section>
-
-    <span class="section-anchor" id="references"></span>
-    <section>
-      <my-references></my-references>
-    </section>
-
-    <span class="section-anchor" id="projects"></span>
-    <section>
-      <my-projects></my-projects>
-    </section>
-
-    <span class="section-anchor" id="sites"></span>
-    <section>
-      <my-sites></my-sites>
-    </section>
+  <div class="display-wrap">
+    <div class="display-blank_space"></div>
+    <div class="display js-display"></div>
   </div>
 
-  <footer class="footer">
-    <div class="container">
-      <section>
-        <p>
-          Follow me on Twitter <a href="//twitter.com/kyleshevlin">@kyleshevlin</a>.
-        </p>
-        <p>
-          Built with <a href="http://gruntjs.com/">Grunt</a>, <a href="http://sass-lang.com/">Sass</a>, <a href="https://d3js.org/">D3</a>, and <a href="http://riotjs.com/">Riot</a>. Is it overkill? Sure! Was it fun? Heck, yeah! Will people with JavaScript turned off be able to read this? Not most of it, but are the people I expect to come to this site also the kind of people who turn off JavaScript? Only if they're testing accessibility. Think about it.
-        </p>
-      </section>
-    </div>
-  </footer>
-
-  <script src="/dist/js/application.js"></script>
-  <script>
-    riot.mount('my-social')
-    riot.mount('my-overview')
-    riot.mount('my-skills')
-    riot.mount('work-item')
-    riot.mount('my-work')
-    riot.mount('my-education')
-    riot.mount('my-references')
-    riot.mount('repo-item', { demopath: '' })
-    riot.mount('my-projects')
-    riot.mount('site-item', { award: false })
-    riot.mount('my-sites')
-  </script>
+  <script src="/dist/js/bundle.js"></script>
 </body>
 </html>

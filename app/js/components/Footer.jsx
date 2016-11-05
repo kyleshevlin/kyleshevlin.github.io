@@ -10,7 +10,7 @@ const Footer = () => {
           </p>
 
           <p>
-            Built with React, <a href='http://gruntjs.com/'>Grunt</a>, <a href='http://sass-lang.com/'>Sass</a>, and <a href='https://d3js.org/'>D3</a>
+            Built with <a href='https://facebook.github.io/react/'>React</a>, <a href='http://gruntjs.com/'>Grunt</a>, <a href='http://sass-lang.com/'>Sass</a>, and <a href='https://d3js.org/'>D3</a>
           </p>
         </section>
       </div>

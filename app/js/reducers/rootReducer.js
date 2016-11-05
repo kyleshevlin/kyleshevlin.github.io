@@ -1,12 +1,23 @@
 import {
   REQUEST_DATA,
   RECEIVE_DATA
-} from '..actionTypes'
+} from '../actionTypes'
 
-const initalState = {
+const initialState = {
   waitingForData: false,
   haveData: false,
-  data: {}
+  data: {
+    education: [],
+    projects: {
+      personal: [],
+      open_source: []
+    },
+    references: [],
+    sites: [],
+    skills: [],
+    social_media: [],
+    work: []
+  }
 }
 
 export default function (state = initialState, action) {

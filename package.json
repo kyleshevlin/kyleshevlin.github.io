@@ -9,9 +9,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "grunt connect",
-    "dist": "grunt distribute",
-    "riot": "riot --watch tags/ assets/javascripts/all-tags.js"
+    "start": "http-server -p 8080 ./",
+    "riot": "riot --watch tags/ assets/javascripts/all-tags.js",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "Kyle Shevlin",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "classnames": "^2.2.5",
     "cssnano": "^3.8.0",
     "eslint": "^3.9.1",
     "eslint-config-standard": "^6.2.1",
