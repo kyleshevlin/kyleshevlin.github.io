@@ -1,12 +1,29 @@
-import { TEST_ACTION_TYPE } from '..actionTypes'
+import {
+  REQUEST_DATA,
+  RECEIVE_DATA
+} from '..actionTypes'
 
 const initalState = {
-  testProperty: false
+  waitingForData: false,
+  haveData: false,
+  data: {}
 }
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case TEST_ACTION_TYPE:
-      return Object.assign({}, state, { testProperty: !state.testProperty })
+    case REQUEST_DATA:
+      return Object.assign({}, state, {
+        waitingForData: true
+      })
+
+    case RECEIVE_DATA:
+      return Object.assign({}, state, {
+        waitingForData: false,
+        haveData: true,
+        data: action.data
+      })
+
+    default:
+      return state
   }
 }

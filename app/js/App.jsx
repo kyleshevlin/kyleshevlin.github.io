@@ -1,11 +1,12 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import store from './store'
+import LayoutContainer from './containers/LayoutContainer'
 
 const App = () => {
   return (
     <Provider store={store}>
-      <div>Hello World</div>
+      <LayoutContainer />
     </Provider>
   )
 }
