@@ -17,7 +17,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'tmp/compiled.css': 'assets/stylesheets/base.scss'
+          'tmp/compiled.css': 'app/scss/base.scss'
         }
       }
     },
