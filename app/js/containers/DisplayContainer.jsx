@@ -3,6 +3,7 @@ import Display from '../components/Display'
 
 const mapStateToProps = (state) => {
   return {
+    haveData: state.haveData,
     experience: state.data.experience
   }
 }
