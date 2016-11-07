@@ -10,8 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server -p 8080 ./",
-    "riot": "riot --watch tags/ assets/javascripts/all-tags.js",
-    "build": "webpack",
+    "build": "NODE_ENV=production grunt build && webpack -p --progress",
     "watch": "webpack --watch"
   },
   "author": "Kyle Shevlin",
@@ -52,7 +51,6 @@
     "react-redux": "^4.4.5",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^1.0.0",
-    "riot": "^2.6.2",
     "webpack": "^1.13.3"
   }
 }

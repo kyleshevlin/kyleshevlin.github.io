@@ -11,8 +11,8 @@ const RepoItem = (props) => {
 
   return (
     <div className='repo-item'>
-      <h3><a href={props.repopath}>{props.title}</a></h3>
-      <p>{props.desc}</p>
+      <h3 className='repo-item-heading'><a href={props.repopath}>{props.title}</a></h3>
+      <p className='repo-item-content'>{props.desc}</p>
       {demo}
     </div>
   )

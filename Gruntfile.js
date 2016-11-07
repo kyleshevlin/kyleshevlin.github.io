@@ -61,5 +61,6 @@ module.exports = function(grunt) {
 
   // Register Tasks
   grunt.registerTask('styles', ['sass', 'postcss', 'clean:tmp'])
+  grunt.registerTask('build', ['styles'])
   grunt.registerTask('default', ['styles', 'watch']);
 };

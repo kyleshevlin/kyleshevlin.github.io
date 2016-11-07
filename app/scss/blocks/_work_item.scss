@@ -1,14 +1,7 @@
 //////////////////////////////
-// Repos
+// Work Item
 //////////////////////////////
 
-.repos {}
-
-.repo-item {
+.work-item {
   margin-bottom: bs(2);
-
-  &-heading,
-  &-content {
-    margin-bottom: 0;
-  }
 }
