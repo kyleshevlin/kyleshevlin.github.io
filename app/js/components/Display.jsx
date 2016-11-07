@@ -2,7 +2,7 @@ import React from 'react'
 import { select } from 'd3-selection'
 import { months } from '../helpers'
 import largeVisual from '../visuals/large'
-// import SmallVisual from '../visuals/small'
+import smallVisual from '../visuals/small'
 
 const { array, bool } = React.PropTypes
 
@@ -18,17 +18,6 @@ class Display extends React.Component {
 
   componentDidMount () {
     this.addDisplays()
-    // const tabletVisual = new SmallVisual({
-    //   container: this.nodeRef,
-    //   className: 'tablet_visual',
-    //   data
-    // })
-
-    // const mobileVisual = new SmallVisual({
-    //   container: this.nodeRef
-    //   className: 'mobile_visual',
-    //   data
-    // })
   }
 
   componentDidUpdate () {
@@ -52,7 +41,21 @@ class Display extends React.Component {
         .colorOne(colorOne)
         .colorTwo(colorTwo)
 
+      const tabletVisual = smallVisual()
+        .className('tablet_visual')
+        .width(500)
+        .data(data)
+        .colorOne(colorOne)
+        .colorTwo(colorTwo)
+
+      const mobileVisual = smallVisual()
+        .data(data)
+        .colorOne(colorOne)
+        .colorTwo(colorTwo)
+
       desktopVisual(display)
+      tabletVisual(display)
+      mobileVisual(display)
     }
   }
 }

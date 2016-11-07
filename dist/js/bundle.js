@@ -25186,6 +25186,10 @@
 
 	var _large2 = _interopRequireDefault(_large);
 
+	var _small = __webpack_require__(278);
+
+	var _small2 = _interopRequireDefault(_small);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25193,8 +25197,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// import SmallVisual from '../visuals/small'
 
 	var _React$PropTypes = _react2.default.PropTypes,
 	    array = _React$PropTypes.array,
@@ -25227,17 +25229,6 @@
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.addDisplays();
-	      // const tabletVisual = new SmallVisual({
-	      //   container: this.nodeRef,
-	      //   className: 'tablet_visual',
-	      //   data
-	      // })
-
-	      // const mobileVisual = new SmallVisual({
-	      //   container: this.nodeRef
-	      //   className: 'mobile_visual',
-	      //   data
-	      // })
 	    }
 	  }, {
 	    key: 'componentDidUpdate',
@@ -25260,7 +25251,13 @@
 
 	        var desktopVisual = (0, _large2.default)().data(data).colorOne(colorOne).colorTwo(colorTwo);
 
+	        var tabletVisual = (0, _small2.default)().className('tablet_visual').width(500).data(data).colorOne(colorOne).colorTwo(colorTwo);
+
+	        var mobileVisual = (0, _small2.default)().data(data).colorOne(colorOne).colorTwo(colorTwo);
+
 	        desktopVisual(display);
+	        tabletVisual(display);
+	        mobileVisual(display);
 	      }
 	    }
 	  }]);
@@ -32996,6 +32993,248 @@
 
 	  Object.defineProperty(exports, '__esModule', { value: true });
 	});
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var _arguments = arguments;
+
+	var _d3Scale = __webpack_require__(264);
+
+	var _d3Array = __webpack_require__(265);
+
+	var _d3Interpolate = __webpack_require__(267);
+
+	var _d3Axis = __webpack_require__(272);
+
+	var _d3Selection = __webpack_require__(273);
+
+	var _d3Transition = __webpack_require__(274);
+
+	var smallVisual = function smallVisual() {
+	  var margin = { top: 40, right: 15, bottom: 15, left: 5 };
+	  var width = 280 - margin.left - margin.right;
+	  var height = 480 - margin.top - margin.bottom;
+	  var className = 'mobile_visual';
+	  var colorOne = '#0000ff';
+	  var colorTwo = '#ff0000';
+	  var rectHeight = 20;
+	  var div = void 0;
+	  var svg = void 0;
+	  var g = void 0;
+	  var rectGroup = void 0;
+	  var data = void 0;
+	  var xScale = void 0;
+	  var yScale = void 0;
+	  var fill = void 0;
+	  var xAxis = void 0;
+	  var xAxisGroup = void 0;
+	  var xLabel = void 0;
+	  var rects = void 0;
+	  var rectWrap = void 0;
+
+	  var chart = function chart(container) {
+	    div = container;
+	    var wrap = div.append('div').classed(className + '-wrap', true);
+
+	    // Scales
+	    xScale = (0, _d3Scale.scaleLinear)().domain([0, (0, _d3Array.max)(data, function (d) {
+	      return d.months;
+	    })]).range([0, width]);
+
+	    yScale = (0, _d3Scale.scaleLinear)().domain([0, data.length]).range([0, height]);
+
+	    fill = (0, _d3Scale.scaleLinear)().domain([0, (0, _d3Array.max)(data, function (d) {
+	      return d.interest;
+	    })]).interpolate(_d3Interpolate.interpolateHsl).range([colorOne, colorTwo]);
+
+	    // XScale Toggle Form
+	    var form = wrap.append('form');
+	    var inputWrapOne = form.append('div').classed('input', true);
+	    var inputWrapTwo = form.append('div').classed('input', true);
+
+	    inputWrapOne.append('label').attr('for', 'months').text('Months');
+	    inputWrapOne.append('input').attr('type', 'radio').attr('name', className + '-scale').attr('id', className + '-months').attr('checked', true);
+
+	    inputWrapTwo.append('label').attr('for', 'expertise').text('Expertise');
+	    inputWrapTwo.append('input').attr('type', 'radio').attr('name', className + '-scale').attr('id', className + '-expertise');
+
+	    // Legend
+	    var legendWidth = width;
+	    var legendHeight = 50;
+	    var legendSvg = wrap.append('svg').classed('legend-svg', true).attr('width', width).attr('height', legendHeight);
+
+	    var gradient = legendSvg.append('defs').append('linearGradient').attr('id', className + '-gradient').attr('x1', '0%').attr('y1', '0%').attr('x2', '100%').attr('y2', '0%').attr('spreadMethod', 'pad');
+
+	    gradient.append('stop').attr('offset', '0%').attr('stop-color', colorOne).attr('stop-opacity', 1);
+
+	    gradient.append('stop').attr('offset', '50%').attr('stop-color', function (d) {
+	      return fill(50);
+	    }).attr('stop-opacity', 1);
+
+	    gradient.append('stop').attr('offset', '100%').attr('stop-color', colorTwo).attr('stop-opacity', 1);
+
+	    var legend = legendSvg.append('g').classed('legend', true).attr('width', legendWidth);
+
+	    var interest = legend.append('g').classed('legend-interest', true).attr('transform', 'translate(0, 25)');
+
+	    interest.append('text').classed('legend-interest-heading', true).attr('x', legendWidth / 2).attr('text-anchor', 'middle').text('Interest');
+
+	    interest.append('text').text('Lower');
+
+	    interest.append('text').attr('x', legendWidth).attr('text-anchor', 'end').text('Higher');
+
+	    interest.append('rect').attr('width', legendWidth).attr('height', 10).attr('fill', 'url(#' + className + '-gradient)').attr('transform', 'translate(0, 5)');
+
+	    // Visual
+	    svg = wrap.append('svg').classed(className, true);
+
+	    svg.attr('width', width + margin.left + margin.right).attr('height', height + margin.top + margin.bottom);
+
+	    g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+
+	    rectGroup = g.append('g').classed('rect-group', true);
+
+	    xAxisGroup = g.append('g').classed('axis-group', true);
+	    xAxis = (0, _d3Axis.axisTop)().scale(xScale);
+	    xAxisGroup.call(xAxis);
+
+	    xLabel = g.append('text').text('Months').attr('transform', 'translate(' + width / 2 + ', ' + (margin.top - 2) * -1 + ')').attr('text-anchor', 'middle').attr('dy', '1em');
+
+	    update();
+	  };
+
+	  var update = function update() {
+	    rects = rectGroup.selectAll('.rect-wrap').data(data);
+
+	    rectWrap = rects.enter().append('g').classed('rect-wrap', true);
+
+	    rectWrap.append('rect').classed('rect', true).attr('x', 0).attr('y', function (d, i) {
+	      return yScale(i + 1) - rectHeight / 2;
+	    }).attr('width', 0).attr('height', rectHeight).attr('fill', function (d) {
+	      return fill(d.interest);
+	    }).transition().delay(function (d, i) {
+	      return i * 100;
+	    }).attr('width', function (d) {
+	      return xScale(d.months);
+	    });
+
+	    rectWrap.append('title').text(function (d) {
+	      return d.name;
+	    });
+
+	    rectWrap.append('text').classed('rect-label', true).attr('x', 5).attr('y', function (d, i) {
+	      return yScale(i + 1) + rectHeight / 2;
+	    }).attr('dy', '-.45em').text(function (d) {
+	      return d.name;
+	    });
+
+	    rects.exit().remove();
+
+	    // Actions
+	    rectWrap.on('mouseover', function (d) {
+	      (0, _d3Selection.select)('.rect-group').classed('is-active', true);
+	      (0, _d3Selection.select)(this).select('.rect').classed('is-active', true);
+	    });
+
+	    rectWrap.on('mouseout', function (d) {
+	      (0, _d3Selection.select)('.rect-group').classed('is-active', false);
+	      (0, _d3Selection.select)(this).select('.rect').classed('is-active', false);
+	    });
+
+	    (0, _d3Selection.selectAll)('input[name=\'' + className + '-scale\']').on('change', function () {
+	      toggle((0, _d3Selection.select)(this).attr('id'));
+	    });
+	  };
+
+	  var toggle = function toggle(value) {
+	    var domain = void 0;
+	    var label = void 0;
+	    var property = void 0;
+
+	    if (value === className + '-months') {
+	      domain = [0, (0, _d3Array.max)(data, function (d) {
+	        return d.months;
+	      })];
+	      label = 'Months';
+	      property = 'months';
+	    } else {
+	      domain = [0, (0, _d3Array.max)(data, function (d) {
+	        return d.expertise;
+	      })];
+	      label = 'Expertise';
+	      property = 'expertise';
+	    }
+
+	    xScale.domain(domain);
+	    xLabel.text(label);
+	    xAxis.scale(xScale);
+	    xAxisGroup.transition().call(xAxis);
+	    rectWrap.selectAll('.rect').attr('width', function (d) {
+	      return xScale(d[property]);
+	    });
+	  };
+
+	  chart.update = update;
+
+	  chart.data = function (value) {
+	    if (!_arguments.length) {
+	      return data;
+	    }
+	    data = value;
+	    return chart;
+	  };
+
+	  chart.width = function (value) {
+	    if (!_arguments.length) {
+	      return width;
+	    }
+	    width = value;
+	    return chart;
+	  };
+
+	  chart.height = function (value) {
+	    if (!_arguments.length) {
+	      return height;
+	    }
+	    height = value;
+	    return chart;
+	  };
+
+	  chart.className = function (value) {
+	    if (!_arguments.length) {
+	      return className;
+	    }
+	    className = value;
+	    return chart;
+	  };
+
+	  chart.colorOne = function (value) {
+	    if (!_arguments.length) {
+	      return colorOne;
+	    }
+	    colorOne = value;
+	    return chart;
+	  };
+
+	  chart.colorTwo = function (value) {
+	    if (!_arguments.length) {
+	      return colorTwo;
+	    }
+	    colorTwo = value;
+	    return chart;
+	  };
+
+	  return chart;
+	};
+
+	exports.default = smallVisual;
 
 /***/ }
 /******/ ]);
