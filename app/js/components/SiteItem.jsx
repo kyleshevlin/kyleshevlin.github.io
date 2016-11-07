@@ -19,7 +19,7 @@ const SiteItem = (props) => {
       </span>
     )
 
-    comingSoon = <span className='site-item-coming_soon'>&mdash; Coming Soon</span>
+    comingSoon = <span className='site-item-coming_soon'> &mdash; Coming Soon</span>
   } else {
     heading = (
       <a
@@ -32,7 +32,7 @@ const SiteItem = (props) => {
   }
 
   if (props.award) {
-    award = <span className='site-item-award'>&mdash; CommArts Award Winner</span>
+    award = <span className='site-item-award'> &mdash; CommArts Award Winner</span>
   }
 
   return (

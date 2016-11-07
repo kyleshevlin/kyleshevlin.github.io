@@ -26064,7 +26064,7 @@
 	    comingSoon = _react2.default.createElement(
 	      'span',
 	      { className: 'site-item-coming_soon' },
-	      '\u2014 Coming Soon'
+	      ' \u2014 Coming Soon'
 	    );
 	  } else {
 	    heading = _react2.default.createElement(
@@ -26081,7 +26081,7 @@
 	    award = _react2.default.createElement(
 	      'span',
 	      { className: 'site-item-award' },
-	      '\u2014 CommArts Award Winner'
+	      ' \u2014 CommArts Award Winner'
 	    );
 	  }
 
