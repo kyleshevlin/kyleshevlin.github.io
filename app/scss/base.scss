@@ -4,6 +4,7 @@
 
 // Setup
 @import
+  'vendors/resormalize',
   '../../bower_components/shevy/core/shevy',
   'globals/variables',
   'globals/functions',
@@ -32,5 +33,6 @@
   'blocks/repos',
   'blocks/sites',
   'blocks/education_items',
+  'blocks/reference_item',
   'blocks/section_anchor'
 ;

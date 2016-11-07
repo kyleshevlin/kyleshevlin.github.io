@@ -25,14 +25,15 @@ module.exports = function(grunt) {
     // PostCSS
     postcss: {
       options: {
-        map: true
+        map: true,
+        processors: [
+          require('autoprefixer')(),
+          require('cssnano')()
+        ]
       },
-      processors: [
-        require('autoprefixer')(),
-        require('cssnano')()
-      ],
       dist: {
-        'dist/css/application.css': 'tmp/compiled.css'
+        src: 'tmp/compiled.css',
+        dest: 'dist/css/bundle.css'
       }
     },
 
