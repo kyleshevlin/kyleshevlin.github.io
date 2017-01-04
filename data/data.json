@@ -91,7 +91,7 @@
       "name": "Ember",
       "months": "2014-09-01",
       "expertise": 70,
-      "interest": 100
+      "interest": 70
     },
     {
       "name": "Rails API",
@@ -114,8 +114,26 @@
     {
       "name": "React",
       "months": "2016-08-01",
-      "expertise": 50,
+      "expertise": 75,
       "interest": 100
+    },
+    {
+      "name": "Redux",
+      "months": "2016-09-01",
+      "expertise": 70,
+      "interest": 100
+    },
+    {
+      "name": "Express",
+      "months": "2016-10-01",
+      "expertise": 50,
+      "interest": 80
+    },
+    {
+      "name": "Jest",
+      "months": "2016-12-01",
+      "expertise": 30,
+      "interest": 80
     }
   ],
   "projects": {
@@ -123,7 +141,7 @@
       {
         "title": "Shevy",
         "repopath": "https://github.com/kyleshevlin/shevy",
-        "desc": "A typography/vertical rhythm Sass library.",
+        "desc": "A typography/vertical rhythm Sass library. Featured in awesome-sass on Github.",
         "demopath": "/shevy"
       },
       {
