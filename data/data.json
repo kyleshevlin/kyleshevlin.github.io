@@ -34,12 +34,6 @@
       "interest": 100
     },
     {
-      "name": "jQuery",
-      "months": "2012-06-01",
-      "expertise": 90,
-      "interest": 20
-    },
-    {
       "name": "Sass",
       "months": "2013-01-01",
       "expertise": 100,
@@ -76,22 +70,16 @@
       "interest": 70
     },
     {
-      "name": "Templating Langs",
-      "months": "2014-01-01",
-      "expertise": 85,
-      "interest": 40
-    },
-    {
       "name": "JS MVCs",
       "months": "2014-06-01",
-      "expertise": 55,
+      "expertise": 75,
       "interest": 100
     },
     {
       "name": "Ember",
       "months": "2014-09-01",
       "expertise": 70,
-      "interest": 70
+      "interest": 45
     },
     {
       "name": "Rails API",
@@ -108,20 +96,32 @@
     {
       "name": "TDD",
       "months": "2016-04-01",
-      "expertise": 30,
+      "expertise": 40,
       "interest": 60
     },
     {
       "name": "React",
       "months": "2016-08-01",
-      "expertise": 75,
+      "expertise": 85,
       "interest": 100
+    },
+    {
+      "name": "Webpack",
+      "months": "2016-08-15",
+      "expertise": 50,
+      "interest": 75
     },
     {
       "name": "Redux",
       "months": "2016-09-01",
-      "expertise": 70,
+      "expertise": 85,
       "interest": 100
+    },
+    {
+      "name": "Node",
+      "months": "2016-09-15",
+      "expertise": 50,
+      "interest": 85
     },
     {
       "name": "Express",
@@ -130,10 +130,16 @@
       "interest": 80
     },
     {
-      "name": "Jest",
-      "months": "2016-12-01",
+      "name": "RxJS",
+      "months": "2017-01-01",
       "expertise": 30,
-      "interest": 80
+      "interest": 70
+    },
+    {
+      "name": "Elm",
+      "months": "2017-01-15",
+      "expertise": 20,
+      "interest": 60
     }
   ],
   "projects": {
@@ -212,6 +218,7 @@
     }
   ],
   "sites": [
+    { "title": "Second Story", "path": "https://secondstory.com" },
     { "title": "McKibbon Hotels", "path": "http://www.mckibbon.com/" },
     { "title": "Global Gourmet", "path": "http://ggcatering.com", "award": true},
     { "title": "TA Associates", "path": "http://ta.com" },
@@ -224,7 +231,7 @@
   ],
   "skills": [
     "Strong front-end developer: HTML and templating languages, CSS/Sass/PostCSS, JavaScript/ES6",
-    "Solid experience with React, Ember and Rails on production-level projects",
+    "Solid experience with React, Redux, Ember and Rails on production-level projects",
     "Experience with Test Driven Development",
     "Experience with Git and SVN version control, code reviews, pull requests, pair programming and more",
     "Creator and maintainer of several Ruby gems and Bower packages",
@@ -245,7 +252,9 @@
       "dates": "September 2016 - Current",
       "jobtitle": "Web and Interactive Developer",
       "points": [
-        "Sole front end developer building the new Second Story company website - a universally rendered React app"
+        "Front end developer building React & Redux applications for web and digital interactives.",
+        "Built company's new brand site as a universally rendered React/Redux application.",
+        "Currently building a multi-touch interactive with React, Redux, RxJS, and WebSockets."
       ]
     },
     {
@@ -254,7 +263,7 @@
       "dates": "November 2013 to July 2016",
       "jobtitle": "Front End Web Developer",
       "points": [
-        "Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish",
+        "Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish.",
         "Sole developer on several projects. Full stack Ruby on Rails development.",
         "Initiated and crafted front end standards for company.",
         "Developed and contributed to company's open source projects.",
