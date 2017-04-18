@@ -12,7 +12,10 @@ const RepoItem = (props) => {
   return (
     <div className='repo-item'>
       <h3 className='repo-item-heading'><a href={props.repopath}>{props.title}</a></h3>
-      <p className='repo-item-content'>{props.desc}</p>
+      <p
+        className='repo-item-content'
+        dangerouslySetInnerHTML={{__html: props.desc}}
+      />
       {demo}
     </div>
   )

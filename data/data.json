@@ -147,7 +147,7 @@
       {
         "title": "Shevy",
         "repopath": "https://github.com/kyleshevlin/shevy",
-        "desc": "A typography/vertical rhythm Sass library. Featured in awesome-sass on Github.",
+        "desc": "A typography/vertical rhythm Sass library. Featured in <a href=\"https://github.com/Famolus/awesome-sass\">awesome-sass</a> on Github.",
         "demopath": "/shevy"
       },
       {
@@ -175,6 +175,21 @@
       }
     ],
     "open_source": [
+      {
+        "title": "React Devtools",
+        "repopath": "https://github.com/facebook/react-devtools",
+        "desc": "Chrome Extension for debugging React Apps"
+      },
+      {
+        "title": "Reactiflux.com",
+        "repopath": "https://github.com/reactiflux/reactiflux.com",
+        "desc": "Website for the Reactiflux community"
+      },
+      {
+        "title": "Async Reactor",
+        "repopath": "https://github.com/xtuc/async-reactor",
+        "desc": "Render async stateless functional components"
+      },
       {
         "title": "ShipShapeCode / Ember-3D-Nav",
         "repopath": "https://github.com/shipshapecode/ember-3d-nav",
@@ -253,8 +268,8 @@
       "jobtitle": "Web and Interactive Developer",
       "points": [
         "Front end developer building React & Redux applications for web and digital interactives.",
-        "Built company's new brand site as a universally rendered React/Redux application.",
-        "Currently building a multi-touch interactive with React, Redux, RxJS, and WebSockets."
+        "Lead developer for company's new brand site. Built with React and Redux and server side rendering.",
+        "Lead developer for touch table interactive built with React, Redux, Electron, and WebSockets."
       ]
     },
     {
@@ -264,7 +279,7 @@
       "jobtitle": "Front End Web Developer",
       "points": [
         "Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish.",
-        "Sole developer on several projects. Full stack Ruby on Rails development.",
+        "Lead developer on several projects. Full stack Ruby on Rails development.",
         "Initiated and crafted front end standards for company.",
         "Developed and contributed to company's open source projects.",
         "Built internal tools and processes to maximize personal and team efficiency and increase developer happiness."
