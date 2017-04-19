@@ -1,9 +1,9 @@
-import { REQUEST_DATA, RECEIVE_DATA } from '../actionTypes'
+import * as types from '../constants/actionTypes'
 
 export function requestData () {
-  return { type: REQUEST_DATA }
+  return { type: types.REQUEST_DATA }
 }
 
 export function receiveData (data) {
-  return { type: RECEIVE_DATA, data }
+  return { type: types.RECEIVE_DATA, data }
 }

@@ -1,7 +1,4 @@
-import {
-  REQUEST_DATA,
-  RECEIVE_DATA
-} from '../actionTypes'
+import * as types from '../constants/actionTypes'
 
 const initialState = {
   waitingForData: false,
@@ -23,17 +20,16 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case REQUEST_DATA:
-      return Object.assign({}, state, {
-        waitingForData: true
-      })
+    case types.REQUEST_DATA:
+      return { ...state, waitingForData: true }
 
-    case RECEIVE_DATA:
-      return Object.assign({}, state, {
+    case types.RECEIVE_DATA:
+      return {
+        ...state,
         waitingForData: false,
         haveData: true,
         data: action.data
-      })
+      }
 
     default:
       return state
