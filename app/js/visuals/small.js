@@ -3,6 +3,7 @@ import { max } from 'd3-array'
 import { interpolateHsl } from 'd3-interpolate'
 import { axisTop } from 'd3-axis'
 import { select, selectAll } from 'd3-selection'
+/* eslint no-unused-vars: "off" */
 import { transition } from 'd3-transition'
 
 const smallVisual = () => {

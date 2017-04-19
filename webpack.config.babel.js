@@ -1,0 +1,71 @@
+const webpack = require('webpack')
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = env => {
+  const config = {
+    context: path.join(__dirname, 'app'),
+    entry: './js/entry.js',
+    output: {
+      path: env.prod
+        ? path.join(__dirname, 'dist')
+        : path.join(__dirname, 'build'),
+      filename: 'bundle.js',
+      publicPath: '/'
+    },
+    resolve: {
+      extensions: ['.js', '.jsx', '.json']
+    },
+    stats: {
+      colors: true,
+      reasons: true,
+      chunks: true
+    },
+    devServer: {
+      historyApiFallback: true
+    },
+    devtool: env.prod ? 'source-map' : 'eval',
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/
+        },
+        {
+          test: /\.jsx?$/,
+          loader: 'eslint-loader',
+          enforce: 'pre',
+          exclude: /node_modules/
+        },
+        {
+          test: /\.scss$/,
+          loader: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: 'css-loader?sourceMap!postcss-loader?sourceMap!sass-loader?sourceMap'
+          })
+        },
+        {
+          test: /\.css$/,
+          loader: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: 'css-loader?sourceMap!postcss-loader?sourceMap'
+          })
+        }
+      ]
+    },
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+      }),
+      new ExtractTextPlugin('style.css'),
+      new HtmlWebpackPlugin({
+        template: './templates/index.ejs',
+        title: 'Kyle Shevlin - Front End Web Developer with Full Stack Skills'
+      })
+    ]
+  }
+
+  return config
+}
