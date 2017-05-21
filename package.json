@@ -25,6 +25,7 @@
     "babel-preset-react": "^6.24.1",
     "classnames": "^2.2.5",
     "condo-grids": "^1.0.2",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "d3-array": "^1.2.0",
     "d3-axis": "^1.0.6",

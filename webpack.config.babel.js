@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = env => {
   const config = {
@@ -63,7 +64,13 @@ module.exports = env => {
       new HtmlWebpackPlugin({
         template: './templates/index.ejs',
         title: 'Kyle Shevlin - Front End Web Developer with Full Stack Skills'
-      })
+      }),
+      new CopyWebpackPlugin([
+        {
+          from: './assets/**/*',
+          to: '[name].[ext]'
+        }
+      ])
     ]
   }
 

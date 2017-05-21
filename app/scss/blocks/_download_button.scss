@@ -1,0 +1,25 @@
+//////////////////////////////
+// Download Button
+//////////////////////////////
+
+.download_button {
+  background-color: $c-brand;
+  color: $c-white;
+  padding: 15px 25px;
+  border-radius: 4px;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: $c-dark-brand;
+    color: $c-white;
+
+    &:after {
+      content: none;
+    }
+  }
+
+  &-wrap {
+    margin-top: bs(2);
+    margin-bottom: bs(2);
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import DisplayContainer from '../containers/DisplayContainer'
+import DownloadButton from './DownloadButton'
 import Overview from './Overview'
 import EducationContainer from '../containers/EducationContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
@@ -20,6 +21,10 @@ const Layout = () => {
         <DisplayContainer />
 
         <section>
+          <DownloadButton
+            path='/dist/Kyle_Shevlin_Resume.pdf'
+            text='Download Resume PDF'
+          />
           <SocialContainer />
           <Overview />
         </section>
