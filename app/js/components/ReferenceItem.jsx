@@ -1,6 +1,5 @@
 import React from 'react'
-
-const { string } = React.PropTypes
+import PropTypes from 'prop-types'
 
 const ReferenceItem = (props) => {
   return (
@@ -13,10 +12,10 @@ const ReferenceItem = (props) => {
 }
 
 ReferenceItem.propTypes = {
-  name: string,
-  title: string,
-  email: string,
-  twitter: string
+  name: PropTypes.string,
+  title: PropTypes.string,
+  email: PropTypes.string,
+  twitter: PropTypes.string
 }
 
 export default ReferenceItem

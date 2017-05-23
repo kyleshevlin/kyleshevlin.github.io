@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import WorkItem from './WorkItem'
-
-const { array } = React.PropTypes
 
 const Work = (props) => {
   return (
@@ -15,7 +14,7 @@ const Work = (props) => {
 }
 
 Work.propTypes = {
-  work: array
+  work: PropTypes.array
 }
 
 export default Work

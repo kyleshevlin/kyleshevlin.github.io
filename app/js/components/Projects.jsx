@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import RepoItem from './RepoItem'
-
-const { object } = React.PropTypes
 
 const Projects = (props) => {
   return (
@@ -24,7 +23,7 @@ const Projects = (props) => {
 }
 
 Projects.propTypes = {
-  projects: object
+  projects: PropTypes.object
 }
 
 export default Projects

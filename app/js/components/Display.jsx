@@ -1,10 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { select } from 'd3-selection'
 import { months } from '../helpers'
 import largeVisual from '../visuals/large'
 import smallVisual from '../visuals/small'
-
-const { array, bool } = React.PropTypes
 
 class Display extends React.Component {
   render () {
@@ -61,8 +60,8 @@ class Display extends React.Component {
 }
 
 Display.propTypes = {
-  haveData: bool,
-  experience: array
+  haveData: PropTypes.bool,
+  experience: PropTypes.array
 }
 
 export default Display

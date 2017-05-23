@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const DownloadButton = ({ path, text }) => (
   <div className='download_button-wrap'>

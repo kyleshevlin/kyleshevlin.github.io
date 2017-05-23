@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import EducationItem from './EducationItem'
-
-const { array } = React.PropTypes
 
 const Education = (props) => {
   return (
@@ -15,7 +14,7 @@ const Education = (props) => {
 }
 
 Education.propTypes = {
-  education: array
+  education: PropTypes.array
 }
 
 export default Education

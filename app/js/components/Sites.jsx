@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import SiteItem from './SiteItem'
-
-const { array } = React.PropTypes
 
 const Sites = (props) => {
   return (
@@ -17,7 +16,7 @@ const Sites = (props) => {
 }
 
 Sites.propTypes = {
-  sites: array
+  sites: PropTypes.array
 }
 
 export default Sites

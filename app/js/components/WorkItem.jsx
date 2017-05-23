@@ -1,6 +1,5 @@
 import React from 'react'
-
-const { arrayOf, string } = React.PropTypes
+import PropTypes from 'prop-types'
 
 const WorkItem = (props) => {
   return (
@@ -20,11 +19,11 @@ const WorkItem = (props) => {
 }
 
 WorkItem.propTypes = {
-  company: string,
-  location: string,
-  dates: string,
-  jobtitle: string,
-  points: arrayOf(string)
+  company: PropTypes.string,
+  location: PropTypes.string,
+  dates: PropTypes.string,
+  jobtitle: PropTypes.string,
+  points: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default WorkItem

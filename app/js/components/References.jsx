@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import ReferenceItem from './ReferenceItem'
-
-const { array } = React.PropTypes
 
 const References = (props) => {
   return (
@@ -22,7 +21,7 @@ const References = (props) => {
 }
 
 References.propTypes = {
-  references: array
+  references: PropTypes.array
 }
 
 export default References

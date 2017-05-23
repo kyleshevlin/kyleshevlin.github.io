@@ -1,10 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 import { requestData, receiveData } from '../actions/data'
-
-const { bool, func } = React.PropTypes
 
 class LayoutContainer extends React.Component {
   render () {
@@ -25,9 +24,9 @@ class LayoutContainer extends React.Component {
 }
 
 LayoutContainer.propTypes = {
-  haveData: bool,
-  requestData: func,
-  receiveData: func
+  haveData: PropTypes.bool,
+  requestData: PropTypes.func,
+  receiveData: PropTypes.func
 }
 
 const mapStateToProps = (state) => {

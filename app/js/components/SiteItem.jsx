@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
-
-const { bool, string } = React.PropTypes
 
 const SiteItem = (props) => {
   const classes = classNames(
@@ -47,10 +46,10 @@ const SiteItem = (props) => {
 }
 
 SiteItem.propTypes = {
-  title: string,
-  path: string,
-  comingsoon: bool,
-  award: bool
+  title: PropTypes.string,
+  path: PropTypes.string,
+  comingsoon: PropTypes.bool,
+  award: PropTypes.bool
 }
 
 export default SiteItem

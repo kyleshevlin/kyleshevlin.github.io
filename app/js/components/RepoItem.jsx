@@ -1,6 +1,5 @@
 import React from 'react'
-
-const { string } = React.PropTypes
+import PropTypes from 'prop-types'
 
 const RepoItem = (props) => {
   let demo = null
@@ -22,10 +21,10 @@ const RepoItem = (props) => {
 }
 
 RepoItem.propTypes = {
-  title: string,
-  repopath: string,
-  desc: string,
-  demopath: string
+  title: PropTypes.string,
+  repopath: PropTypes.string,
+  desc: PropTypes.string,
+  demopath: PropTypes.string
 }
 
 export default RepoItem

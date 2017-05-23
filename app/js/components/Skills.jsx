@@ -1,6 +1,5 @@
 import React from 'react'
-
-const { array } = React.PropTypes
+import PropTypes from 'prop-types'
 
 const Skills = (props) => {
   return (
@@ -16,7 +15,7 @@ const Skills = (props) => {
 }
 
 Skills.propTypes = {
-  skills: array
+  skills: PropTypes.array
 }
 
 export default Skills

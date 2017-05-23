@@ -1,6 +1,5 @@
 import React from 'react'
-
-const { array } = React.PropTypes
+import PropTypes from 'prop-types'
 
 const Social = (props) => {
   return (
@@ -15,7 +14,7 @@ const Social = (props) => {
 }
 
 Social.propTypes = {
-  social_media: array
+  social_media: PropTypes.array
 }
 
 export default Social

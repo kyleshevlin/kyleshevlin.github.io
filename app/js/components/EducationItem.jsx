@@ -1,6 +1,5 @@
 import React from 'react'
-
-const { string, number } = React.PropTypes
+import PropTypes from 'prop-types'
 
 const EducationItem = (props) => {
   let teaser = null
@@ -18,11 +17,11 @@ const EducationItem = (props) => {
 }
 
 EducationItem.propTypes = {
-  city: string,
-  degree: string,
-  school: string,
-  teaser: string,
-  year: number
+  city: PropTypes.string,
+  degree: PropTypes.string,
+  school: PropTypes.string,
+  teaser: PropTypes.string,
+  year: PropTypes.number
 }
 
 export default EducationItem
