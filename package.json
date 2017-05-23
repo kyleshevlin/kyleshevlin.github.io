@@ -10,6 +10,7 @@
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "NODE_ENV=production webpack -p --progress --env.prod",
+    "postbuild": "rimraf ./dist/index.html",
     "start": "webpack-dev-server --env.dev --hot"
   },
   "author": "Kyle Shevlin",
