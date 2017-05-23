@@ -3,8 +3,9 @@ import { max, extent } from 'd3-array'
 import { interpolateHsl } from 'd3-interpolate'
 import { axisLeft } from 'd3-axis'
 import { select } from 'd3-selection'
-/* eslint no-unused-vars: "off" */
 import { transition } from 'd3-transition'
+
+const t = transition().duration(300)
 
 const largeVisual = () => {
   let margin = { top: 50, right: 50, bottom: 75, left: 50 }
@@ -140,7 +141,7 @@ const largeVisual = () => {
       .attr('cx', function (d, i) { return xScale(i + 1) })
       .attr('cy', function (d) { return yScale(d.months) })
       .attr('fill', function (d) { return fill(d.interest) })
-      .transition().delay(function (d, i) { return i * 100 })
+      .transition(t).delay(function (d, i) { return i * 100 })
       .attr('r', function (d) { return radius(d.expertise) })
 
     node.append('text').classed('node-label', true)

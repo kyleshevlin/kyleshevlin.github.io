@@ -3,8 +3,9 @@ import { max } from 'd3-array'
 import { interpolateHsl } from 'd3-interpolate'
 import { axisTop } from 'd3-axis'
 import { select, selectAll } from 'd3-selection'
-/* eslint no-unused-vars: "off" */
 import { transition } from 'd3-transition'
+
+const t = transition().duration(300)
 
 const smallVisual = () => {
   let margin = { top: 40, right: 15, bottom: 15, left: 5 }
@@ -163,7 +164,7 @@ const smallVisual = () => {
       .attr('width', 0)
       .attr('height', rectHeight)
       .attr('fill', d => fill(d.interest))
-      .transition().delay((d, i) => i * 100)
+      .transition(t).delay((d, i) => i * 100)
       .attr('width', d => xScale(d.months))
 
     rectWrap.append('title')
