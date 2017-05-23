@@ -1,22 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const WorkItem = (props) => {
-  return (
-    <div className='work-item'>
-      <p>
-        <strong>{props.company}</strong> - {props.location} - {props.dates}<br />
-        <strong>{props.jobtitle}</strong>
-      </p>
+const WorkItem = ({
+  company,
+  location,
+  dates,
+  jobtitle,
+  points
+}) => (
+  <div className='work-item'>
+    <p>
+      <strong>{company}</strong> - {location} - {dates}<br />
+      <strong>{jobtitle}</strong>
+    </p>
 
-      <ul>
-        {props.points.map((item, index) => {
-          return <li key={index}>{item}</li>
-        })}
-      </ul>
-    </div>
-  )
-}
+    <ul>
+      {points.map(item => <li key={item}>{item}</li>)}
+    </ul>
+  </div>
+)
 
 WorkItem.propTypes = {
   company: PropTypes.string,

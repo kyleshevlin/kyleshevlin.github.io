@@ -1,17 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 import { requestData, receiveData } from '../actions/data'
 
-class LayoutContainer extends React.Component {
-  render () {
-    return (
-      <Layout />
-    )
-  }
-
+class LayoutContainer extends Component {
   componentDidMount () {
     if (!this.props.haveData) {
       this.props.requestData()
@@ -21,6 +15,10 @@ class LayoutContainer extends React.Component {
       })
     }
   }
+
+  render () {
+    return <Layout />
+  }
 }
 
 LayoutContainer.propTypes = {
@@ -29,21 +27,13 @@ LayoutContainer.propTypes = {
   receiveData: PropTypes.func
 }
 
-const mapStateToProps = (state) => {
-  return {
-    haveData: state.haveData
-  }
-}
+const mapStateToProps = state => ({
+  haveData: state.haveData
+})
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    requestData () {
-      dispatch(requestData())
-    },
-    receiveData (data) {
-      dispatch(receiveData(data))
-    }
-  }
+const mapDispatchToProps = {
+  requestData,
+  receiveData
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LayoutContainer)

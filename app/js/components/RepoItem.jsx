@@ -1,21 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const RepoItem = (props) => {
-  let demo = null
+const RepoItem = ({
+  title,
+  repopath,
+  desc,
+  demopath
+}) => {
+  let demoLink = null
 
-  if (props.demopath) {
-    demo = <a href={props.demopath}>Demo</a>
+  if (demopath) {
+    demoLink = <a href={demopath}>Demo</a>
   }
 
   return (
     <div className='repo-item'>
-      <h3 className='repo-item-heading'><a href={props.repopath}>{props.title}</a></h3>
+      <h3 className='repo-item-heading'><a href={repopath}>{title}</a></h3>
       <p
         className='repo-item-content'
-        dangerouslySetInnerHTML={{__html: props.desc}}
+        dangerouslySetInnerHTML={{__html: desc}}
       />
-      {demo}
+      {demoLink}
     </div>
   )
 }

@@ -12,34 +12,32 @@ import SkillsContainer from '../containers/SkillsContainer'
 import SocialContainer from '../containers/SocialContainer'
 import WorkContainer from '../containers/WorkContainer'
 
-const Layout = () => {
-  return (
-    <div className='layout'>
-      <Header />
+const Layout = () => (
+  <div className='layout'>
+    <Header />
 
-      <div className='container'>
-        <DisplayContainer />
+    <div className='container'>
+      <DisplayContainer />
 
-        <section>
-          <DownloadButton
-            path='/dist/Kyle_Shevlin_Resume.pdf'
-            text='Download Resume PDF'
-          />
-          <SocialContainer />
-          <Overview />
-        </section>
+      <section>
+        <DownloadButton
+          path='/dist/Kyle_Shevlin_Resume.pdf'
+          text='Download Resume PDF'
+        />
+        <SocialContainer />
+        <Overview />
+      </section>
 
-        <SkillsContainer />
-        <WorkContainer />
-        <EducationContainer />
-        <ReferencesContainer />
-        <ProjectsContainer />
-        <SitesContainer />
-      </div>
-
-      <Footer />
+      <SkillsContainer />
+      <WorkContainer />
+      <EducationContainer />
+      <ReferencesContainer />
+      <ProjectsContainer />
+      <SitesContainer />
     </div>
-  )
-}
+
+    <Footer />
+  </div>
+)
 
 export default Layout

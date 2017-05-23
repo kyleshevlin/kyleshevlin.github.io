@@ -2,36 +2,29 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-const SiteItem = (props) => {
+const SiteItem = ({
+  title,
+  path,
+  comingsoon,
+  award
+}) => {
   const classes = classNames(
     'site-item',
-    { 'is-coming-soon': props.comingsoon }
+    { 'is-coming-soon': comingsoon }
   )
   let heading
-  let comingSoon = null
-  let award = null
+  let comingSoonSpan = null
+  let awardSpan = null
 
-  if (props.comingsoon) {
-    heading = (
-      <span className='site-item-heading-span'>
-        {props.title}
-      </span>
-    )
-
-    comingSoon = <span className='site-item-coming_soon'> &mdash; Coming Soon</span>
+  if (comingsoon) {
+    heading = <span className='site-item-heading-span'>{title}</span>
+    comingSoonSpan = <span className='site-item-coming_soon'> &mdash; Coming Soon</span>
   } else {
-    heading = (
-      <a
-        className='site-item-heading-link'
-        href={props.path}
-      >
-        {props.title}
-      </a>
-    )
+    heading = <a className='site-item-heading-link' href={path}>{title}</a>
   }
 
-  if (props.award) {
-    award = <span className='site-item-award'> &mdash; CommArts Award Winner</span>
+  if (award) {
+    awardSpan = <span className='site-item-award'> &mdash; CommArts Award Winner</span>
   }
 
   return (
@@ -39,8 +32,8 @@ const SiteItem = (props) => {
       <h3 className='site-item-heading'>
         {heading}
       </h3>
-      {comingSoon}
-      {award}
+      {comingSoonSpan}
+      {awardSpan}
     </div>
   )
 }

@@ -1,17 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Social = (props) => {
-  return (
-    <div>
-      <ul>
-        {props.social_media.map((item, index) => {
-          return <li key={index}>{item.title}: <a href={item.path}>{item.path}</a></li>
-        })}
-      </ul>
-    </div>
-  )
-}
+const Social = ({ social_media }) => (
+  <div>
+    <ul>
+      {social_media.map(({ title, path }) => <li key={title}>{title}: <a href={path}>{path}</a></li>)}
+    </ul>
+  </div>
+)
 
 Social.propTypes = {
   social_media: PropTypes.array

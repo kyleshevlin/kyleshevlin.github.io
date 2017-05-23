@@ -1,15 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ReferenceItem = (props) => {
-  return (
-    <div className='reference-item'>
-      <strong>{props.name}</strong> &mdash; {props.title}<br />
-      <a href={`mailto:${props.email}`}>{props.email}</a><br />
-      <a href={`http://twitter.com/${props.twitter}`}>@{props.twitter}</a>
-    </div>
-  )
-}
+const ReferenceItem = ({
+  name,
+  title,
+  email,
+  twitter
+}) => (
+  <div className='reference-item'>
+    <strong>{name}</strong> &mdash; {title}<br />
+    <a href={`mailto:${email}`}>{email}</a><br />
+    <a href={`http://twitter.com/${twitter}`}>@{twitter}</a>
+  </div>
+)
 
 ReferenceItem.propTypes = {
   name: PropTypes.string,
