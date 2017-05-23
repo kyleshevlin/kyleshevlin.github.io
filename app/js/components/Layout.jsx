@@ -1,4 +1,4 @@
-import React from 'react'
+import { h } from 'preact'
 import Header from './Header'
 import Footer from './Footer'
 import DisplayContainer from '../containers/DisplayContainer'

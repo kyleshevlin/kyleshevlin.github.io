@@ -1,4 +1,4 @@
-import React from 'react'
+import { h } from 'preact'
 
 const Footer = () => (
   <footer className='footer'>
@@ -9,7 +9,7 @@ const Footer = () => (
         </p>
 
         <p>
-          Built with <a href='https://facebook.github.io/react/'>React</a>, <a href='https://webpack.js.org/'>Webpack</a>, <a href='http://sass-lang.com/'>Sass</a>, and <a href='https://d3js.org/'>D3</a>
+          Built with <a href='https://preactjs.com/'>Preact</a>, <a href='https://webpack.js.org/'>Webpack</a>, <a href='http://sass-lang.com/'>Sass</a>, and <a href='https://d3js.org/'>D3</a>
         </p>
       </section>
     </div>

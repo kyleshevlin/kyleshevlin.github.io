@@ -16,6 +16,10 @@ module.exports = env => {
       publicPath: '/'
     },
     resolve: {
+      alias: {
+        "react": "preact-compat",
+        "react-dom": "preact-compat"
+      },
       extensions: ['.js', '.jsx', '.json']
     },
     stats: {

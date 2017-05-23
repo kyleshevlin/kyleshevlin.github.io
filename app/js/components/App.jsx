@@ -1,4 +1,4 @@
-import React from 'react'
+import { h } from 'preact'
 import { Provider } from 'react-redux'
 import store from '../store'
 import LayoutContainer from '../containers/LayoutContainer'

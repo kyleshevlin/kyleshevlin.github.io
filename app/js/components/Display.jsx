@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
 import { select } from 'd3-selection'
 import { months } from '../helpers'
