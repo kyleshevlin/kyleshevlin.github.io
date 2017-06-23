@@ -8,7 +8,7 @@ import { transition } from 'd3-transition'
 const t = transition().duration(300)
 
 const largeVisual = () => {
-  let margin = { top: 50, right: 50, bottom: 75, left: 50 }
+  let margin = { top: 50, right: 75, bottom: 75, left: 50 }
   let width = 800 - margin.left - margin.right
   let height = 500 - margin.top - margin.bottom
   let className = 'visual'
