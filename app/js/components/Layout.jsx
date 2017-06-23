@@ -6,7 +6,6 @@ import DownloadButton from './DownloadButton'
 import Overview from './Overview'
 import EducationContainer from '../containers/EducationContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
-import ReferencesContainer from '../containers/ReferencesContainer'
 import SitesContainer from '../containers/SitesContainer'
 import SkillsContainer from '../containers/SkillsContainer'
 import SocialContainer from '../containers/SocialContainer'
@@ -31,7 +30,6 @@ const Layout = () => (
       <SkillsContainer />
       <WorkContainer />
       <EducationContainer />
-      <ReferencesContainer />
       <ProjectsContainer />
       <SitesContainer />
     </div>

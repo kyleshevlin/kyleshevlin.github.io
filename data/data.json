@@ -212,26 +212,6 @@
       }
     ]
   },
-  "references": [
-    {
-      "name": "James Kurczodyna",
-      "title": "Director of Technology",
-      "email": "james@wearefine.com",
-      "twitter": "jamesmk"
-    },
-    {
-      "name": "Mark Hoffman",
-      "title": "Director of Interactive Development",
-      "email": "mark@wearefine.com",
-      "twitter": "code_mischief"
-    },
-    {
-      "name": "Niles McGiver",
-      "title": "Back End Developer",
-      "email": "niles@wearefine.com",
-      "twitter": "nilesvm"
-    }
-  ],
   "sites": [
     { "title": "Second Story", "path": "https://secondstory.com" },
     { "title": "McKibbon Hotels", "path": "http://www.mckibbon.com/" },
