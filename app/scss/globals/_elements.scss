@@ -26,6 +26,7 @@ body {
 a {
   color: $c-brand;
   text-decoration: none;
+  overflow-wrap: break-word;
   position: relative;
   transition: color .3s ease;
 
