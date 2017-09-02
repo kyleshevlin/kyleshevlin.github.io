@@ -13,9 +13,8 @@ class Display extends Component {
       const display = select('.js-display')
       const data = this.props.experience
 
-      // This is a mutation, I should think of a better way to do this
-      data.forEach((d) => {
-        d.months = months(d.months)
+      data.forEach(d => {
+        d.months = months(d.startDate)
       })
 
       const desktopVisual = largeVisual()
@@ -53,7 +52,7 @@ class Display extends Component {
     return (
       <div className='display-wrap'>
         <div className='display-blank_space' />
-        <div ref={(r) => { this.nodeRef = r }} className='display js-display' />
+        <div ref={r => { this.nodeRef = r }} className='display js-display' />
       </div>
     )
   }

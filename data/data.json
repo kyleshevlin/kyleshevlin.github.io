@@ -17,127 +17,127 @@
   "experience": [
     {
       "name": "HTML",
-      "months": "2012-01-01",
+      "startDate": "2012-01-01",
       "expertise": 90,
       "interest": 10
     },
     {
       "name": "CSS",
-      "months": "2012-01-01",
+      "startDate": "2012-01-01",
       "expertise": 90,
       "interest": 50
     },
     {
       "name": "JavaScript",
-      "months": "2012-06-01",
+      "startDate": "2012-06-01",
       "expertise": 90,
       "interest": 100
     },
     {
       "name": "Sass",
-      "months": "2013-01-01",
+      "startDate": "2013-01-01",
       "expertise": 100,
       "interest": 60
     },
     {
       "name": "WordPress",
-      "months": "2013-01-01",
+      "startDate": "2013-01-01",
       "expertise": 50,
       "interest": 25
     },
     {
       "name": "PHP",
-      "months": "2013-01-01",
+      "startDate": "2013-01-01",
       "expertise": 50,
       "interest": 5
     },
     {
       "name": "Rails",
-      "months": "2013-06-01",
+      "startDate": "2013-06-01",
       "expertise": 85,
       "interest": 75
     },
     {
       "name": "Git",
-      "months": "2013-06-01",
+      "startDate": "2013-06-01",
       "expertise": 75,
       "interest": 55
     },
     {
       "name": "Bash",
-      "months": "2013-06-01",
+      "startDate": "2013-06-01",
       "expertise": 50,
       "interest": 70
     },
     {
       "name": "JS MVCs",
-      "months": "2014-06-01",
+      "startDate": "2014-06-01",
       "expertise": 75,
       "interest": 100
     },
     {
       "name": "Ember",
-      "months": "2014-09-01",
+      "startDate": "2014-09-01",
       "expertise": 70,
       "interest": 45
     },
     {
       "name": "Rails API",
-      "months": "2015-04-01",
+      "startDate": "2015-04-01",
       "expertise": 50,
       "interest": 75
     },
     {
       "name": "D3",
-      "months": "2015-09-01",
+      "startDate": "2015-09-01",
       "expertise": 60,
       "interest": 100
     },
     {
       "name": "TDD",
-      "months": "2016-04-01",
+      "startDate": "2016-04-01",
       "expertise": 40,
       "interest": 60
     },
     {
       "name": "React",
-      "months": "2016-08-01",
+      "startDate": "2016-08-01",
       "expertise": 95,
       "interest": 100
     },
     {
       "name": "Webpack",
-      "months": "2016-08-15",
+      "startDate": "2016-08-15",
       "expertise": 50,
       "interest": 75
     },
     {
       "name": "Redux",
-      "months": "2016-09-01",
+      "startDate": "2016-09-01",
       "expertise": 85,
       "interest": 100
     },
     {
       "name": "Node",
-      "months": "2016-09-15",
+      "startDate": "2016-09-15",
       "expertise": 60,
       "interest": 85
     },
     {
       "name": "Express",
-      "months": "2016-10-01",
+      "startDate": "2016-10-01",
       "expertise": 50,
       "interest": 80
     },
     {
       "name": "RxJS",
-      "months": "2017-01-01",
+      "startDate": "2017-01-01",
       "expertise": 30,
       "interest": 70
     },
     {
       "name": "FP",
-      "months": "2017-01-15",
+      "startDate": "2017-01-15",
       "expertise": 60,
       "interest": 100
     }
@@ -247,9 +247,19 @@
   ],
   "work": [
     {
+      "company": "Fastly",
+      "location": "Portland, OR",
+      "dates": "August 2017 - Present",
+      "jobtitle": "Senior Software Engineer",
+      "points": [
+        "Member of Platform UX team",
+        "More info later, I just started :)"
+      ]
+    },
+    {
       "company": "Second Story",
       "location": "Portland, OR",
-      "dates": "September 2016 - Current",
+      "dates": "September 2016 - August 2017",
       "jobtitle": "Web and Interactive Developer",
       "points": [
         "Front end developer building React & Redux applications for web and digital interactives.",
