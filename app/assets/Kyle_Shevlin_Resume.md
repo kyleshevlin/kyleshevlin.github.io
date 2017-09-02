@@ -31,7 +31,13 @@ I am focused on becoming the best JavaScript engineer I can be. I want to work o
 
 ### Work
 
-**Second Story** - Portland, OR - September 2016 to Present
+**Fastly** - Portland, OR - August 2017 to Present
+Senior Software Engineer
+
+* Member of Platform UX team
+* Taking over front end for data visualizations
+
+**Second Story** - Portland, OR - September 2016 to August 2017
 Web and Interactive Developer
 
 * Front end JavaScript developer building React & Redux applications for web and digital interactives

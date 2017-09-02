@@ -170,37 +170,37 @@ const largeVisual = () => {
 
   chart.update = update
 
-  chart.data = (value) => {
+  chart.data = function (value) {
     if (!arguments.length) { return data }
     data = value
     return chart
   }
 
-  chart.width = (value) => {
+  chart.width = function (value) {
     if (!arguments.length) { return width }
     width = value
     return chart
   }
 
-  chart.height = (value) => {
+  chart.height = function (value) {
     if (!arguments.length) { return height }
     height = value
     return chart
   }
 
-  chart.className = (value) => {
+  chart.className = function (value) {
     if (!arguments.length) { return className }
     className = value
     return chart
   }
 
-  chart.colorOne = (value) => {
+  chart.colorOne = function (value) {
     if (!arguments.length) { return colorOne }
     colorOne = value
     return chart
   }
 
-  chart.colorTwo = (value) => {
+  chart.colorTwo = function (value) {
     if (!arguments.length) { return colorTwo }
     colorTwo = value
     return chart
