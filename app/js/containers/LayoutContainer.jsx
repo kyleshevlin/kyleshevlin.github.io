@@ -5,13 +5,13 @@ import Layout from '../components/Layout'
 import { fetchData } from '../actions'
 
 class LayoutContainer extends Component {
-  componentDidMount () {
+  componentDidMount() {
     if (!this.props.haveData) {
       this.props.fetchData()
     }
   }
 
-  render () {
+  render() {
     return <Layout />
   }
 }

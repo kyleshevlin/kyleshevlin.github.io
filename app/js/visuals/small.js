@@ -29,7 +29,7 @@ const smallVisual = () => {
   let rects
   let rectWrap
 
-  const chart = (container) => {
+  const chart = container => {
     div = container
     const wrap = div.append('div').classed(className + '-wrap', true)
 
@@ -52,7 +52,8 @@ const smallVisual = () => {
     const inputWrapOne = form.append('div').classed('input', true)
     const inputWrapTwo = form.append('div').classed('input', true)
 
-    inputWrapOne.append('label')
+    inputWrapOne
+      .append('label')
       .attr('for', 'months')
       .text('Months')
     inputWrapOne
@@ -62,10 +63,12 @@ const smallVisual = () => {
       .attr('id', `${className}-months`)
       .attr('checked', true)
 
-    inputWrapTwo.append('label')
+    inputWrapTwo
+      .append('label')
       .attr('for', 'expertise')
       .text('Expertise')
-    inputWrapTwo.append('input')
+    inputWrapTwo
+      .append('input')
       .attr('type', 'radio')
       .attr('name', `${className}-scale`)
       .attr('id', `${className}-expertise`)
@@ -73,54 +76,67 @@ const smallVisual = () => {
     // Legend
     const legendWidth = width
     const legendHeight = 50
-    const legendSvg = wrap.append('svg').classed('legend-svg', true)
+    const legendSvg = wrap
+      .append('svg')
+      .classed('legend-svg', true)
       .attr('width', width)
       .attr('height', legendHeight)
 
-    const gradient = legendSvg.append('defs')
+    const gradient = legendSvg
+      .append('defs')
       .append('linearGradient')
-        .attr('id', `${className}-gradient`)
-        .attr('x1', '0%')
-        .attr('y1', '0%')
-        .attr('x2', '100%')
-        .attr('y2', '0%')
-        .attr('spreadMethod', 'pad')
+      .attr('id', `${className}-gradient`)
+      .attr('x1', '0%')
+      .attr('y1', '0%')
+      .attr('x2', '100%')
+      .attr('y2', '0%')
+      .attr('spreadMethod', 'pad')
 
-    gradient.append('stop')
+    gradient
+      .append('stop')
       .attr('offset', '0%')
       .attr('stop-color', colorOne)
       .attr('stop-opacity', 1)
 
-    gradient.append('stop')
+    gradient
+      .append('stop')
       .attr('offset', '50%')
       .attr('stop-color', d => fill(50))
       .attr('stop-opacity', 1)
 
-    gradient.append('stop')
+    gradient
+      .append('stop')
       .attr('offset', '100%')
       .attr('stop-color', colorTwo)
       .attr('stop-opacity', 1)
 
-    const legend = legendSvg.append('g').classed('legend', true)
+    const legend = legendSvg
+      .append('g')
+      .classed('legend', true)
       .attr('width', legendWidth)
 
-    const interest = legend.append('g').classed('legend-interest', true)
+    const interest = legend
+      .append('g')
+      .classed('legend-interest', true)
       .attr('transform', 'translate(0, 25)')
 
-    interest.append('text').classed('legend-interest-heading', true)
+    interest
+      .append('text')
+      .classed('legend-interest-heading', true)
       .attr('x', legendWidth / 2)
       .attr('text-anchor', 'middle')
       .text('Interest')
 
-    interest.append('text')
-      .text('Lower')
+    interest.append('text').text('Lower')
 
-    interest.append('text')
+    interest
+      .append('text')
       .attr('x', legendWidth)
       .attr('text-anchor', 'end')
       .text('Higher')
 
-    interest.append('rect')
+    interest
+      .append('rect')
       .attr('width', legendWidth)
       .attr('height', 10)
       .attr('fill', `url(#${className}-gradient)`)
@@ -133,18 +149,20 @@ const smallVisual = () => {
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
 
-    g = svg.append('g')
+    g = svg
+      .append('g')
       .attr('transform', `translate(${margin.left}, ${margin.top})`)
 
     rectGroup = g.append('g').classed('rect-group', true)
 
     xAxisGroup = g.append('g').classed('axis-group', true)
-    xAxis = axisTop()
-      .scale(xScale)
+    xAxis = axisTop().scale(xScale)
     xAxisGroup.call(xAxis)
 
-    xLabel = g.append('text').text('Months')
-      .attr('transform', `translate(${(width / 2)}, ${(margin.top - 2) * -1})`)
+    xLabel = g
+      .append('text')
+      .text('Months')
+      .attr('transform', `translate(${width / 2}, ${(margin.top - 2) * -1})`)
       .attr('text-anchor', 'middle')
       .attr('dy', '1em')
 
@@ -152,50 +170,58 @@ const smallVisual = () => {
   }
 
   const update = () => {
-    rects = rectGroup.selectAll('.rect-wrap')
-      .data(data)
+    rects = rectGroup.selectAll('.rect-wrap').data(data)
 
-    rectWrap = rects.enter()
-      .append('g').classed('rect-wrap', true)
+    rectWrap = rects
+      .enter()
+      .append('g')
+      .classed('rect-wrap', true)
 
-    rectWrap.append('rect').classed('rect', true)
+    rectWrap
+      .append('rect')
+      .classed('rect', true)
       .attr('x', 0)
-      .attr('y', (d, i) => yScale(i + 1) - (rectHeight / 2))
+      .attr('y', (d, i) => yScale(i + 1) - rectHeight / 2)
       .attr('width', 0)
       .attr('height', rectHeight)
       .attr('fill', d => fill(d.interest))
-      .transition(t).delay((d, i) => i * 100)
+      .transition(t)
+      .delay((d, i) => i * 100)
       .attr('width', d => xScale(d.months))
 
-    rectWrap.append('title')
-      .text(d => d.name)
+    rectWrap.append('title').text(d => d.name)
 
-    rectWrap.append('text').classed('rect-label', true)
+    rectWrap
+      .append('text')
+      .classed('rect-label', true)
       .attr('x', 5)
-      .attr('y', (d, i) => yScale(i + 1) + (rectHeight / 2))
+      .attr('y', (d, i) => yScale(i + 1) + rectHeight / 2)
       .attr('dy', '-.45em')
       .text(d => d.name)
 
     rects.exit().remove()
 
     // Actions
-    rectWrap.on('mouseover', function (d) {
+    rectWrap.on('mouseover', function(d) {
       select('.rect-group').classed('is-active', true)
-      select(this).select('.rect').classed('is-active', true)
+      select(this)
+        .select('.rect')
+        .classed('is-active', true)
     })
 
-    rectWrap.on('mouseout', function (d) {
+    rectWrap.on('mouseout', function(d) {
       select('.rect-group').classed('is-active', false)
-      select(this).select('.rect').classed('is-active', false)
+      select(this)
+        .select('.rect')
+        .classed('is-active', false)
     })
 
-    selectAll(`input[name='${className}-scale']`)
-      .on('change', function () {
-        toggle(select(this).attr('id'))
-      })
+    selectAll(`input[name='${className}-scale']`).on('change', function() {
+      toggle(select(this).attr('id'))
+    })
   }
 
-  const toggle = (value) => {
+  const toggle = value => {
     let domain
     let label
     let property
@@ -214,44 +240,55 @@ const smallVisual = () => {
     xLabel.text(label)
     xAxis.scale(xScale)
     xAxisGroup.transition().call(xAxis)
-    rectWrap.selectAll('.rect')
-      .attr('width', d => xScale(d[property]))
+    rectWrap.selectAll('.rect').attr('width', d => xScale(d[property]))
   }
 
   chart.update = update
 
-  chart.data = (value) => {
-    if (!arguments.length) { return data }
+  chart.data = value => {
+    if (!arguments.length) {
+      return data
+    }
     data = value
     return chart
   }
 
-  chart.width = (value) => {
-    if (!arguments.length) { return width }
+  chart.width = value => {
+    if (!arguments.length) {
+      return width
+    }
     width = value
     return chart
   }
 
-  chart.height = (value) => {
-    if (!arguments.length) { return height }
+  chart.height = value => {
+    if (!arguments.length) {
+      return height
+    }
     height = value
     return chart
   }
 
-  chart.className = (value) => {
-    if (!arguments.length) { return className }
+  chart.className = value => {
+    if (!arguments.length) {
+      return className
+    }
     className = value
     return chart
   }
 
-  chart.colorOne = (value) => {
-    if (!arguments.length) { return colorOne }
+  chart.colorOne = value => {
+    if (!arguments.length) {
+      return colorOne
+    }
     colorOne = value
     return chart
   }
 
-  chart.colorTwo = (value) => {
-    if (!arguments.length) { return colorTwo }
+  chart.colorTwo = value => {
+    if (!arguments.length) {
+      return colorTwo
+    }
     colorTwo = value
     return chart
   }

@@ -1,12 +1,7 @@
 import { h } from 'preact'
 import PropTypes from 'prop-types'
 
-const RepoItem = ({
-  title,
-  repopath,
-  desc,
-  demopath
-}) => {
+const RepoItem = ({ title, repopath, desc, demopath }) => {
   let demoLink = null
 
   if (demopath) {
@@ -14,11 +9,13 @@ const RepoItem = ({
   }
 
   return (
-    <div className='repo-item'>
-      <h3 className='repo-item-heading'><a href={repopath}>{title}</a></h3>
+    <div className="repo-item">
+      <h3 className="repo-item-heading">
+        <a href={repopath}>{title}</a>
+      </h3>
       <p
-        className='repo-item-content'
-        dangerouslySetInnerHTML={{__html: desc}}
+        className="repo-item-content"
+        dangerouslySetInnerHTML={{ __html: desc }}
       />
       {demoLink}
     </div>

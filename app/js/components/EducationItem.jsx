@@ -1,13 +1,7 @@
 import { h } from 'preact'
 import PropTypes from 'prop-types'
 
-const EducationItem = ({
-  teaser,
-  degree,
-  school,
-  city,
-  year
-}) => {
+const EducationItem = ({ teaser, degree, school, city, year }) => {
   let teaserSpan = null
 
   if (teaser) {
@@ -15,8 +9,10 @@ const EducationItem = ({
   }
 
   return (
-    <div className='education-item'>
-      <strong>{degree}</strong>{teaserSpan}<br />
+    <div className="education-item">
+      <strong>{degree}</strong>
+      {teaserSpan}
+      <br />
       {school} - {city} - {year}
     </div>
   )

@@ -6,7 +6,7 @@ import largeVisual from '../visuals/large'
 import smallVisual from '../visuals/small'
 
 class Display extends Component {
-  addDisplays () {
+  addDisplays() {
     if (this.props.haveData) {
       const colorOne = '#0a2029'
       const colorTwo = '#33a1cc'
@@ -40,19 +40,24 @@ class Display extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.addDisplays()
   }
 
-  componentDidUpdate () {
+  componentDidUpdate() {
     this.addDisplays()
   }
 
-  render () {
+  render() {
     return (
-      <div className='display-wrap'>
-        <div className='display-blank_space' />
-        <div ref={r => { this.nodeRef = r }} className='display js-display' />
+      <div className="display-wrap">
+        <div className="display-blank_space" />
+        <div
+          ref={r => {
+            this.nodeRef = r
+          }}
+          className="display js-display"
+        />
       </div>
     )
   }

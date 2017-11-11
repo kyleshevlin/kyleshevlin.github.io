@@ -17,8 +17,8 @@ module.exports = env => {
     },
     resolve: {
       alias: {
-        "react": "preact-compat",
-        "react-dom": "preact-compat"
+        react: 'preact-compat',
+        'react-dom': 'preact-compat'
       },
       extensions: ['.js', '.jsx', '.json']
     },
@@ -48,7 +48,8 @@ module.exports = env => {
           test: /\.scss$/,
           loader: ExtractTextPlugin.extract({
             fallback: 'style-loader',
-            use: 'css-loader?sourceMap!postcss-loader?sourceMap!sass-loader?sourceMap'
+            use:
+              'css-loader?sourceMap!postcss-loader?sourceMap!sass-loader?sourceMap'
           })
         },
         {
@@ -62,12 +63,14 @@ module.exports = env => {
     },
     plugins: [
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+        'process.env.NODE_ENV': JSON.stringify(
+          process.env.NODE_ENV || 'development'
+        )
       }),
       new ExtractTextPlugin('style.css'),
       new HtmlWebpackPlugin({
         template: './templates/index.ejs',
-        title: 'Kyle Shevlin - Front End Web Developer with Full Stack Skills'
+        title: 'Kyle Shevlin - Front End JavaScript Engineer'
       }),
       new CopyWebpackPlugin([
         {

@@ -1,7 +1,6 @@
 import { h } from 'preact'
 import Header from './Header'
 import Footer from './Footer'
-import DisplayContainer from '../containers/DisplayContainer'
 import DownloadButton from './DownloadButton'
 import Overview from './Overview'
 import EducationContainer from '../containers/EducationContainer'
@@ -12,18 +11,16 @@ import SocialContainer from '../containers/SocialContainer'
 import WorkContainer from '../containers/WorkContainer'
 
 const Layout = () => (
-  <div className='layout'>
+  <div className="layout">
     <Header />
 
-    <div className='container'>
-      <DisplayContainer />
-
+    <div className="container">
       <section>
-        <DownloadButton
-          path='/dist/Kyle_Shevlin_Resume.pdf'
-          text='Download Resume PDF'
-        />
         <SocialContainer />
+        <DownloadButton
+          path="/dist/Kyle_Shevlin_Resume.pdf"
+          text="Download Resume PDF"
+        />
         <Overview />
       </section>
 

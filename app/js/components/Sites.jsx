@@ -5,7 +5,7 @@ import SiteItem from './SiteItem'
 const Sites = ({ sites }) => (
   <section>
     <h2>Noteworthy Websites I Have Built</h2>
-    <div className='sites'>
+    <div className="sites">
       {sites.map(item => <SiteItem key={item.title} {...item} />)}
     </div>
   </section>
