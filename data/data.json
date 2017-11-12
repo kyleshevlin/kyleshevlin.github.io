@@ -14,134 +14,6 @@
       "year": 2007
     }
   ],
-  "experience": [
-    {
-      "name": "HTML",
-      "startDate": "2012-01-01",
-      "expertise": 90,
-      "interest": 10
-    },
-    {
-      "name": "CSS",
-      "startDate": "2012-01-01",
-      "expertise": 90,
-      "interest": 50
-    },
-    {
-      "name": "JavaScript",
-      "startDate": "2012-06-01",
-      "expertise": 90,
-      "interest": 100
-    },
-    {
-      "name": "Sass",
-      "startDate": "2013-01-01",
-      "expertise": 100,
-      "interest": 60
-    },
-    {
-      "name": "WordPress",
-      "startDate": "2013-01-01",
-      "expertise": 50,
-      "interest": 25
-    },
-    {
-      "name": "PHP",
-      "startDate": "2013-01-01",
-      "expertise": 50,
-      "interest": 5
-    },
-    {
-      "name": "Rails",
-      "startDate": "2013-06-01",
-      "expertise": 85,
-      "interest": 75
-    },
-    {
-      "name": "Git",
-      "startDate": "2013-06-01",
-      "expertise": 75,
-      "interest": 55
-    },
-    {
-      "name": "Bash",
-      "startDate": "2013-06-01",
-      "expertise": 50,
-      "interest": 70
-    },
-    {
-      "name": "JS MVCs",
-      "startDate": "2014-06-01",
-      "expertise": 75,
-      "interest": 100
-    },
-    {
-      "name": "Ember",
-      "startDate": "2014-09-01",
-      "expertise": 70,
-      "interest": 45
-    },
-    {
-      "name": "Rails API",
-      "startDate": "2015-04-01",
-      "expertise": 50,
-      "interest": 75
-    },
-    {
-      "name": "D3",
-      "startDate": "2015-09-01",
-      "expertise": 60,
-      "interest": 100
-    },
-    {
-      "name": "TDD",
-      "startDate": "2016-04-01",
-      "expertise": 40,
-      "interest": 60
-    },
-    {
-      "name": "React",
-      "startDate": "2016-08-01",
-      "expertise": 95,
-      "interest": 100
-    },
-    {
-      "name": "Webpack",
-      "startDate": "2016-08-15",
-      "expertise": 50,
-      "interest": 75
-    },
-    {
-      "name": "Redux",
-      "startDate": "2016-09-01",
-      "expertise": 85,
-      "interest": 100
-    },
-    {
-      "name": "Node",
-      "startDate": "2016-09-15",
-      "expertise": 60,
-      "interest": 85
-    },
-    {
-      "name": "Express",
-      "startDate": "2016-10-01",
-      "expertise": 50,
-      "interest": 80
-    },
-    {
-      "name": "RxJS",
-      "startDate": "2017-01-01",
-      "expertise": 30,
-      "interest": 70
-    },
-    {
-      "name": "FP",
-      "startDate": "2017-01-15",
-      "expertise": 60,
-      "interest": 100
-    }
-  ],
   "projects": {
     "personal": [
       {
@@ -230,14 +102,12 @@
     { "title": "Anchor Brewing", "path": "http://anchorbrewing.com" }
   ],
   "skills": [
-    "Strong front-end developer: HTML and templating languages, CSS/Sass/PostCSS, JavaScript/ES6",
-    "Solid experience with React, Redux, Ember and Rails on production-level projects",
-    "Experience with Test Driven Development",
-    "Experience with Git and SVN version control, code reviews, pull requests, pair programming and more",
-    "Creator and maintainer of several Ruby gems and Bower packages",
-    "Contributor to several open source projects",
-    "Highly skilled in creating front-end systems that are responsive, mobile-first, cross browser compatible applications",
-    "Code is always well documented, styleguides always followed, and kept clean for the next developer on the project",
+    "Strong UI engineer focused on JavaScript applications",
+    "Expertise in React and Redux",
+    "Passionate about functional programming",
+    "Creator, maintainer, and contributor to several OSS projects",
+    "Highly skilled in custom, maintainable, scalable, and responsive front end architecture",
+    "Clean code advocate",
     "Excellent communicator and teacher; Able to facilitate dialogue across disciplines"
   ],
   "social_media": [
@@ -252,8 +122,8 @@
       "dates": "August 2017 - Present",
       "jobtitle": "Senior Software Engineer",
       "points": [
-        "Member of Platform UX team",
-        "More info later, I just started :)"
+        "Senior JavaScript Engineer for the Application Engineering team",
+        "Implemented graphs for Fastly's Image Optimization feature"
       ]
     },
     {
@@ -262,22 +132,23 @@
       "dates": "September 2016 - August 2017",
       "jobtitle": "Web and Interactive Developer",
       "points": [
-        "Front end developer building React & Redux applications for web and digital interactives.",
-        "Lead developer for company's new brand site. Built with React and Redux and server side rendering.",
-        "Lead developer for touch table interactive built with React, Redux, Electron, and WebSockets."
+        "Lead developer for Second Story's brand site. Built with React and Redux and server side rendering",
+        "Lead developer for Holland America's cruise line interactives built with React, Redux, Electron, and WebSockets"
       ]
     },
     {
       "company": "FINE",
       "location": "Portland, OR",
-      "dates": "November 2013 to July 2016",
+      "dates": "November 2013 - July 2016",
       "jobtitle": "Front End Web Developer",
       "points": [
-        "Front End Developer and Tech Lead for numerous projects. Crafted templates and views, built CSS/Sass from the ground up, scaffolded models, wired controllers, and wrote all JavaScript from start to finish.",
-        "Lead developer on several projects. Full stack Ruby on Rails development.",
-        "Initiated and crafted front end standards for company.",
-        "Developed and contributed to company's open source projects.",
-        "Built internal tools and processes to maximize personal and team efficiency and increase developer happiness."
+        "Front end UI developer for Ruby on Rails applications.",
+        "Focused on custom, maintainable CSS/SCSS architecture",
+        "Promoted to full stack responsibilities",
+        "Lead developer on several projects",
+        "Initiated and crafted front end standards for company",
+        "Developed and contributed to company's open source projects",
+        "Built internal tools and processes to maximize personal and team efficiency and increase developer happiness"
       ]
     }
   ]

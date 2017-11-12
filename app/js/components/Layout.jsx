@@ -16,11 +16,11 @@ const Layout = () => (
 
     <div className="container">
       <section>
-        <SocialContainer />
         <DownloadButton
           path="/dist/Kyle_Shevlin_Resume.pdf"
           text="Download Resume PDF"
         />
+        <SocialContainer />
         <Overview />
       </section>
 

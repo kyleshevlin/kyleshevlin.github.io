@@ -5,7 +5,6 @@ const initialState = {
   haveData: false,
   data: {
     education: [],
-    experience: [],
     projects: {
       personal: [],
       open_source: []

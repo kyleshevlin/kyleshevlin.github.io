@@ -5,7 +5,8 @@
 .download_button {
   background-color: $c-brand;
   color: $c-white;
-  padding: 15px 25px;
+  font-size: .85rem;
+  padding: bs(.5) bs(.75);
   border-radius: 4px;
   transition: background-color .3s ease;
 

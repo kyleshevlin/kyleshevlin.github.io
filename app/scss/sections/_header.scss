@@ -4,4 +4,13 @@
 
 .header {
   margin: bs() 0;
+
+  &-heading {
+    line-height: 1;
+    margin-bottom: bs(.5);
+
+    &-link {
+      display: inline-block;
+    }
+  }
 }
