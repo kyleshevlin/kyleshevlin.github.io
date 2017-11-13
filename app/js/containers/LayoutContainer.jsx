@@ -12,7 +12,7 @@ class LayoutContainer extends Component {
   }
 
   render() {
-    return <Layout />
+    return this.props.haveData ? <Layout /> : null
   }
 }
 

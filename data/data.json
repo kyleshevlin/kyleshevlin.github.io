@@ -17,6 +17,11 @@
   "projects": {
     "personal": [
       {
+        "title": "React 101",
+        "repopath": "https://github.com/kyleshevlin/react-101",
+        "desc": "Ongoing workshop teaching the fundamentals of React to beginner and intermediate level users via Twitch live stream."
+      },
+      {
         "title": "Shevy",
         "repopath": "https://github.com/kyleshevlin/shevy",
         "desc": "A typography/vertical rhythm Sass library. Featured in <a href=\"https://github.com/Famolus/awesome-sass\">awesome-sass</a> on Github.",
@@ -30,25 +35,8 @@
       {
         "title": "Matchbox",
         "repopath": "https://github.com/kyleshevlin/matchbox",
-        "desc": "A vanilla JavaScript plugin for... well... matching the height of boxes.",
+        "desc": "A vanilla JavaScript plugin for... well... matching the height of boxes. Not as useful now that Flexbox and CSS Grids are fully implemented.",
         "demopath": "/matchbox"
-      },
-      {
-        "title": "Condo",
-        "repopath": "https://github.com/kyleshevlin/condo",
-        "desc": "A micro Sass grid library.",
-        "demopath": "/condo"
-      },
-      {
-        "title": "Componentize",
-        "repopath": "https://github.com/kyleshevlin/componentize",
-        "desc": "Rails generator for inline and block components; similar to Ember-CLI's component generator"
-      },
-      {
-        "title": "Ripsum",
-        "repopath": "https://github.com/kyleshevlin/ripsum",
-        "desc": "Ruby gem for generating random amounts of lorem ipsum with each page load.",
-        "demopath": "/ripsum"
       }
     ],
     "open_source": [
@@ -61,26 +49,6 @@
         "title": "Reactiflux.com",
         "repopath": "https://github.com/reactiflux/reactiflux.com",
         "desc": "Website for the Reactiflux community"
-      },
-      {
-        "title": "Async Reactor",
-        "repopath": "https://github.com/xtuc/async-reactor",
-        "desc": "Render async stateless functional components"
-      },
-      {
-        "title": "ShipShapeCode / Ember-3D-Nav",
-        "repopath": "https://github.com/shipshapecode/ember-3d-nav",
-        "desc": "Ember addon for a simple, yet configurable, 3d navigation"
-      },
-      {
-        "title": "Rails API / Active Model Serializers",
-        "repopath": "https://github.com/rails-api/active_model_serializers",
-        "desc": "ActiveModel::Serializer implementation and Rails hooks"
-      },
-      {
-        "title": "WeAreFINE / FAE",
-        "repopath": "https://github.com/wearefine/fae",
-        "desc": "A flexible CMS for Rails"
       },
       {
         "title": "WeAreFINE / Frob Core",
