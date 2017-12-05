@@ -1,4 +1,6 @@
 import { h } from 'preact'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import Header from './Header'
 import Footer from './Footer'
 import DownloadButton from './DownloadButton'
@@ -10,8 +12,8 @@ import SkillsContainer from '../containers/SkillsContainer'
 import SocialContainer from '../containers/SocialContainer'
 import WorkContainer from '../containers/WorkContainer'
 
-const Layout = () => (
-  <div className="layout">
+const Layout = ({ isNightMode }) => (
+  <div className={isNightMode ? 'layout is-night-mode' : 'layout'}>
     <Header />
 
     <div className="container">
@@ -35,4 +37,12 @@ const Layout = () => (
   </div>
 )
 
-export default Layout
+Layout.propTypes = {
+  isNightMode: PropTypes.bool.isRequired
+}
+
+const mapStateToProps = state => ({
+  isNightMode: state.isNightMode
+})
+
+export default connect(mapStateToProps)(Layout)

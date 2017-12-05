@@ -1,0 +1,41 @@
+//////////////////////////////
+// Nightmode Toggle
+//////////////////////////////
+
+.nightmode_toggle {
+  display: inline-block;
+  height: 38px; // for outline's sake
+  background: none;
+  color: currentColor;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+
+  &-wrap {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &-text {
+    display: none;
+
+    @include bp(alpha) {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: $f-cata;
+      font-size: .75em;
+      margin-right: bs(.25);
+    }
+  }
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: auto;
+    fill: $c-brand;
+    stroke: $c-brand;
+    transform: rotate(-135deg);
+  }
+}

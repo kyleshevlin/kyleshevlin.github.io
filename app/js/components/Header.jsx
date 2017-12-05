@@ -1,4 +1,5 @@
 import { h } from 'preact'
+import NightModeToggle from './NightModeToggle'
 
 const Header = () => (
   <header className="header">
@@ -12,6 +13,7 @@ const Header = () => (
         </a>
       </h1>
       <h2 className="header-subheading">Front End JavaScript Engineer</h2>
+      <NightModeToggle />
     </div>
   </header>
 )

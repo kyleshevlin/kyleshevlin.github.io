@@ -3,7 +3,7 @@
 //////////////////////////////
 
 .header {
-  margin: bs() 0;
+  padding: bs() 0;
 
   &-heading {
     line-height: 1;
@@ -12,5 +12,9 @@
     &-link {
       display: inline-block;
     }
+  }
+
+  &-subheading {
+    margin-bottom: 0;
   }
 }

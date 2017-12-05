@@ -21,3 +21,7 @@ export function fetchData() {
       )
   }
 }
+
+export function toggleNightMode() {
+  return { type: types.TOGGLE_NIGHT_MODE }
+}

@@ -1,0 +1,14 @@
+//////////////////////////////
+// Layout
+//////////////////////////////
+
+.layout {
+  background: $c-white;
+  color: $c-black;
+  transition: all .3s ease;
+
+  &.is-night-mode {
+    background: $c-dark-gray;
+    color: $c-white;
+  }
+}

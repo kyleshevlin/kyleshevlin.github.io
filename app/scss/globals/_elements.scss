@@ -18,11 +18,6 @@ html {
   }
 }
 
-body {
-  background: $c-white;
-  color: $c-black;
-}
-
 a {
   color: $c-brand;
   text-decoration: none;
@@ -86,7 +81,7 @@ ul {
 }
 
 blockquote {
-  background: $c-light-brand;
+  background: rgba($c-brand, .15);
   font-family: $f-cata;
   font-style: italic;
   padding: bs();

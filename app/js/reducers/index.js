@@ -14,7 +14,8 @@ const initialState = {
     skills: [],
     social_media: [],
     work: []
-  }
+  },
+  isNightMode: false
 }
 
 export default function(state = initialState, action) {
@@ -28,6 +29,12 @@ export default function(state = initialState, action) {
         waitingForData: false,
         haveData: true,
         data: action.data
+      }
+
+    case types.TOGGLE_NIGHT_MODE:
+      return {
+        ...state,
+        isNightMode: !state.isNightMode
       }
 
     default:
