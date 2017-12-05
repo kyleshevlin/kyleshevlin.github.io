@@ -19,12 +19,14 @@
       {
         "title": "React 101",
         "repopath": "https://github.com/kyleshevlin/react-101",
-        "desc": "Ongoing workshop teaching the fundamentals of React to beginner and intermediate level users via Twitch live stream."
+        "desc":
+          "Ongoing workshop teaching the fundamentals of React to beginner and intermediate level users via Twitch live stream."
       },
       {
         "title": "Shevy",
         "repopath": "https://github.com/kyleshevlin/shevy",
-        "desc": "A typography/vertical rhythm Sass library. Featured in <a href=\"https://github.com/Famolus/awesome-sass\">awesome-sass</a> on Github.",
+        "desc":
+          "A typography/vertical rhythm Sass library. Featured in <a href=\"https://github.com/Famolus/awesome-sass\">awesome-sass</a> on Github.",
         "demopath": "/shevy"
       },
       {
@@ -35,7 +37,8 @@
       {
         "title": "Matchbox",
         "repopath": "https://github.com/kyleshevlin/matchbox",
-        "desc": "A vanilla JavaScript plugin for... well... matching the height of boxes. Not as useful now that Flexbox and CSS Grids are fully implemented.",
+        "desc":
+          "A vanilla JavaScript plugin for... well... matching the height of boxes. Not as useful now that Flexbox and CSS Grids are fully implemented.",
         "demopath": "/matchbox"
       }
     ],
@@ -60,11 +63,11 @@
   "sites": [
     { "title": "Second Story", "path": "https://secondstory.com" },
     { "title": "McKibbon Hotels", "path": "http://www.mckibbon.com/" },
-    { "title": "Global Gourmet", "path": "http://ggcatering.com", "award": true},
+    { "title": "Global Gourmet", "path": "http://ggcatering.com", "award": true },
     { "title": "TA Associates", "path": "http://ta.com" },
     { "title": "Stag's Leap Wine Cellar", "path": "http://cask23.com", "award": true },
     { "title": "Frazier Healthcare", "path": "http://frazierhealthcare.com" },
-    { "title": "Eroica Wine", "path": "http://www.eroicawine.com/"},
+    { "title": "Eroica Wine", "path": "http://www.eroicawine.com/" },
     { "title": "Motto Wines", "path": "http://mottowines.com" },
     { "title": "Darioush", "path": "http://darioush.com", "award": true },
     { "title": "Anchor Brewing", "path": "http://anchorbrewing.com" }
@@ -81,7 +84,9 @@
   "social_media": [
     { "title": "Github", "path": "https://github.com/kyleshevlin" },
     { "title": "LinkedIn", "path": "https://www.linkedin.com/in/kyleshevlin" },
-    { "title": "Twitter", "path": "https://twitter.com/kyleshevlin"}
+    { "title": "Twitter", "path": "https://twitter.com/kyleshevlin" },
+    { "title": "Twitch", "path": "https://twitch.tv/kyleshevlin" },
+    { "title": "Second Career Devs Podcast", "path": "https://secondcareerdevs.com" }
   ],
   "work": [
     {
