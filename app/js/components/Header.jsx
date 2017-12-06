@@ -14,10 +14,6 @@ const Header = () => (
       </h1>
       <h2 className="header-subheading">Front End JavaScript Engineer</h2>
 
-      <div className='header-description'>
-        Conference Speaker, Teacher, Livecoding Twitch Streamer, and Podcast Host.
-      </div>
-
       <NightModeToggle />
     </div>
   </header>
