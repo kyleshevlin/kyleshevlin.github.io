@@ -12,6 +12,13 @@
 
 **Also Skilled In**: Node, Webpack, Sass, Ember, Ruby on Rails, d3
 
+### Other Accomplishments
+
+* Started and championed the #jobs-advice community on Reactiflux; Reactiflux MVP
+* Teaches JavaScript, React, and Redux to people via Twitch stream
+* Recently added as an Egghead.io instructor, working on first course
+* Speaker at GDG DevFest Silicon Valley 2017
+
 ### Education
 
 **MA in Theology** (Yes, you're reading that correctly. I'm a theologian turned programmer)
@@ -32,34 +39,29 @@ Senior Software Engineer
 **Second Story** - Portland, OR - September 2016 to August 2017
 Web and Interactive Developer
 
-* Lead developer for Second Story's brand site, built from scratch with React, Redux, Webpack, and server side rendering.
-* Lead developer for Holland America's Exploration Space, a touch table interactive built with React, Redux, Webpack, Electron, Websockets and can handle four concurrent users.
+* Sole developer for Second Story's brand site, built from scratch with React, Redux, Webpack, and server side rendering.
+* Sole developer for Holland America's Exploration Space, a touch table interactive built with React, Redux, Webpack, Electron, Websockets and can handle four concurrent users.
 
 **FINE** - Portland, OR - November 2013 to June 2016
 Front End Web Developer
 
-* Crafted custom views and SCSS for dozens of brand sites
-* Focused on custom, maintainable CSS/SCSS architecture
+* Crafted custom, maintainable CSS/SCSS architectures for dozens of websites
 * Created a Ruby gem (Componentize) that allowed us to create Rails components by utilizing partials. Sped up site builds by 2-3 weeks.
 * Promoted to "Full Stack". Responsible for entire project builds, all models, views, controllers, CSS and JavaScript.
-* Tech Lead and/or Lead developer on several projects
-* Initiated and crafted front end standards for company
+* Tech Lead and/or Sole developer on several projects
+* Initiated and crafted front end standards and practices for company
 * Developed and contributed to company's open source projects
-* Built internal tools and processes to maximize personal and team efficiency and increase developer happiness
 
 ### Noteworthy Repos
 
-[React 101](https://github.com/kyleshevlin/react-101)
+* [React 101](https://github.com/kyleshevlin/react-101)
 Ongoing workshop teaching the fundamentals of React to beginner and intermediate level users via Twitch live stream
-
-[Shevy](https://github.com/kyleshevlin/shevy)
+* [Shevy](https://github.com/kyleshevlin/shevy)
 A typography/vertical rhythm Sass library.
 [Demo](http://kyleshevlin.github.io/shevy)
-
-[ShevyJS](https://github.com/kyleshevlin/shevyjs)
+* [ShevyJS](https://github.com/kyleshevlin/shevyjs)
 A rebuild of Shevy for JavaScript. Specifically built for CSS-in-JS systems
-
-[Matchbox](https://github.com/kyleshevlin/matchbox)
+* [Matchbox](https://github.com/kyleshevlin/matchbox)
 A vanilla JavaScript plugin for... well... matching the height of boxes.
 [Demo](http://kyleshevlin.github.io/matchbox)
 
@@ -71,16 +73,15 @@ A vanilla JavaScript plugin for... well... matching the height of boxes.
 * [Emotion](https://github.com/emotion-js/emotion)
 * [WeAreFINE / Frob Core](https://github.com/wearefine/frob-core)
 
-### Noteworthy Websites I Have Built
+### Noteworthy Websites I Have Worked On
 
-* [Second Story](https://secondstory.com/)
-* [McKibbon Hotels](mckibbon.com)
-* [Global Gourmet](ggcatering.com) - CommArts Award Winner
-* [TA Associates](ta.com)
+* [Second Story](https://secondstory.com/) - Sole Front End Developer
+* [Global Gourmet](ggcatering.com) - CommArts Award Winner - Sole Front End Developer
+* [TA Associates](ta.com) - Sole Front End Developer
 * [Stag's Leap Wine Cellar](cask23.com) - CommArts Award Winner
-* [Frazier Healthcare](frazierhealthcare.com)
-* [Eroica Wine](www.eroicawine.com)
-* [Motto Wines](mottowines.com)
+* [Frazier Healthcare](frazierhealthcare.com) - Sole Front End Developer
+* [Eroica Wine](www.eroicawine.com) - Full Stack Developer
+* [Motto Wines](mottowines.com) - Full Stack Developer
 * [Darioush](darioush.com) - CommArts Award Winner
 * [Anchor Brewing](anchorbrewing.com)
 

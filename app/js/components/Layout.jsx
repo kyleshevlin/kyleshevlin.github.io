@@ -6,6 +6,7 @@ import NightModeToggle from './NightModeToggle'
 import Footer from './Footer'
 import DownloadSection from './DownloadSection'
 // import Overview from './Overview'
+import AccomplishmentsContainer from '../containers/AccomplishmentsContainer'
 import EducationContainer from '../containers/EducationContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
 import SitesContainer from '../containers/SitesContainer'
@@ -21,6 +22,7 @@ const Layout = ({ isNightMode }) => (
     <div className="container">
       {/* <Overview /> */}
       <SkillsContainer />
+      <AccomplishmentsContainer />
       <EducationContainer />
       <WorkContainer />
       <ProjectsContainer />

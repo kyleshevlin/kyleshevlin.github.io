@@ -1,4 +1,11 @@
 {
+  "accomplishments": [
+    "Started and championed the #jobs-advice community on Reactiflux",
+    "Reactiflux MVP",
+    "Teaches React to people via Twitch stream",
+    "Recently added as an Egghead.io instructor, working on first course",
+    "Speaker at GDG DevFest Silicon Valley 2017"
+  ],
   "education": [
     {
       "degree": "MA in Theology",
@@ -71,16 +78,69 @@
     ]
   },
   "sites": [
-    { "title": "Second Story", "path": "https://secondstory.com" },
-    { "title": "McKibbon Hotels", "path": "http://www.mckibbon.com/" },
-    { "title": "Global Gourmet", "path": "http://ggcatering.com", "award": true },
-    { "title": "TA Associates", "path": "http://ta.com" },
-    { "title": "Stag's Leap Wine Cellar", "path": "http://cask23.com", "award": true },
-    { "title": "Frazier Healthcare", "path": "http://frazierhealthcare.com" },
-    { "title": "Eroica Wine", "path": "http://www.eroicawine.com/" },
-    { "title": "Motto Wines", "path": "http://mottowines.com" },
-    { "title": "Darioush", "path": "http://darioush.com", "award": true },
-    { "title": "Anchor Brewing", "path": "http://anchorbrewing.com" }
+    {
+      "title": "Second Story",
+      "path": "https://secondstory.com",
+      "solo": {
+        "front": true
+      }
+    },
+    {
+      "title": "McKibbon Hotels",
+      "path": "http://www.mckibbon.com/"
+    },
+    {
+      "title": "Global Gourmet",
+      "path": "http://ggcatering.com",
+      "award": true,
+      "solo": {
+        "front": true
+      }
+    },
+    {
+      "title": "TA Associates",
+      "path": "http://ta.com",
+      "solo": {
+        "front": true
+      }
+    },
+    {
+      "title": "Stag's Leap Wine Cellar",
+      "path": "http://cask23.com",
+      "award": true
+    },
+    {
+      "title": "Frazier Healthcare",
+      "path": "http://frazierhealthcare.com",
+      "solo": {
+        "front": true
+      }
+    },
+    {
+      "title": "Eroica Wine",
+      "path": "http://www.eroicawine.com/",
+      "solo": {
+        "front": true,
+        "back": true
+      }
+    },
+    {
+      "title": "Motto Wines",
+      "path": "http://mottowines.com",
+      "solo": {
+        "front": true,
+        "back": true
+      }
+    },
+    {
+      "title": "Darioush",
+      "path": "http://darioush.com",
+      "award": true
+    },
+    {
+      "title": "Anchor Brewing",
+      "path": "http://anchorbrewing.com"
+    }
   ],
   "skills": {
     "primary": [
@@ -126,8 +186,8 @@
       "dates": "September 2016 - August 2017",
       "jobtitle": "Web and Interactive Developer",
       "points": [
-        "Lead developer for Second Story's brand site, built from scratch with React, Redux, Webpack, and server side rendering.",
-        "Lead developer for Holland America's Exploration Space, a touch table interactive built with React, Redux, Webpack, Electron, Websockets and can handle four concurrent users."
+        "Sole developer for Second Story's brand site, built from scratch with React, Redux, Webpack, and server side rendering.",
+        "Sole developer for Holland America's Exploration Space, a touch table interactive built with React, Redux, Webpack, Electron, Websockets and can handle four concurrent users."
       ]
     },
     {
@@ -136,14 +196,12 @@
       "dates": "November 2013 - July 2016",
       "jobtitle": "Front End Web Developer",
       "points": [
-        "Crafted custom views and SCSS for dozens of brand sites",
-        "Focused on custom, maintainable CSS/SCSS architecture",
+        "Crafted custom, maintainable CSS/SCSS architectures for dozens of websites",
         "Created a Ruby gem (Componentize) that allowed us to create Rails components by utilizing partials. Sped up site builds by 2-3 weeks.",
         "Promoted to \"Full Stack\". Responsible for entire project builds, all models, views, controllers, CSS and JavaScript.",
-        "Tech Lead and/or Lead developer on several projects",
-        "Initiated and crafted front end standards for company",
-        "Developed and contributed to company's open source projects",
-        "Built internal tools and processes to maximize personal and team efficiency and increase developer happiness"
+        "Tech Lead and/or Sole developer on several projects",
+        "Initiated and crafted front end standards and practices for company",
+        "Developed and contributed to company's open source projects"
       ]
     }
   ]
