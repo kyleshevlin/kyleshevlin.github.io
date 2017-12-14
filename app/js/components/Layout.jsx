@@ -2,9 +2,10 @@ import { h } from 'preact'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Header from './Header'
+import NightModeToggle from './NightModeToggle'
 import Footer from './Footer'
-import DownloadButton from './DownloadButton'
-import Overview from './Overview'
+import DownloadSection from './DownloadSection'
+// import Overview from './Overview'
 import EducationContainer from '../containers/EducationContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
 import SitesContainer from '../containers/SitesContainer'
@@ -15,22 +16,19 @@ import WorkContainer from '../containers/WorkContainer'
 const Layout = ({ isNightMode }) => (
   <div className={isNightMode ? 'layout is-night-mode' : 'layout'}>
     <Header />
+    <NightModeToggle />
 
     <div className="container">
-      <section>
-        <DownloadButton
-          path="/dist/Kyle_Shevlin_Resume.pdf"
-          text="Download Resume PDF"
-        />
-        <SocialContainer />
-        <Overview />
-      </section>
-
+      {/* <Overview /> */}
       <SkillsContainer />
-      <WorkContainer />
       <EducationContainer />
+      <WorkContainer />
       <ProjectsContainer />
       <SitesContainer />
+      <section>
+        <SocialContainer />
+      </section>
+      <DownloadSection />
     </div>
 
     <Footer />

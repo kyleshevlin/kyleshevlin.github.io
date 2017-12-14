@@ -49,9 +49,19 @@
         "desc": "Chrome Extension for debugging React Apps"
       },
       {
-        "title": "Reactiflux.com",
-        "repopath": "https://github.com/reactiflux/reactiflux.com",
-        "desc": "Website for the Reactiflux community"
+        "title": "a11yproject",
+        "repopath": "https://github.com/a11yproject/a11yproject.com",
+        "desc": "Making #A11Y tips and tricks easier to digest and leveraging the community into the cloud."
+      },
+      {
+        "title": "Operation Code",
+        "repopath": "https://github.com/OperationCode/operationcode_frontend",
+        "desc": "The frontend repo for Operation Code"
+      },
+      {
+        "title": "Emotion",
+        "repopath": "https://github.com/emotion-js/emotion",
+        "desc": "A powerful and fast CSS-in-JS library"
       },
       {
         "title": "WeAreFINE / Frob Core",
@@ -72,20 +82,30 @@
     { "title": "Darioush", "path": "http://darioush.com", "award": true },
     { "title": "Anchor Brewing", "path": "http://anchorbrewing.com" }
   ],
-  "skills": [
-    "Strong UI engineer focused on JavaScript applications",
-    "Expertise in React and Redux",
-    "Passionate about functional programming",
-    "Creator, maintainer, and contributor to several OSS projects",
-    "Highly skilled in custom, maintainable, scalable, and responsive front end architecture",
-    "Clean code advocate",
-    "Excellent communicator and teacher; Able to facilitate dialogue across disciplines"
-  ],
+  "skills": {
+    "primary": [
+      "Strong UI engineer",
+      "Expertise in JavaScript, React, and Redux",
+      "Passionate about functional programming",
+      "Creator, maintainer, and contributor to several OSS projects",
+      "Highly skilled in custom, maintainable, scalable, and responsive front end architecture",
+      "Excellent communicator and teacher"
+    ],
+    "secondary": [
+      "Node",
+      "Webpack",
+      "Sass",
+      "Ember",
+      "Ruby on Rails",
+      "d3"
+    ]
+  },
   "social_media": [
     { "title": "Github", "path": "https://github.com/kyleshevlin" },
     { "title": "LinkedIn", "path": "https://www.linkedin.com/in/kyleshevlin" },
     { "title": "Twitter", "path": "https://twitter.com/kyleshevlin" },
     { "title": "Twitch", "path": "https://twitch.tv/kyleshevlin" },
+    { "title": "Youtube", "path": "https://youtube.com/kyleshevlin" },
     { "title": "Second Career Devs Podcast", "path": "https://secondcareerdevs.com" }
   ],
   "work": [
@@ -95,8 +115,9 @@
       "dates": "August 2017 - Present",
       "jobtitle": "Senior Software Engineer",
       "points": [
-        "Senior JavaScript Engineer for the Application Engineering team",
-        "Implemented graphs for Fastly's Image Optimization feature"
+        "Implemented graphs in d3 that indicate a customer's usage of Fastly's Image Optimization feature",
+        "Built new UIs for various loadbalancing features",
+        "Migrated and converted components from main application into a NPM package consumable by all our front end applications"
       ]
     },
     {
@@ -105,8 +126,8 @@
       "dates": "September 2016 - August 2017",
       "jobtitle": "Web and Interactive Developer",
       "points": [
-        "Lead developer for Second Story's brand site. Built with React and Redux and server side rendering",
-        "Lead developer for Holland America's cruise line interactives built with React, Redux, Electron, and WebSockets"
+        "Lead developer for Second Story's brand site, built from scratch with React, Redux, Webpack, and server side rendering.",
+        "Lead developer for Holland America's Exploration Space, a touch table interactive built with React, Redux, Webpack, Electron, Websockets and can handle four concurrent users."
       ]
     },
     {
@@ -115,10 +136,11 @@
       "dates": "November 2013 - July 2016",
       "jobtitle": "Front End Web Developer",
       "points": [
-        "Front end UI developer for Ruby on Rails applications.",
+        "Crafted custom views and SCSS for dozens of brand sites",
         "Focused on custom, maintainable CSS/SCSS architecture",
-        "Promoted to full stack responsibilities",
-        "Lead developer on several projects",
+        "Created a Ruby gem (Componentize) that allowed us to create Rails components by utilizing partials. Sped up site builds by 2-3 weeks.",
+        "Promoted to \"Full Stack\". Responsible for entire project builds, all models, views, controllers, CSS and JavaScript.",
+        "Tech Lead and/or Lead developer on several projects",
         "Initiated and crafted front end standards for company",
         "Developed and contributed to company's open source projects",
         "Built internal tools and processes to maximize personal and team efficiency and increase developer happiness"

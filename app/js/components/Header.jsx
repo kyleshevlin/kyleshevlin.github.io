@@ -1,5 +1,4 @@
 import { h } from 'preact'
-import NightModeToggle from './NightModeToggle'
 
 const Header = () => (
   <header className="header">
@@ -14,11 +13,10 @@ const Header = () => (
       </h1>
       <h2 className="header-subheading">Front End JavaScript Engineer</h2>
 
-      <div className='header-description'>
-        Conference Speaker, Teacher, Livecoding Twitch Streamer, and Podcast Host.
+      <div className="header-description">
+        Conference and Meetup speaker, teacher, livecoding Twitch streamer, and
+        podcast host.
       </div>
-
-      <NightModeToggle />
     </div>
   </header>
 )

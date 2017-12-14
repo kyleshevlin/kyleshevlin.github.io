@@ -17,22 +17,11 @@ class NightModeToggle extends Component {
   render() {
     return (
       <div className="nightmode_toggle-wrap">
-        <button
-          className="nightmode_toggle"
-          onClick={this.handleClick}
-        >
-          <span className="nightmode_toggle-text">
-            Toggle Night Mode
-          </span>
+        <button className="nightmode_toggle" onClick={this.handleClick}>
+          <span className="nightmode_toggle-text">Toggle Night Mode</span>
           <svg className="nightmode_toggle-icon" viewBox="7 7 36 36">
             <g>
-              <circle
-                strokeWidth="3"
-                fill="none"
-                r="16"
-                cy="25"
-                cx="25"
-              />
+              <circle strokeWidth="3" fill="none" r="16" cy="25" cx="25" />
               <path
                 strokeWidth="0"
                 d="m25,9a16,16 0 0 1 0,32l0,-1.5a18,18 0 0 1 0,-29l0,-1.5z"
@@ -58,6 +47,4 @@ const mapDispatchToProps = {
   toggleNightMode
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  NightModeToggle
-)
+export default connect(mapStateToProps, mapDispatchToProps)(NightModeToggle)
