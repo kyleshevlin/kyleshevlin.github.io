@@ -12,6 +12,7 @@ import ProjectsContainer from '../containers/ProjectsContainer'
 import SitesContainer from '../containers/SitesContainer'
 import SkillsContainer from '../containers/SkillsContainer'
 import SocialContainer from '../containers/SocialContainer'
+import TalksContainer from '../containers/TalksContainer'
 import WorkContainer from '../containers/WorkContainer'
 
 const Layout = ({ isNightMode }) => (
@@ -27,6 +28,7 @@ const Layout = ({ isNightMode }) => (
       <WorkContainer />
       <ProjectsContainer />
       <SitesContainer />
+      <TalksContainer />
       <section>
         <SocialContainer />
       </section>

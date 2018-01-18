@@ -4,7 +4,8 @@
     "Reactiflux MVP",
     "Teaches JavaScript, React, and Redux to people via Twitch stream",
     "Recently added as an Egghead.io instructor, working on first course",
-    "Speaker at GDG DevFest Silicon Valley 2017"
+    "Speaker at GDG DevFest Silicon Valley 2017",
+    "Scheduled to speak at FluentConf 2018"
   ],
   "education": [
     {
@@ -167,6 +168,13 @@
     { "title": "Twitch", "path": "https://twitch.tv/kyleshevlin" },
     { "title": "Youtube", "path": "https://youtube.com/kyleshevlin" },
     { "title": "Second Career Devs Podcast", "path": "https://secondcareerdevs.com" }
+  ],
+  "talks": [
+    {
+      "title": "Just Enough Functional Programming to be a Danger to Yourself and Coworkers",
+      "url": "https://www.youtube.com/watch?v=-4QNj7TJjgo",
+      "id": "-4QNj7TJjgo"
+    }
   ],
   "work": [
     {
