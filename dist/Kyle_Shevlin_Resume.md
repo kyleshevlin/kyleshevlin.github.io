@@ -92,4 +92,4 @@ A vanilla JavaScript plugin for... well... matching the height of boxes.
 * [Twitter](https://twitter.com/kyleshevlin): https://twitter.com/kyleshevlin
 * [Twitch](https://twitch.tv/kyleshevlin): https://twitch.tv/kyleshevlin
 * [Youtube](https://youtube.com/kyleshevlin): https://youtube.com/kyleshevlin
-* [Second Career Devs Podcast](https://secondcareerdevs.com): https//secondcareerdevs.com
+* [Second Career Devs Podcast](https://secondcareerdevs.com): https://secondcareerdevs.com
