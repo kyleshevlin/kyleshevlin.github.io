@@ -3,8 +3,7 @@
 
 ### Skills
 
-* Strong UI engineer
-* Expertise in JavaScript, React, and Redux
+* Strong UI engineer; Expertise in JavaScript, React, and Redux
 * Passionate about functional programming
 * Creator, maintainer, and contributor to several OSS projects
 * Highly skilled in custom, maintainable, scalable, and responsive front end architecture
@@ -15,9 +14,10 @@
 ### Other Accomplishments
 
 * Started and championed the #jobs-advice community on Reactiflux; Reactiflux MVP
+* Speaker at GDG DevFest Silicon Valley 2017
+* Scheduled to speak at FluentConf 2018
 * Teaches JavaScript, React, and Redux to people via Twitch stream
 * Recently added as an Egghead.io instructor, working on first course
-* Speaker at GDG DevFest Silicon Valley 2017
 
 ### Education
 
