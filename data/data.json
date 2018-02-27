@@ -4,7 +4,7 @@
     "Speaker at GDG DevFest Silicon Valley 2017",
     "Scheduled to speak at FluentConf 2018",
     "Teaches JavaScript, React, and Redux to people via Twitch stream",
-    "Recently added as an Egghead.io instructor, working on first course"
+    "Egghead.io instructor"
   ],
   "education": [
     {
@@ -24,6 +24,11 @@
   "projects": {
     "personal": [
       {
+        "title": "Phomo",
+        "repopath": "https://github.com/kyleshevlin/phomo",
+        "desc": "Another JavaScript UI library for your FOMO"
+      },
+      {
         "title": "React 101",
         "repopath": "https://github.com/kyleshevlin/react-101",
         "desc":
@@ -40,13 +45,6 @@
         "title": "ShevyJS",
         "repopath": "https://github.com/kyleshevlin/shevyjs",
         "desc": "A rebuild of Shevy for JavaScript. Specifically built for CSS-in-JS systems"
-      },
-      {
-        "title": "Matchbox",
-        "repopath": "https://github.com/kyleshevlin/matchbox",
-        "desc":
-          "A vanilla JavaScript plugin for... well... matching the height of boxes. Not as useful now that Flexbox and CSS Grids are fully implemented.",
-        "demopath": "/matchbox"
       }
     ],
     "open_source": [
@@ -176,9 +174,18 @@
   ],
   "work": [
     {
+      "company": "Formidable",
+      "location": "Remote - office in Seattle, WA",
+      "dates": "March 2018 - Present",
+      "jobtitle": "Senior Software Engineer",
+      "points": [
+        "Starting March 5th" 
+      ]
+    },
+    {
       "company": "Fastly",
       "location": "Portland, OR",
-      "dates": "August 2017 - Present",
+      "dates": "August 2017 - February 2018",
       "jobtitle": "Senior Software Engineer",
       "points": [
         "Implemented graphs in d3 that indicate a customer's usage of Fastly's Image Optimization feature",
