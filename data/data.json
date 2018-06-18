@@ -1,11 +1,11 @@
 {
   "accomplishments": [
-    "Started and championed the #jobs-advice community on Reactiflux; Reactiflux MVP",
     "Speaker at GDG DevFest Silicon Valley 2017",
-    "Scheduled to speak at RevolutionConf 2018",
-    "Scheduled to speak at FluentConf 2018",
-    "Teaches JavaScript, React, and Redux to people via Twitch stream",
-    "Egghead.io instructor"
+    "Speaker at RevolutionConf 2018",
+    "Speaker at FluentConf 2018",
+    "Egghead.io instructor",
+    "Started and championed the #jobs-advice community on Reactiflux; Reactiflux MVP",
+    "Teaches JavaScript, React, and Redux to people via Twitch stream"
   ],
   "education": [
     {
@@ -152,9 +152,6 @@
     "secondary": [
       "Node",
       "Webpack",
-      "Sass",
-      "Ember",
-      "Ruby on Rails",
       "d3"
     ]
   },
@@ -171,6 +168,11 @@
       "title": "Just Enough Functional Programming to be a Danger to Yourself and Coworkers",
       "url": "https://www.youtube.com/watch?v=-4QNj7TJjgo",
       "id": "-4QNj7TJjgo"
+    },
+    {
+      "title": "On Being a Second Career Dev",
+      "url": "https://www.youtube.com/watch?v=_xElXb13C8U",
+      "id": "_xElXb13C8U"
     }
   ],
   "work": [
@@ -179,9 +181,7 @@
       "location": "Remote - office in Seattle, WA",
       "dates": "March 2018 - Present",
       "jobtitle": "Senior Software Engineer",
-      "points": [
-        "Starting March 5th" 
-      ]
+      "points": []
     },
     {
       "company": "Fastly",
