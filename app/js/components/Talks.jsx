@@ -6,7 +6,7 @@ const Talks = ({ talks }) =>
     <section>
       <h2>Talks</h2>
       {talks.map(talk => (
-        <div key={talk.id}>
+        <div className="talk_item" key={talk.id}>
           <h4>{talk.title}</h4>
           <iframe
             id="ytplayer"
