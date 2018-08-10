@@ -1,11 +1,11 @@
 {
   "accomplishments": [
-    "Speaker at GDG DevFest Silicon Valley 2017",
-    "Speaker at RevolutionConf 2018",
+    "Speaking at React Byteconf",
     "Speaker at FluentConf 2018",
-    "Egghead.io instructor",
-    "Started and championed the #jobs-advice community on Reactiflux; Reactiflux MVP",
-    "Teaches JavaScript, React, and Redux to people via Twitch stream"
+    "Speaker at RevolutionConf 2018",
+    "Speaker at GDG DevFest Silicon Valley 2017",
+    "Host of the Second Career Devs podcast",
+    "Egghead.io instructor"
   ],
   "education": [
     {
@@ -181,7 +181,11 @@
       "location": "Remote - office in Seattle, WA",
       "dates": "March 2018 - Present",
       "jobtitle": "Senior Software Engineer",
-      "points": []
+      "points": [
+        "Built features for a high-volume photography app with React, Mobx, and Electron"
+        "Contributed and enhanced components in a shared UI library",
+        "Implemented new standards to improve codebase and DX"
+      ]
     },
     {
       "company": "Fastly",
