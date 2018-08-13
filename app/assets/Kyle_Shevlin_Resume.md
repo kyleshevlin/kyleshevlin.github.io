@@ -9,15 +9,17 @@
 * Highly skilled in custom, maintainable, scalable, and responsive front end architecture
 * Excellent communicator and teacher
 
-**Also Skilled In**: Node, Webpack, Sass, Ember, Ruby on Rails, d3
+**Also Skilled In**: Node, Webpack, d3
 
 ### Other Accomplishments
 
-* Started and championed the #jobs-advice community on Reactiflux; Reactiflux MVP
+* Speaking at React Byteconf
+* Panel Host for Chain React 2018
+* Speaker at FluentConf 2018
+* Speaker at RevolutionConf 2018
 * Speaker at GDG DevFest Silicon Valley 2017
-* Scheduled to speak at FluentConf 2018
-* Teaches JavaScript, React, and Redux to people via Twitch stream
-* Recently added as an Egghead.io instructor, working on first course
+* Egghead.io instructor
+* Host of the Second Career Devs podcast
 
 ### Education
 
@@ -29,7 +31,14 @@ Lenoir-Rhyne University - Hickory, NC - 2007
 
 ### Work
 
-**Fastly** - Portland, OR - August 2017 to Present
+**Formidable** - Remote - March 2018 - August 2018
+Senior Software Engineer
+
+* Built features for a high-volume photography app with React, Mobx, and Electron
+* Contributed and enhanced components in a shared UI library
+* Implemented new standards to improve codebase and DX
+
+**Fastly** - Portland, OR - August 2017 - February 2018
 Senior Software Engineer
 
 * Implemented graphs in d3 that indicate a customer's usage of Fastly's Image Optimization feature
