@@ -1,12 +1,13 @@
 {
   "accomplishments": [
-    "Speaking at React Byteconf",
+    "Speaker at React Byteconf 2018",
     "Panel Host for Chain React 2018",
     "Speaker at FluentConf 2018",
     "Speaker at RevolutionConf 2018",
     "Speaker at GDG DevFest Silicon Valley 2017",
     "Host of the Second Career Devs podcast",
-    "Egghead.io instructor"
+    "Egghead.io instructor",
+    "Board Member for the non-profit Vets Who Code"
   ],
   "education": [
     {
@@ -165,6 +166,11 @@
     { "title": "Second Career Devs Podcast", "path": "https://secondcareerdevs.com" }
   ],
   "talks": [
+    {
+      "title": "Learning Backwards: Learning Computer Science Through the Lens of React",
+      "url": "https://www.youtube.com/watch?v=0QdUsOSt60s",
+      "id": "0QdUsOSt60s"
+    },
     {
       "title": "Just Enough Functional Programming to be a Danger to Yourself and Coworkers",
       "url": "https://www.youtube.com/watch?v=-4QNj7TJjgo",
