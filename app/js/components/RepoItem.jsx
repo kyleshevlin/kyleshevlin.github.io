@@ -1,17 +1,17 @@
 import { h } from 'preact'
 import PropTypes from 'prop-types'
 
-const RepoItem = ({ title, repopath, desc, demopath }) => {
+const RepoItem = ({ title, repoPath, desc, demoPath }) => {
   let demoLink = null
 
-  if (demopath) {
-    demoLink = <a href={demopath}>Demo</a>
+  if (demoPath) {
+    demoLink = <a href={demoPath}>Demo</a>
   }
 
   return (
     <div className="repo-item">
       <h3 className="repo-item-heading">
-        <a href={repopath}>{title}</a>
+        <a href={repoPath}>{title}</a>
       </h3>
       <p
         className="repo-item-content"
@@ -24,9 +24,9 @@ const RepoItem = ({ title, repopath, desc, demopath }) => {
 
 RepoItem.propTypes = {
   title: PropTypes.string,
-  repopath: PropTypes.string,
+  repoPath: PropTypes.string,
   desc: PropTypes.string,
-  demopath: PropTypes.string
+  demoPath: PropTypes.string
 }
 
 export default RepoItem

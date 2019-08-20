@@ -28,52 +28,52 @@
     "personal": [
       {
         "title": "Phomo",
-        "repopath": "https://github.com/kyleshevlin/phomo",
+        "repoPath": "https://github.com/kyleshevlin/phomo",
         "desc": "Another JavaScript UI library for your FOMO"
       },
       {
         "title": "React 101",
-        "repopath": "https://github.com/kyleshevlin/react-101",
+        "repoPath": "https://github.com/kyleshevlin/react-101",
         "desc":
           "Ongoing workshop teaching the fundamentals of React to beginner and intermediate level users via Twitch live stream."
       },
       {
         "title": "Shevy",
-        "repopath": "https://github.com/kyleshevlin/shevy",
+        "repoPath": "https://github.com/kyleshevlin/shevy",
         "desc":
           "A typography/vertical rhythm Sass library. Featured in <a href=\"https://github.com/Famolus/awesome-sass\">awesome-sass</a> on Github.",
-        "demopath": "/shevy"
+        "demoPath": "/shevy"
       },
       {
         "title": "ShevyJS",
-        "repopath": "https://github.com/kyleshevlin/shevyjs",
+        "repoPath": "https://github.com/kyleshevlin/shevyjs",
         "desc": "A rebuild of Shevy for JavaScript. Specifically built for CSS-in-JS systems"
       }
     ],
     "open_source": [
       {
         "title": "React Devtools",
-        "repopath": "https://github.com/facebook/react-devtools",
+        "repoPath": "https://github.com/facebook/react-devtools",
         "desc": "Chrome Extension for debugging React Apps"
       },
       {
         "title": "a11yproject",
-        "repopath": "https://github.com/a11yproject/a11yproject.com",
+        "repoPath": "https://github.com/a11yproject/a11yproject.com",
         "desc": "Making #A11Y tips and tricks easier to digest and leveraging the community into the cloud."
       },
       {
         "title": "Operation Code",
-        "repopath": "https://github.com/OperationCode/operationcode_frontend",
+        "repoPath": "https://github.com/OperationCode/operationcode_frontend",
         "desc": "The frontend repo for Operation Code"
       },
       {
         "title": "Emotion",
-        "repopath": "https://github.com/emotion-js/emotion",
+        "repoPath": "https://github.com/emotion-js/emotion",
         "desc": "A powerful and fast CSS-in-JS library"
       },
       {
         "title": "WeAreFINE / Frob Core",
-        "repopath": "https://github.com/wearefine/frob-core",
+        "repoPath": "https://github.com/wearefine/frob-core",
         "desc": "A framework for front (frob) enders (tenders) everywhere"
       }
     ]
@@ -188,7 +188,7 @@
       "company": "Webflow",
       "location": "Remote",
       "dates": "January 2019 - Present",
-      "jobtitle": "Senior Software Engineer",
+      "jobTitle": "Senior Software Engineer",
       "points": [
         "Member of the CMS team, responsible for all parts of Webflow revolving around dynamic data",
         "Shipped password protection for dynamic pages",
@@ -200,7 +200,7 @@
       "company": "Formidable",
       "location": "Remote - office in Seattle, WA",
       "dates": "March 2018 - August 2018",
-      "jobtitle": "Senior Software Engineer",
+      "jobTitle": "Senior Software Engineer",
       "points": [
         "Built features for a high-volume photography app with React, Mobx, and Electron",
         "Contributed and enhanced components in a shared UI library",
@@ -211,7 +211,7 @@
       "company": "Fastly",
       "location": "Portland, OR",
       "dates": "August 2017 - February 2018",
-      "jobtitle": "Senior Software Engineer",
+      "jobTitle": "Senior Software Engineer",
       "points": [
         "Implemented graphs in d3 that indicate a customer's usage of Fastly's Image Optimization feature",
         "Built new UIs for various load balancing features",
@@ -222,7 +222,7 @@
       "company": "Second Story",
       "location": "Portland, OR",
       "dates": "September 2016 - August 2017",
-      "jobtitle": "Web and Interactive Developer",
+      "jobTitle": "Web and Interactive Developer",
       "points": [
         "Sole developer for Second Story's brand site, built from scratch with React, Redux, Webpack, and server side rendering.",
         "Sole developer for Holland America's Exploration Space, a touch table interactive built with React, Redux, Webpack, Electron, Websockets and can handle four concurrent users."
@@ -232,7 +232,7 @@
       "company": "FINE",
       "location": "Portland, OR",
       "dates": "November 2013 - July 2016",
-      "jobtitle": "Front End Web Developer",
+      "jobTitle": "Front End Web Developer",
       "points": [
         "Crafted custom, maintainable CSS/SCSS architectures for dozens of websites",
         "Created a Ruby gem (Componentize) that allowed us to create Rails components by utilizing partials. Sped up site builds by 2-3 weeks.",
