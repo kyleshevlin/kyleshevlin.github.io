@@ -154,6 +154,7 @@
     "secondary": [
       "Node",
       "Webpack",
+      "Flow",
       "d3"
     ]
   },
@@ -213,7 +214,7 @@
       "jobtitle": "Senior Software Engineer",
       "points": [
         "Implemented graphs in d3 that indicate a customer's usage of Fastly's Image Optimization feature",
-        "Built new UIs for various loadbalancing features",
+        "Built new UIs for various load balancing features",
         "Migrated and converted components from main application into a NPM package consumable by all our front end applications"
       ]
     },
