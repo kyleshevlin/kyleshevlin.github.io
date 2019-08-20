@@ -1,13 +1,9 @@
 {
   "accomplishments": [
-    "Speaker at React Byteconf 2018",
-    "Panel Host for Chain React 2018",
-    "Speaker at FluentConf 2018",
-    "Speaker at RevolutionConf 2018",
-    "Speaker at GDG DevFest Silicon Valley 2017",
     "Host of the Second Career Devs podcast",
     "Egghead.io instructor",
-    "Board Member for the non-profit Vets Who Code"
+    "Board Member for the non-profit Vets Who Code",
+    "Conference Speaker"
   ],
   "education": [
     {
@@ -27,9 +23,14 @@
   "projects": {
     "personal": [
       {
-        "title": "Phomo",
-        "repoPath": "https://github.com/kyleshevlin/phomo",
-        "desc": "Another JavaScript UI library for your FOMO"
+        "title": "Just Enough Functional Programming",
+        "repoPath": "https://github.com/kyleshevlin/just-enough-fp-lessons",
+        "desc": "My introductory course to functional programming for egghead.io"
+      },
+      {
+        "title": "Data Structures and Algorithms",
+        "repoPath": "https://github.com/kyleshevlin/intro-to-data-structures-and-algorithms",
+        "desc": "My introductory course to data structures and algorithms for egghead.io"
       },
       {
         "title": "React 101",
@@ -70,11 +71,6 @@
         "title": "Emotion",
         "repoPath": "https://github.com/emotion-js/emotion",
         "desc": "A powerful and fast CSS-in-JS library"
-      },
-      {
-        "title": "WeAreFINE / Frob Core",
-        "repoPath": "https://github.com/wearefine/frob-core",
-        "desc": "A framework for front (frob) enders (tenders) everywhere"
       }
     ]
   },
@@ -198,7 +194,7 @@
     },
     {
       "company": "Formidable",
-      "location": "Remote - office in Seattle, WA",
+      "location": "Remote",
       "dates": "March 2018 - August 2018",
       "jobTitle": "Senior Software Engineer",
       "points": [
