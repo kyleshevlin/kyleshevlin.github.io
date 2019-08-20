@@ -9,17 +9,14 @@
 * Highly skilled in custom, maintainable, scalable, and responsive front end architecture
 * Excellent communicator and teacher
 
-**Also Skilled In**: Node, Webpack, d3
+**Also Skilled In**: Node, Webpack, Flow, d3
 
 ### Other Accomplishments
 
-* Speaking at React Byteconf
-* Panel Host for Chain React 2018
-* Speaker at FluentConf 2018
-* Speaker at RevolutionConf 2018
-* Speaker at GDG DevFest Silicon Valley 2017
 * Egghead.io instructor
 * Host of the Second Career Devs podcast
+* Board Member for the non-profit Vets Who Code
+* Conference Speaker
 
 ### Education
 
@@ -30,6 +27,14 @@ Fuller Theoglogical Seminary - Pasadena, CA - 2012
 Lenoir-Rhyne University - Hickory, NC - 2007
 
 ### Work
+
+**Webflow** - Remote - January 2019 - Present
+Senior Software Engineer
+
+* Member of the CMS team, responsible for all parts of Webflow revolving around dynamic data
+* Shipped password protection for dynamic pages
+* Increased test coverage, enabling confident refactors, reducing regressions, and increasing velocity for teammates and myself
+* Provided support and code reviews for our most recent big feature, a multi-image field type for our CMS (huge wishlist item for our customers)
 
 **Formidable** - Remote - March 2018 - August 2018
 Senior Software Engineer
@@ -63,6 +68,10 @@ Front End Web Developer
 
 ### Noteworthy Repos
 
+* [Just Enough Functional Programming](https://github.com/kyleshevlin/just-enough-fp-lessons)
+A repo of lessons that goes along with my intro to functional programming course on [egghead.io](https://egghead.io/courses/just-enough-functional-programming-in-javascript)
+* [Data Structures & Algorithms](https://github.com/kyleshevlin/intro-to-data-structures-and-algorithms)
+A repo of lessons that goes along with my intro to data structures and algorithms course on [egghead.io](https://egghead.io/courses/data-structures-and-algorithms-in-javascript)
 * [React 101](https://github.com/kyleshevlin/react-101)
 Ongoing workshop teaching the fundamentals of React to beginner and intermediate level users via Twitch live stream
 * [Shevy](https://github.com/kyleshevlin/shevy)
@@ -70,9 +79,6 @@ A typography/vertical rhythm Sass library.
 [Demo](http://kyleshevlin.github.io/shevy)
 * [ShevyJS](https://github.com/kyleshevlin/shevyjs)
 A rebuild of Shevy for JavaScript. Specifically built for CSS-in-JS systems
-* [Matchbox](https://github.com/kyleshevlin/matchbox)
-A vanilla JavaScript plugin for... well... matching the height of boxes.
-[Demo](http://kyleshevlin.github.io/matchbox)
 
 ### Open Source Projects I Contribute To
 
@@ -80,7 +86,6 @@ A vanilla JavaScript plugin for... well... matching the height of boxes.
 * [a11yproject](https://github.com/a11yproject/a11yproject.com)
 * [Operation Code](https://github.com/OperationCode/operationcode_frontend)
 * [Emotion](https://github.com/emotion-js/emotion)
-* [WeAreFINE / Frob Core](https://github.com/wearefine/frob-core)
 
 ### Noteworthy Websites I Have Worked On
 
