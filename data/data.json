@@ -184,6 +184,18 @@
   ],
   "work": [
     {
+      "company": "Webflow",
+      "location": "Remote",
+      "dates": "January 2019 - Present",
+      "jobtitle": "Senior Software Engineer",
+      "points": [
+        "Member of the CMS team, responsible for all parts of Webflow revolving around dynamic data",
+        "Shipped password protection for dynamic pages",
+        "Increased test coverage to enable confident refactors, reduce regressions, and increase speed for teammates and myself",
+        "Provided support and code reviews for our most recent big feature, a multi-image field type for our CMS (huge wishlist item for our customers)"
+      ]
+    },
+    {
       "company": "Formidable",
       "location": "Remote - office in Seattle, WA",
       "dates": "March 2018 - August 2018",
