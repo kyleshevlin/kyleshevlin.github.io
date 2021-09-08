@@ -10,7 +10,7 @@
     "build": "parcel build ./src/index.html --dist-dir docs",
     "start": "parcel ./src/index.html"
   },
-  "author": "Kyle Shevlin",
+  "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (https://kyleshevlin.com)",
   "private": true,
   "devDependencies": {
     "@parcel/transformer-mdx": "2.0.0-rc.0",
