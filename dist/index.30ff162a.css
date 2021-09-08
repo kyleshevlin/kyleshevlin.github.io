@@ -1,0 +1,34 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.dark {
+  --background-color: #171717;
+  --text-color: #fff;
+}
+
+a {
+  color: tomato;
+}
+
+/*# sourceMappingURL=index.30ff162a.css.map */

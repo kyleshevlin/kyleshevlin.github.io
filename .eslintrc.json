@@ -1,7 +1,0 @@
-{
-  "extends": ["standard", "standard-preact"],
-  "rules": {
-    "jsx-quotes": "off",
-    "space-before-function-paren": "off"
-  }
-}
