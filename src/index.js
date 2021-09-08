@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import Resume from './resume.mdx'
 import Container from './components/Container'
+import DownloadResume from './components/DownloadResume'
 import ThemeToggle from './components/ThemeToggle'
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
             <ThemeToggle />
           </div>
           <Resume />
+          <div style={{ marginTop: '2rem' }}>
+            <DownloadResume />
+          </div>
         </Container>
       </main>
     </>

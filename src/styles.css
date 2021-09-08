@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --background-color: #fff;
-  --text-color: #000;
-}
-
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -16,17 +11,21 @@ html {
 }
 
 body {
+  --background: #fff;
+  --text: #000;
+  --accent: tomato;
+
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background);
+  color: var(--text);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 body.dark {
-  --background-color: #171717;
-  --text-color: #fff;
+  --background: #171717;
+  --text: #fff;
 }
 
 a {
-  color: tomato;
+  color: var(--accent);
 }

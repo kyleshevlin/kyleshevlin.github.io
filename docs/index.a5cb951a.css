@@ -1,0 +1,2 @@
+*,:after,:before{box-sizing:border-box}html{font-family:Arial,Helvetica,sans-serif;font-size:100%;line-height:1.6}body{--background:#fff;--text:#000;--accent:tomato;background-color:var(--background);color:var(--text);margin:0;transition:background-color .2s ease,color .2s ease}body.dark{--background:#171717;--text:#fff}a{color:var(--accent)}
+/*# sourceMappingURL=index.a5cb951a.css.map */
