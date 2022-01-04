@@ -14,6 +14,7 @@ body {
   --background: #fff;
   --text: #000;
   --accent: tomato;
+  --offset: #f1f1f1;
 
   margin: 0;
   background-color: var(--background);
@@ -24,8 +25,16 @@ body {
 body.dark {
   --background: #171717;
   --text: #fff;
+  --offset: #282828;
 }
 
 a {
   color: var(--accent);
+}
+
+code {
+  background-color: var(--offset);
+  display: inline-block;
+  font-size: 1rem;
+  padding-inline: 0.25rem;
 }
