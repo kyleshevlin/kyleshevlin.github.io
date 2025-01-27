@@ -1,2 +1,0 @@
-*,:after,:before{box-sizing:border-box}:root{--background-color:#fff;--text-color:#000}html{font-family:Arial,Helvetica,sans-serif;font-size:100%;line-height:1.6}body{background-color:var(--background-color);color:var(--text-color);margin:0;transition:background-color .2s ease,color .2s ease}body.dark{--background-color:#171717;--text-color:#fff}a{color:tomato}
-/*# sourceMappingURL=index.fd1a3f9b.css.map */
