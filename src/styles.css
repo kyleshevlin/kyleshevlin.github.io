@@ -38,3 +38,13 @@ code {
   font-size: 1rem;
   padding-inline: 0.25rem;
 }
+
+hr {
+  background-color: #ccc;
+  border: none;
+  height: 1px;
+}
+
+h3 {
+  margin-top: 2em;
+}
