@@ -7,7 +7,7 @@
     "url": "git@github.com:kyleshevlin/kyleshevlin.github.io.git"
   },
   "scripts": {
-    "build": "parcel build ./src/index.html --dist-dir docs",
+    "build": "rm -rf ./docs && parcel build ./src/index.html --dist-dir docs",
     "makepdf": "node ./scripts/convertResumeToPdf.js",
     "start": "parcel ./src/index.html"
   },
